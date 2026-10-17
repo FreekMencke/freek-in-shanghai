@@ -1,0 +1,15 @@
+{%- set img = post.data.image -%}
+<article class="card">
+  <header>
+    <h2 class="card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <p class="entry-meta">
+      <svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+      <a href="{{ post.url }}"><time datetime="{{ post.date | isoDate }}">{{ post.date | date }}</time></a>
+    </p>
+  </header>
+  <a class="card-image" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ img.card.src }}" srcset="{{ img.small.src }} {{ img.small.width }}w, {{ img.card.src }} {{ img.card.width }}w" sizes="(max-width: 767px) 100vw, 290px" width="{{ img.card.width }}" height="{{ img.card.height }}" alt="" loading="lazy" decoding="async">
+  </a>
+  <p class="card-excerpt">{{ post.data.excerpt }}</p>
+  <a class="button" href="{{ post.url }}">{{ site.text.readMore }}<span class="visually-hidden">: {{ post.data.title }}</span></a>
+</article>

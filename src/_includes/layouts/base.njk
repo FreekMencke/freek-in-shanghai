@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="icon" href="{{ site.favicons.icon32 }}" sizes="32x32">
+    <link rel="icon" href="{{ site.favicons.icon192 }}" sizes="192x192">
+    <link rel="apple-touch-icon" href="{{ site.favicons.appleTouch }}">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body class="{{ bodyClass }}">
+    <a class="skip-link" href="#content">{{ site.text.skipToContent }}</a>
+    {% include "partials/icons.njk" %}
+    {% include "partials/header.njk" %}
+    {% if hero %}{% include "partials/hero.njk" %}{% endif %}
+    <div id="content" class="site-content">
+      <div class="container">
+        {{ content | safe }}
+      </div>
+    </div>
+    {% include "partials/footer.njk" %}
+    <script type="application/json" id="ui-text">{{ site.ui | dump | safe }}</script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{%- set older = collections.posts | getPreviousCollectionItem(page) -%}
+{%- set newer = collections.posts | getNextCollectionItem(page) -%}
+<nav class="post-nav" aria-label="{{ site.text.postNavigation }}">
+  {%- if older %}
+  <a class="post-nav-older" href="{{ older.url }}" rel="prev">
+    <span class="visually-hidden">{{ site.text.previousPost }}: </span>{{ older.data.title }}
+  </a>
+  {%- endif %}
+  {%- if newer %}
+  <a class="post-nav-newer" href="{{ newer.url }}" rel="next">
+    <span class="visually-hidden">{{ site.text.nextPost }}: </span>{{ newer.data.title }}
+  </a>
+  {%- endif %}
+</nav>

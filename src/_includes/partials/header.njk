@@ -1,0 +1,21 @@
+<header class="site-header{% if hero %} over-hero{% endif %}" data-header>
+  <div class="container site-header-inner">
+    <div class="site-branding">
+      {% if hero %}<h1 class="site-title">{% else %}<p class="site-title">{% endif %}
+        <a href="/" rel="home">{{ site.title }}</a>
+      {% if hero %}</h1>{% else %}</p>{% endif %}
+      <p class="site-description">{{ site.tagline }}</p>
+    </div>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
+      <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+      <span class="visually-hidden">{{ site.text.menu }}</span>
+    </button>
+    <nav id="site-nav" class="main-nav" aria-label="{{ site.text.menu }}">
+      <ul>
+        {%- for item in site.menu %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

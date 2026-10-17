@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+<main class="content-area">
+  <article class="entry">
+    <header class="entry-header">
+      <h1 class="entry-title">{{ title }}</h1>
+      <p class="entry-meta">
+        <svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+        <time datetime="{{ page.date | isoDate }}">{{ page.date | date }}</time>
+      </p>
+    </header>
+    {%- if image.large %}
+    <div class="entry-image">
+      <img src="{{ image.large.src }}" width="{{ image.large.width }}" height="{{ image.large.height }}" alt="">
+    </div>
+    {%- endif %}
+    <div class="entry-content">
+      {{ content | safe }}
+    </div>
+    {%- if tags.length %}
+    <footer class="entry-footer">
+      <h2 class="visually-hidden">{{ site.text.tags }}</h2>
+      <ul class="tag-links">
+        {%- for slug in tags %}
+        <li><a href="/tag/{{ slug }}/">{{ slug | tagName }}</a></li>
+        {%- endfor %}
+      </ul>
+    </footer>
+    {%- endif %}
+  </article>
+  {% include "partials/post-nav.njk" %}
+  {% if comments.length %}{% include "partials/comments.njk" %}{% endif %}
+</main>

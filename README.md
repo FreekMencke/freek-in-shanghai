@@ -1,0 +1,84 @@
+# Freek in Shanghai
+
+Static archive of the blog www.freekinshanghai.be (2017): 21 posts, the About page, 42 comments and 934 photos in
+26 slideshows. Rebuilt in October 2026 from the WordPress backup as a plain static site: no server, database or
+WordPress needed to view it.
+
+## View it
+
+- **From disk:** open `_site/index.html` in a browser. All links are relative, so it works without a server.
+- **With a local server:** `npm run serve`, then open http://localhost:8081.
+
+## Build
+
+Needs Node 24 (see `.nvmrc`).
+
+```
+npm ci
+npm run build     # writes _site/
+npm run check     # verifies _site/ (see below)
+```
+
+## Structure
+
+| Path | What it is |
+| --- | --- |
+| `src/_data/site.js` | Site title, menu, social links, hero and favicons, and all interface text |
+| `src/assets/css/site.css` | The only stylesheet. Colours, fonts and sizes are tokens at the top (`:root`) |
+| `src/assets/js/site.js` | The only script: header, mobile menu, masonry cards, slideshows, photo viewer |
+| `src/assets/fonts/` | Open Sans and Josefin Sans, self-hosted (SIL Open Font License) |
+| `src/_includes/layouts/` | `base.njk` (every page), `post.njk`, `page.njk` |
+| `src/_includes/partials/` | Header, hero, card, comments, post navigation, footer, SVG icons |
+| `src/posts/*.html` | One file per post: front matter (title, date, tags, images, comments) and the post HTML |
+| `src/about.html`, `src/index.njk`, `src/tags.njk`, `src/404.njk` | About page, home page, one page per tag, 404 page |
+| `src/_data/tagList.json` | Tag slugs and names |
+| `src/uploads/` | The photos, in the same `2017/MM/` folders as on the old site (only files a page uses) |
+| `eleventy.config.js` | Eleventy setup: collections, Dutch dates, relative URLs |
+| `tools/check/check.mjs` | The checks behind `npm run check` |
+| `baseline/content.json` | What the WordPress site showed, used by the checks |
+| `tools/extract/`, `tools/baseline/` | One-time scripts that exported the content from WordPress |
+
+The site is built with [Eleventy](https://www.11ty.dev/) 3.
+
+## Making changes
+
+- **Look of the whole site:** the tokens at the top of `site.css`.
+- **Menu, footer links, interface text:** `src/_data/site.js`.
+- **Page structure:** one partial in `src/_includes/partials/`.
+- **A post:** its file in `src/posts/`. The body is plain HTML.
+
+After a change, run `npm run build` and `npm run check`. The check fails if a post's text, photos or comments differ
+from `baseline/content.json`, so an intended content change also needs that file updated.
+
+## What the checks cover
+
+1. Every post and the About page against the WordPress baseline: title, date, text, tags, featured image,
+   slideshow photos and captions in order, inline photos, comments and outbound links.
+2. Every local link, image, script, stylesheet and font resolves to a file; nothing loads from Google Fonts,
+   Gravatar, wordpress.com or the old domain.
+3. No file in `uploads/` is unused.
+4. HTML validation with html-validate.
+
+## Differences from the WordPress site
+
+On purpose:
+
+- Interface in Dutch (it was English), dates as "6 juni 2017".
+- Slideshows start paused, with a "12 / 426" counter, arrow keys and swipe, and only load the photos around the
+  current one (the two biggest posts used to load 330 MB and 148 MB of photos at once). Clicking a photo opens it
+  full size.
+- All posts on one home page instead of infinite scroll; each tag on one page.
+- Comments are read-only, without the form or Gravatar avatars.
+- Dropped: share buttons, cookie banner, preloader, smooth-scroll script, category/date/author archives, feeds.
+- Content fixes:
+  - "Eerste week op kantoor": the dead imgur GIF is replaced by the copy in the media library.
+  - "Residence permit en stage": the dead external G2 logo (and its link) is removed.
+  - "Bankrekening, massage en Mahjong": the link to a "Foto's" page that no longer existed is removed (text kept).
+  - "Eten, karaoke en 96th floor afterparty": one slideshow had random order; it now uses its saved order.
+  - Hero subtitle typo fixed; tag "uistap" merged into "uitstap"; tag "Test" removed.
+  - About page: a sharper photo, and the photo sits above the text on phones.
+
+## Licences
+
+The stylesheet is based on the Astrid theme by aThemes (GPLv2 or later). The fonts are under the SIL Open Font
+License 1.1 (see `src/assets/fonts/`). Posts and photos: © Freek Mencke.

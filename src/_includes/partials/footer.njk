@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="container site-footer-inner">
+    <nav aria-label="{{ site.text.socialMenu }}">
+      <ul class="footer-menu">
+        {%- for link in site.social %}
+        <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <p class="footer-name">{{ site.author }}</p>
+  </div>
+</footer>

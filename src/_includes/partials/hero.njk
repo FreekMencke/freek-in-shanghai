@@ -1,0 +1,10 @@
+<div class="hero">
+  <picture>
+    <source media="(max-width: 1024px)" srcset="{{ site.hero.imageMobile.src }}" width="{{ site.hero.imageMobile.width }}" height="{{ site.hero.imageMobile.height }}">
+    <img class="hero-image" src="{{ site.hero.image.src }}" width="{{ site.hero.image.width }}" height="{{ site.hero.image.height }}" alt="" fetchpriority="high">
+  </picture>
+  <div class="hero-text" data-hero-text>
+    <p class="hero-subtitle">{{ site.hero.subtitle }}</p>
+    <p class="hero-title">{{ site.hero.title }}</p>
+  </div>
+</div>
