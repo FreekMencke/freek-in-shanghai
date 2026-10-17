@@ -1,0 +1,4865 @@
+{
+  "capturedFrom": "http://localhost:8080",
+  "site": {
+    "title": "Freek in Shanghai",
+    "description": "Een blog over mijn tijd in Shanghai.",
+    "heroTitle": "Freek in Shanghai",
+    "heroSubtitle": "Een blog over mijn tijd in shanghai",
+    "menu": [
+      "Home",
+      "About"
+    ],
+    "footerLinks": [
+      {
+        "text": "Twitter",
+        "href": "https://twitter.com/FreekMencke"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/freekmencke/"
+      }
+    ],
+    "footerName": "Freek Mencke",
+    "heroImages": [
+      "2017/03/cropped-shanghai-vignette.jpg",
+      "2017/03/shanghai.jpg"
+    ]
+  },
+  "posts": [
+    {
+      "path": "/volgende-week-zit-ik-in-shanghai/",
+      "title": "Volgende week zit ik in Shanghai!",
+      "date": "2017-02-27T14:21:29+00:00",
+      "tags": [
+        "China",
+        "Reis",
+        "Shanghai",
+        "Voorbereiding"
+      ],
+      "featured": {
+        "file": "2017/02/luggage-1950628_640.jpg",
+        "shown": true
+      },
+      "text": "Het duurt niet zo lang meer voordat ik moet vertrekken. Nu zaterdag is mijn vlucht al naar Shanghai. Het begint nu toch wel wat spannender te worden. Maar ik moet wel eerlijk zeggen dat ik nog altijd niet echt het gevoel heb dat ik volgende week aan de andere kant van de wereld zit! Ik heb al een VPN gezocht zodat ik toch nog al mijn programma’s en accounts aankan in China. In China is er namelijk een nationale firewall die heel veel internetverkeer blokkeert. Voor een overzicht van alle geblokkeerde sites in China kun je hier klikken. Ik heb gekozen voor ExpressVPN. Dit is een van de snelste en veiligste VPN’s die er zijn. Wat wel nog een beetje vervelend is dat ik nog niks heb gehoord waar ik precies ga verblijven. Ook hebben ze de details nog niet doorgegeven hoe en wanneer ze mij komen ophalen bij de luchthaven. Maar ik vertrouw erop dat het goed komt. Ik heb laatst een email gekregen dat ik binnenkort de details krijg voor het ophalen aan de luchthaven en ook een email dat ze bezig zijn met de accommodatie. Ik neem aan dat ze dit niet zouden sturen als er problemen zouden zijn. Voorlopig is het nog eventjes afwachten!",
+      "slideshows": [],
+      "images": [],
+      "links": [
+        "https://en.wikipedia.org/wiki/Websites_blocked_in_mainland_China",
+        "https://www.expressvpn.com/"
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "parent": null,
+          "author": "Anneke",
+          "date": "2017-02-28T20:45:41+00:00",
+          "text": "Freek veel succes en een mooie tijd."
+        },
+        {
+          "id": 2,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-03-02T11:49:34+00:00",
+          "text": "Hallo Freek. Leuk dat ik je kan volgen in China, het is een hele ervaring voor jou en leuk om mee te maken. Ik wens je een goede reis en veel succes in Shanghai. Ik blijf je volgen en stuur je ook wel berichtjes. Groetjes aan de Geert, Trudy , Jelle en zijn vriendin. Groetjes (Tante ) ahum Jeanne"
+        },
+        {
+          "id": 3,
+          "parent": null,
+          "author": "Katrien",
+          "date": "2017-03-03T16:55:54+00:00",
+          "text": "Een hele fijne reis en verblijf in Shanghai Freek! Super dat je je ervaringen wil delen via deze blog. Veel succes van ons alle 4, groetjes de Hendrikxjes"
+        }
+      ]
+    },
+    {
+      "path": "/eindelijk-wat-meer-informatie/",
+      "title": "Eindelijk wat meer informatie",
+      "date": "2017-03-01T20:19:22+00:00",
+      "tags": [
+        "China",
+        "Reis",
+        "Shanghai",
+        "Voorbereiding"
+      ],
+      "featured": {
+        "file": "2017/03/brief-700x350.png",
+        "shown": true
+      },
+      "text": "Ik heb vandaag gelukkig een paar e-mailtjes gekregen met wat meer informatie. Ik moet er wel bij vermelden dat ik wel eerst een bericht heb moeten sturen vooraleer ik deze kreeg! Ze vroegen om een foto van mezelf zodat ze zeker kunnen zijn dat ze de juiste persoon meenemen. Jack, iemand van het bedrijf dat alles regelt, gaat met een bordje staan met ‘Freek’ erop zodat ik ook met de juiste persoon mee ga. Wie weet waar ik anders zou uitkomen! Ik heb ook een telefoon nummer en een adres gekregen voor het geval dat ik niemand zou vinden. Ik hoop dat dit niet zal gebeuren, maar dan zal ik waarschijnlijk toch nog wel mijn weg kunnen vinden. Het begint nu toch wel wat te korten, al moet ik eerlijk zeggen dat ik het gevoel niet heb dat ik over vier dagen in Shanghai zit. Dat zal nog wel komen zeker?",
+      "slideshows": [],
+      "images": [],
+      "links": [],
+      "comments": []
+    },
+    {
+      "path": "/ik-ben-in-shanghai/",
+      "title": "Ik ben in Shanghai!",
+      "date": "2017-03-05T06:51:55+00:00",
+      "tags": [
+        "appartement",
+        "Changshou",
+        "China",
+        "Shanghai"
+      ],
+      "featured": {
+        "file": "2017/03/terminal-700x525.jpg",
+        "shown": true
+      },
+      "text": "Een paar uur geleden ben ik geland in Shanghai, weliswaar met meer dan een uur vertraging, maar wat is een extra uurtje op 13 uur. Alles verliep vlot, we konden meteen door de douane en we hadden ons koffer ook meteen gevonden. We verlieten de terminal om Jacky, de persoon die ons kwam ophalen, te zoeken maar we vonden hem niet. Gelukkig toen we een sms aan het sturen waren om te vragen waar hij zat had hij ons gevonden! Daarna vertrokken we naar ons appartement. We gingen met een taxi, die by the way geen gordels had want wie heeft nu gordels nodig, en het was denk ik ongeveer een uurtje rijden vanaf het vliegveld. Nu ben ik dit aan het schrijven op het appartement, het adres is: Lane 28 Changshou road building 22 room 2501. Ik zit dus op de 25e verdieping en heb een heel mooi uitzicht. Ik zal binnenkort nog een post maken met een paar foto’s van het appartement. Dat is het voorlopig, als ik nog wat bedenk zal ik nog wel een post maken! Nu is het echt begonnen!",
+      "slideshows": [],
+      "images": [],
+      "links": [],
+      "comments": [
+        {
+          "id": 4,
+          "parent": null,
+          "author": "Ome Miel",
+          "date": "2017-03-05T12:58:10+00:00",
+          "text": "Hoi Freek, Fijn om te lezen dat de reis allemaal goed verlopen is. Het appartement ziet er netjes uit, hier kun je het gemakkelijk 3 maanden volhouden. Een ding,,,, vergeet niet te genieten!!!!"
+        },
+        {
+          "id": 5,
+          "parent": null,
+          "author": "Truus",
+          "date": "2017-03-05T15:26:13+00:00",
+          "text": "Hoi Freek, jij zult wel in diepe rust zijn nu. Maar wat ik me afvroeg kunnen wij ook het commentaar van andere op jouw blog zien? Dat is natuurlijk wel leuk als iedereen dat kan zien. Groetjes Mama Anders weet je mss niet wie ik ben ?"
+        },
+        {
+          "id": 7,
+          "parent": null,
+          "author": "freekmencke",
+          "date": "2017-03-05T23:17:17+00:00",
+          "text": "Ja dat gaat gewoon. Ik moet ze gewoon eerst een keer goedkeuren denk ik."
+        },
+        {
+          "id": 8,
+          "parent": null,
+          "author": "Anneke",
+          "date": "2017-03-06T16:31:26+00:00",
+          "text": "Veel succes ben benieuwd wat je allemaal gaat beleven!"
+        }
+      ]
+    },
+    {
+      "path": "/een-beetje-verkennen/",
+      "title": "Een beetje verkennen",
+      "date": "2017-03-07T04:26:26+00:00",
+      "tags": [
+        "appartement",
+        "Eten",
+        "Gebouwen",
+        "Reis",
+        "Shanghai",
+        "Stage",
+        "Verkennen"
+      ],
+      "featured": {
+        "file": "2017/03/featured-700x726.jpg",
+        "shown": false
+      },
+      "text": "Appartement Zoals beloofd zijn hier wat foto’s van het appartement! We hebben blijkbaar een van de beste appartementen. Onze huisgenoot is ook van België, een Brusselaar, en echt een toffe kerel. Gelukkig kan hij goed Nederlands, haha! Hij kent ook veel andere die hier in Shanghai zitten. We hebben er dan een paar uitgenodigd en ze waren allemaal jaloers op ons ruime, mooie appartement! Helaas waren dat ook allemaal Walen en hebben we dus toch onze Franse kennis moeten bovenhalen! Informatie en verkennen We zijn gisteren ook nog naar Hutong school geweest om wat meer informatie te krijgen. Blijkbaar is er een vertraging opgelopen op de stage visa. Het komt er dus op neer dat ik deze en volgende week vrij heb. Volgende week begin ik wel met een intensieve cursus Chinees van half 9 tot half 1, maar dan ben ik dus nog bijna heel de dag vrij. We zijn gisteren ook nog gaan verkennen toen we klaar waren bij Hutong school. Hieronder kun je een paar foto’s zien die ik gemaakt heb. We hebben natuurlijk veel meer gezien maar ik ga niet de hele tijd rondlopen en Shanghai alleen maar door mijn camera zien! De parken waren best wel druk. Maar niet zoals je het zou verwachten. Er waren allemaal tafeltjes en een soort van fitness apparaten die bijna allemaal in gebruik waren door oudere mensen. Op de tafeltjes waren ze allemaal kaart- en bordspellen aan het spelen. Er waren Chinese omaatjes die hun been bijna in hun nek konden leggen, opaatjes die pull-up’s aan het doen waren, … Maar er waren ook jongere mensen die in groep aan het hardlopen waren in het park. In ieder geval het park werd ten volste benut. Dat zou bij ons totaal niet zo het geval zijn. In mijn foto’s heb ik bijna alleen maar foto’s van parken, maar je ziet echt alles hier. Van wolkenkrabbers tot grootse Europese gebouwen tot kleine Chinese huisjes, en dit allemaal door elkaar. Maar het is een zeer veilige stad. Dit werd ons ook verteld door Hutong, ongeveer het ergste wat hier gebeurd zijn zakkenrollers en dit gebeurd amper. Er zijn ook niet echt wijken die je moet vermijden in Shanghai, maar dit wilt natuurlijk niet zeggen dat je zonder op te letten elk straatje in kan lopen. Het eten is ook zeer goedkoop. Voor volledige maaltijden heb ik tussen de 2-7 euro betaald, in een restaurant(je)s. Boodschappen doen is ook helemaal niet duur, tenzij je chocolade of melk wilt hebben. Blijkbaar eten de Chinezen dit amper en moet dat dus allemaal geïmporteerd worden. Het is hier heel fijn in Shanghai in andere woorden!",
+      "slideshows": [
+        {
+          "id": "gallery-126-1-slideshow",
+          "images": [
+            {
+              "file": "2017/03/IMG_20170306_205813.jpg",
+              "caption": "Ingang"
+            },
+            {
+              "file": "2017/03/IMG_20170306_205850.jpg",
+              "caption": "Keuken"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210003.jpg",
+              "caption": "Wasmachine buiten keuken"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210039.jpg",
+              "caption": "Keuken andere kant"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210420.jpg",
+              "caption": "Badkamer ingang"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210437.jpg",
+              "caption": "Badkamer"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210446.jpg",
+              "caption": "Badkamer andere kant"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210101.jpg",
+              "caption": "Woonkamer"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210206.jpg",
+              "caption": "Uitzicht vanaf balkon"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210301.jpg",
+              "caption": "Woonkamer andere kant"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210330.jpg",
+              "caption": "Woonkamer nog andere kant"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210346.jpg",
+              "caption": "Bert z’n slaapkamer"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210512.jpg",
+              "caption": "Mijn slaapkamer"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210539.jpg",
+              "caption": "Uitzicht vanuit mijn kamer"
+            },
+            {
+              "file": "2017/03/IMG_20170306_210549.jpg",
+              "caption": "Mijn slaapkamer andere kant"
+            }
+          ]
+        },
+        {
+          "id": "gallery-126-2-slideshow",
+          "images": [
+            {
+              "file": "2017/03/IMG_20170306_143706.jpg",
+              "caption": "Een ander park"
+            },
+            {
+              "file": "2017/03/IMG_20170306_143444.jpg",
+              "caption": "Een ander park"
+            },
+            {
+              "file": "2017/03/IMG_20170306_143321.jpg",
+              "caption": "Een ander park"
+            },
+            {
+              "file": "2017/03/IMG_20170306_143310.jpg",
+              "caption": "Een ander park"
+            },
+            {
+              "file": "2017/03/IMG_20170306_122955.jpg",
+              "caption": "Parc des Roses"
+            },
+            {
+              "file": "2017/03/IMG_20170306_122858.jpg",
+              "caption": "Parc des Roses"
+            },
+            {
+              "file": "2017/03/IMG_20170305_183918.jpg",
+              "caption": "The Bund (eergisteren)"
+            },
+            {
+              "file": "2017/03/IMG_20170305_183349.jpg",
+              "caption": "The Bund (eergisteren)"
+            },
+            {
+              "file": "2017/03/IMG_20170305_183430.jpg",
+              "caption": "The Bund (eergisteren)"
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "links": [],
+      "comments": [
+        {
+          "id": 9,
+          "parent": null,
+          "author": "Truus",
+          "date": "2017-03-07T07:58:11+00:00",
+          "text": "Leuk…!!"
+        },
+        {
+          "id": 10,
+          "parent": null,
+          "author": "Geert Mencke",
+          "date": "2017-03-07T08:13:02+00:00",
+          "text": "Hey, Freek, Dat ziet er allemaal heel mooi uit! Ik denk dat als je weer in Overpelt bent, je wel weer even moet wennen! Veel plezier."
+        },
+        {
+          "id": 11,
+          "parent": null,
+          "author": "Katrien",
+          "date": "2017-03-07T10:29:55+00:00",
+          "text": "Amai Freek, ziet er allemaal veelbelovend uit, geniet ervan!"
+        },
+        {
+          "id": 12,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-03-07T13:24:20+00:00",
+          "text": "Hallo Freek, Je hebt inderdaad een super appartement en wat een uitzicht overdag en ‘s-avonds. Geniet ervan, het is een hele ervaring. Succes met het leren van de Chinese taal en je studie over een paar weken. Groetjes Jeanne"
+        }
+      ]
+    },
+    {
+      "path": "/boodschappen-doen-en-cullinaire-uitdagingen/",
+      "title": "Boodschappen doen en cullinaire uitdagingen",
+      "date": "2017-03-09T12:08:52+00:00",
+      "tags": [
+        "Beer",
+        "De Refter",
+        "Drinken",
+        "Eten",
+        "Medische",
+        "Shanghai",
+        "Tasting",
+        "Test"
+      ],
+      "featured": {
+        "file": "2017/03/17077711_430707013988024_5851715919427928064_n-700x700.jpg",
+        "shown": false
+      },
+      "text": "Boodschappen doen, uhm… Hoe werkt dat precies? Hier in Shanghai is er natuurlijk ook een hele andere manier om boodschappen te doen. We zijn eerst naar de Tesco geweest. Dit is een hele grote supermarkt ongeveer 2km wandelen vanaf ons appartement. Onderweg gingen we over de rivier, en dat leverde deze twee foto’s op. We kwamen midden door een “woonwijk”. Er stonden zoveel gigantische appartementen, het was niet te geloven! Eenmaal daar aangekomen, in de grote supermarkt, moesten we nog onze spullen gaan zoeken. Dit was natuurlijk niet te doen, alles staat anders geordend als bij ons dus je niet weet waar je moet zoeken. We hebben dan de Epermarket ontdekt. Dit is een online store waar je bijvoorbeeld ook nutella en duvel ofzo kan bestellen. We hadden dus een bestelling geplaatst en ze kwamen het leven tot aan de deur de volgende dag. Ideaal toch! We hebben dus wat eten besteld voor s’ochtends te eten: brood, salami, cornflakes, … We kregen zelfs een complementaire doos met allemaal groenten erin, we zouden dus zelfs kunnen gaan koken! Culturele + culinaire avonturen en een Belgische kroeg! We zijn dus gisteren ook naar de Jing’an Temple geweest. Dit is een oude boeddhistische tempel in het midden van de stad. Een hele leuke ervaring. Het houtwerk en de afwerking van de tempel was supermooi. Hier zijn wat foto’s: We zijn daarna een plaats gaan zoeken om te gaan lunchen. In een winkelcentrum kort bij hadden we een heel gezellig zaakje gevonden om te gaan eten. Het eten was heerlijk, het bier ook! Daarna waren we er wel achter gekomen dat het Japans eten was en niet Chinees!! En dat was het nog niet voor die dag. We zijn daarna naar De Refter geweest, een échte Belgische kroeg! Er is namelijk elke woensdag in De Refter een beer tasting waar je 6 verschillende speciaal bieren krijgt, waarom niet dus! We hadden ook een friends-platter besteld, een schotel met wat frietjes, bitterballen en onion rings! En om die dag af te sluiten, dit zijn Bernard en Delphine. Mijn kamergenoot en een vriend van hem. Gelukkig is Delphine tweetalig in Chinees en Frans en hebben we dus nooit problemen met de taal als zij erbij is! Medische testen, op z’n Chinees We zijn vandaag medische testen gaan afleggen. Dit moet blijkbaar om een resident permit te krijgen. Dit hebben we nodig om onze stage te doen. We moesten eerst ook nog in de metro in zo’n foto-hokje pasfoto’s maken. We zijn daarna met de taxi naar het medisch centrum geweest en toen begon het. We moesten een soort van badjas aan, en daarna moesten we de hele tijd door verschillende hokjes lopen: in het eerste moest je X-Ray van je bovenlijf maken, in het tweede moest je bloed laten trekken, in de derde maken ze een echo van je buik, … Het was dus echt werk aan de lopende band. Ik heb nog geen resultaten gekregen, maar ik ben ervan overtuigd dat ze goed zullen zijn! Dat was het voor deze blog post! Het is hier super leuk in Shanghai, en het eten is super lekker!",
+      "slideshows": [
+        {
+          "id": "gallery-153-1-slideshow",
+          "images": [
+            {
+              "file": "2017/03/IMG_20170307_154954.jpg",
+              "caption": "Hoge appartementen"
+            },
+            {
+              "file": "2017/03/IMG_20170307_155043.jpg",
+              "caption": "Hoge appartementen"
+            }
+          ]
+        },
+        {
+          "id": "gallery-153-2-slideshow",
+          "images": [
+            {
+              "file": "2017/03/IMG_20170308_141632-e1489058297553.jpg",
+              "caption": "Jing’an Temple"
+            },
+            {
+              "file": "2017/03/IMG_20170308_143029-e1489058203154.jpg",
+              "caption": "Jing’an Temple"
+            },
+            {
+              "file": "2017/03/IMG_20170308_143626.jpg",
+              "caption": "Jing’an Temple"
+            },
+            {
+              "file": "2017/03/IMG_20170308_142431.jpg",
+              "caption": "Jing’an Temple"
+            },
+            {
+              "file": "2017/03/IMG_20170308_142639.jpg",
+              "caption": "Jing’an Temple"
+            },
+            {
+              "file": "2017/03/IMG_20170308_142514.jpg",
+              "caption": "Jing’an Temple"
+            },
+            {
+              "file": "2017/03/IMG_20170308_143318.jpg",
+              "caption": "Jing’an Temple met Bert"
+            },
+            {
+              "file": "2017/03/IMG_20170308_143327.jpg",
+              "caption": "Jing’an Temple met Bert"
+            },
+            {
+              "file": "2017/03/IMG_20170308_145821.jpg",
+              "caption": "Voor Jing’an Temple"
+            }
+          ]
+        },
+        {
+          "id": "gallery-153-3-slideshow",
+          "images": [
+            {
+              "file": "2017/03/17077711_430707013988024_5851715919427928064_n.jpg",
+              "caption": "Japans eten"
+            },
+            {
+              "file": "2017/03/IMG_20170308_153343.jpg",
+              "caption": "Asahi – Japans bier"
+            }
+          ]
+        },
+        {
+          "id": "gallery-153-4-slideshow",
+          "images": [
+            {
+              "file": "2017/03/17076418_384939298556002_5160741692516597760_n.jpg",
+              "caption": "Beer tasting"
+            },
+            {
+              "file": "2017/03/17076938_1429881617023525_7474689953557905408_n.jpg",
+              "caption": "Beer tasting"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/03/IMG_20170308_121415-e1489059744325-1024x982.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170308_150046-1024x768.jpg",
+          "caption": null
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 13,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-03-09T12:33:37+00:00",
+          "text": "super allemaal, wat een geweldige andere wereld. gelukkig smaakt het eten goed en er is zelfs een Belgisch café. Wat wil je nog meer."
+        }
+      ]
+    },
+    {
+      "path": "/eten-karaoke-en-96th-floor-afterparty/",
+      "title": "Eten, karaoke en 96th floor afterparty",
+      "date": "2017-03-11T05:19:36+00:00",
+      "tags": [
+        "After party",
+        "Eten",
+        "Karaoke",
+        "KTV",
+        "Shanghai",
+        "WTC"
+      ],
+      "featured": {
+        "file": "2017/03/SHANGHAI_PORTRET_1_8.jpg",
+        "shown": false
+      },
+      "text": "Eten Het eten in China is heerlijk. Alles wat ik tot nu toe heb gegeten was super lekker. Maar ik heb natuurlijk niet altijd zin om ergens naar toe te gaan om te gaan eten. Om dan toch Chinees te blijven hebben we instant noodles gekocht met een minder Chinese smaak: Black pepper steak. Maar het was wel heel lekker! Black Pepper Steak noodles We vroegen ons ook af wat Chinezen s’ochtends eten, want ze eten hier geen brood of cereals. Blijkbaar eet men hier op weg naar het werk bij kraampjes enzo. Wij hebben dat dus ook geprobeerd! Ik weet niet hoe dit heet, maar het was een soort bapao. Je hebt er met vlees in en met groenten in. Maar het kost echt niks. Voor 1 broodje is het 1-2 RMB, dit komt neer op 0,13-0,26 euro per broodje. Ik snap niet hoe ze hier op kunnen verdienen soms. Soort van bapao Karaoke Hutong, de organisatie waarmee ik in Shanghai ben, organiseert ook veel activiteiten. Gisterenavond was er een KTV (karaoke) avond. In het begin is dat super awkward, maar iedereen zat daarna gewoon mee te zingen en de microfoon rond te geven. Het was heel gezellig! Dit was ook weer heel goedkoop: 40RMB oftwel 5,45 euro. Dit was inclusief bier! Niet te geloven. Afterparty Als afterparty waren we naar de Shanghai WTC tower geweest. Dit is een van de gebouwen die je ziet op de foto op de beginpagina van mijn blog! We hadden een code van een promotor gekregen om gratis binnen te mogen. Maar er stonden buiten Lamborghini’, Porsche’s, … Het was echt niet normaal, net alsof we in een film zaten. Toen gingen we naarboven met de lift. Het was op de 96e verdieping… DE 96E VERDIEPING! Het was super fancy en high-end, we voelden ons een beetje out of place dus we waren niet heel lang gebleven, maar het was echt wel de moeite waard! Al in al is het dus zeer fijn hier in Shanghai. Ik heb de tijd van mijn leven en ben blij dat ik deze kans heb genomen!",
+      "slideshows": [
+        {
+          "id": "gallery-191-1-slideshow",
+          "images": [
+            {
+              "file": "2017/03/mmexport1489206408496.jpg",
+              "caption": "KTV avond"
+            },
+            {
+              "file": "2017/03/mmexport1489206391213.jpg",
+              "caption": "KTV avond"
+            },
+            {
+              "file": "2017/03/IMG_20170310_204838.jpg",
+              "caption": "KTV avond"
+            },
+            {
+              "file": "2017/03/IMG_20170310_225509.jpg",
+              "caption": "KTV avond"
+            }
+          ]
+        },
+        {
+          "id": "gallery-191-2-slideshow",
+          "images": [
+            {
+              "file": "2017/03/mmexport1489206089213.jpg",
+              "caption": "Shanghai WTC Tower"
+            },
+            {
+              "file": "2017/03/SHANGHAI_PORTRET_1_8.jpg",
+              "caption": "Shanghai WTC Tower"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/03/IMG_20170310_182043-225x300.jpg",
+          "caption": "Black Pepper Steak noodles"
+        },
+        {
+          "file": "2017/03/IMG_20170310_110801-225x300.jpg",
+          "caption": "Soort van bapao"
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 14,
+          "parent": null,
+          "author": "Leo",
+          "date": "2017-03-12T17:10:42+00:00",
+          "text": "Blij om te lezen dat je het goed hebt Freek . Geniet ervan"
+        },
+        {
+          "id": 15,
+          "parent": null,
+          "author": "Ann H",
+          "date": "2017-03-13T08:52:51+00:00",
+          "text": "Dag Freek, wat is de stad veranderd sinds mijn bezoek in 1994, maar tegelijkertijd ook niet. Wat je ‘s ochtends eet op straat is https://en.wikipedia.org/wiki/Baozi, in het Chinees klinkt het als ‘pauze’, in het Engels dumplings. Geniet van je verblijf!"
+        },
+        {
+          "id": 17,
+          "parent": null,
+          "author": "Anneke",
+          "date": "2017-03-14T08:24:34+00:00",
+          "text": "Wat een spannend leven heb je daar, leuk om je volgen en veel plezier nog?"
+        }
+      ]
+    },
+    {
+      "path": "/rustig-weekend-en-mijn-eerste-chinese-les/",
+      "title": "Rustig weekend en mijn eerste Chinese les",
+      "date": "2017-03-13T13:34:30+00:00",
+      "tags": [
+        "China",
+        "Eten",
+        "Les",
+        "Nanjing Road",
+        "Shanghai",
+        "Verkennen"
+      ],
+      "featured": {
+        "file": "2017/03/IMG_20170311_165031_512-700x700.jpg",
+        "shown": false
+      },
+      "text": "Weekend We zijn het weekend rustig begonnen. We zijn gaan wandelen op Nanjing Road, dit is een heel grote winkelstraat met alle winkels die je je kunt inbeelden. Deze staat loopt ook door tot op de Bund. We hebben natuurlijk ook weer lekker gegeten hier, alles wat ik tot nu toe gegeten heb was lekker! We lopen hier serieus wat kilometers, ik denk dat we gemiddeld zo’n 10-12km per dag (+-15 000 stappen) lopen. Dus na een dag serieus stappen kwamen we terug thuis, maar we moesten nog eten. Na wat denken kwamen we op het briljante idee om eten te laten leveren! We begonnen dus iets te zoeken en vonden de perfecte website, namelijk www.mealbay.net. We hadden dus een paar lekkere pizza’s besteld! Na ongeveer een uur stonden ze aan de deur. Pizza is natuurlijk wel niet echt een Chinese maaltijd… Maar toen we zondag wakker werden was er nog een verassing voor ons. Het was namelijk heel hard aan het regenen! We hebben die dag letterlijk niks gedaan. Om te vergelijken, ik heb die dag nog geen 4000 stappen gezet. Dat is dus een stuk minder als de andere dagen (+-15 000 stappen). Je kunt dus wel raden dat we niet echt buiten geweest zijn. Ik was ‘s ochtends nog even baozi (soort van bapao) gehaald voor ontbijt, maar voor de rest ben ik niet buiten geweest. Die dag hebben we ook gewoon weer eten besteld, maar dit duurde echte 95 minuten, véél langer dan zaterdag. Chinese les Vandaag heb ik mijn eerste les Chinees gehad! Ik zat hier eerlijk gezegd echt uit naar te kijken. Ik heb deze week een intensieve week Chinees, dit wil zeggen dat ik 4 uur les per dag heb. Dit is natuurlijk heel veel, en bijgevolg was de eerste les ook een beetje overdonderend. Eerst moet je ook nog leren om Pinyin te lezen. Dit is een manier om Chinees te schrijven met onze letters, maar de letters zelf worden wel heel anders uitgesproken. Een q wordt bijvoorbeeld uitsproken als tch. Dat is dus wel even wennen, maar het was heel leuk! Na afloop zijn we ook nog wat gaan eten. De Hutong school is gelegen in de French concession, en bijgevolg zijn er heel veel restaurantjes in de buurt. We zijn dus weer lekker gaan uiteten! Om af te sluiten Ik dacht om af te sluiten zal ik eens laten zien hoe ik mijn blog schrijf! Dat doe ik zo dus, met een lekkere TsingTao (chinees bier) erbij! Tot de volgende!",
+      "slideshows": [],
+      "images": [
+        {
+          "file": "2017/03/IMG_20170311_165031_512-1024x1024.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170311_193316_011.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170312_154109_302.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170313_202134-1024x768.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170313_193359_167-1024x1024.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170313_202018-768x1024.jpg",
+          "caption": null
+        }
+      ],
+      "links": [
+        "http://www.mealbay.net",
+        "https://en.wikipedia.org/wiki/Pinyin",
+        "https://en.wikipedia.org/wiki/Shanghai_French_Concession"
+      ],
+      "comments": [
+        {
+          "id": 16,
+          "parent": null,
+          "author": "Leo",
+          "date": "2017-03-13T20:26:02+00:00",
+          "text": "Top"
+        },
+        {
+          "id": 18,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-03-16T07:55:30+00:00",
+          "text": "Ha die Freek. Het ziet er allemaal super uit, vooral al dat lekkere eten. De Belgische pot zal straks weer wennen zijn. Het is wel fijn dat je nu ook eindelijk iets kunt leren. Succes. Groetjes"
+        }
+      ]
+    },
+    {
+      "path": "/chinees-bier-en-stage/",
+      "title": "Chinese les, bier en stage!",
+      "date": "2017-03-17T05:53:40+00:00",
+      "tags": [
+        "Beer",
+        "China",
+        "Chinees",
+        "De Refter",
+        "Drinken",
+        "Eten",
+        "Shanghai",
+        "Stage",
+        "Tasting"
+      ],
+      "featured": {
+        "file": "2017/03/IMG_20170315_234334_255-700x742.jpg",
+        "shown": false
+      },
+      "text": "Chinees Deze week is voor mij een intensieve week chinees. Dit wil zeggen dat ik 4 uur Chinese les per dag heb, van 14.30-18.30. Zoals je je kunt inbeelden dit is redelijk lang, maar dit is maar tot en met maandag. Vanaf dan is het maar 2 uur per week. We hebben al best veel Chinees geleerd. We kunnen onszelf voorstellen, wat eten en drinken bestellen en nog een paar andere dingen. En dit al na 4 dagen! In deze straat is Hutong school gelegen: Hutong school road Een echte Shanghaise straat: kleinere gebouwen met in de achtergrond een gigantische wolkenkrabber. Shanghai is echt een gevarieerde stad, Je ziet hier van alles! Bier en eten Het eten is hier echt fantastisch. Ik maak ook zoveel foto’s van eten dat dit onderhand een foodie blog is geworden! Hier zijn nog een paar foto’s van wat ik deze week heb gegeten! Deze dumplings zijn overal rond de 10-12 RMB, dit is ongeveer 1.50 EUR. Echt een aanrader! We zijn ook weer naar de beer tasting bij De Refter geweest. Deze week was het Delirium avond, we hadden Tremens, Nocturum, Red, Argentum, Deliria en Christmas. Ze waren echt allemaal heel lekker! Mijn top drie is Argentum, Red en Tremens. De minst lekkere was Nocturum, die vond ik niet geweldig. Ik denk dat we hier vaste klant gaan worden! En wat past er nu beter bij Belgisch bier dan Belgische frieten! Stage We hebben gisteren ook onze eerste meeting gehad bij G2Studio. Deze ging voornamelijk over wat we moeten doen op onze stage. Bij G2Studio gebruiken ze een web platform dat gemaakt is door een intern van vorig jaar. Deze intern was ook een student bij Thomas More. Dit web platform gebruiken ze om quotaties aan te maken, vrij aan te vragen, er is een kalender, … Onze taak bestaat eruit om dit platform wat uit te breiden en bestaande functies te verbeteren. Dit is echter niet zo simpel. De code die geschreven is is niet geweldig, er is namelijk geen gebruik gemaakt van een PHP framework terwijl toch alles in PHP geschreven is. De code is ook wat slordig en kan het dus af en toe echt zoeken zijn waarom iets niet werkt. Maar ik heb het volste vertrouwen erin dat ik dit kan. Ik heb namelijk al kleine dingen proberen te veranderen en dit ging goed. Vervolgens gaan we waarschijnlijk ook aan een nieuw project kunnen meewerken wat later in de stage. Hierover zijn echter nog geen details bekend. We gaan het dus druk genoeg hebben, maar ik denk zeker dat het wel leuk wordt!",
+      "slideshows": [
+        {
+          "id": "gallery-246-1-slideshow",
+          "images": [
+            {
+              "file": "2017/03/IMG_20170314_193604_751.jpg",
+              "caption": "Dumplings"
+            },
+            {
+              "file": "2017/03/IMG_20170315_125706_990.jpg",
+              "caption": "Dumplings"
+            }
+          ]
+        },
+        {
+          "id": "gallery-246-2-slideshow",
+          "images": [
+            {
+              "file": "2017/03/IMG_20170315_234334_255.jpg",
+              "caption": "Averbode"
+            },
+            {
+              "file": "2017/03/IMG_20170315_200959.jpg",
+              "caption": "Frieten & bier @ De Refter"
+            },
+            {
+              "file": "2017/03/IMG_20170315_200015.jpg",
+              "caption": "Delirum beer tasting @ De Refter"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/03/IMG_20170315_143113-768x1024.jpg",
+          "caption": "Hutong school road"
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 19,
+          "parent": null,
+          "author": "Anneke",
+          "date": "2017-03-17T18:03:06+00:00",
+          "text": "?Groetjes Wat voor weer hebben jullie daar?"
+        },
+        {
+          "id": 20,
+          "parent": 19,
+          "author": "Freek",
+          "date": "2017-03-18T03:33:31+00:00",
+          "text": "Momenteel rond de 12-14°C, eerste week was het 18°C. Maar we hebben bijna altijd zon gehad, dus het is wel mooi weer."
+        },
+        {
+          "id": 21,
+          "parent": null,
+          "author": "Will en Graddy",
+          "date": "2017-03-18T16:01:35+00:00",
+          "text": "He Freek, wat maak jij een super tijd door, geweldig. Geniet ervan, we blijven je volgen. Will en Graddy"
+        }
+      ]
+    },
+    {
+      "path": "/einde-chinese-lessen-begin-stage/",
+      "title": "Einde Chinese lessen, begin stage!",
+      "date": "2017-03-21T12:01:54+00:00",
+      "tags": [
+        "China",
+        "Chinees",
+        "Lessen",
+        "Shanghai",
+        "Stage"
+      ],
+      "featured": {
+        "file": "2017/03/IMG_20170320_154326_123.jpg",
+        "shown": true
+      },
+      "text": "Chinese lessen Gisteren hebben we onze laatste intensieve Chinese lessen gehad. We hadden vanaf vorige week maandag tot en met gisteren les gehad van 14.30-18.30. Ik heb ongelofelijk veel geleerd vind ik zelf. Ik kan af en toe al eens eten bestellen, maar het is toch nog niet zo simpel. Vanaf nu gaan we 2u Chinees per week krijgen maar dat is nog niet helemaal geregeld. We hebben ook Chinese testen gehad, maar daar heb ik super goed op gescoord: 100/100 op de eerste en 116/120 op de tweede! Jaja, wie weet word ik nog een echte Chinees! Dit is een foto van de klas waar ik Chinees mee had: Mijn Chinese klas Stage Vandaag hebben we vanaf thuis gewerkt voor onze stage. Onze opdracht bestaat eruit om het oude web platform dat ze gebruiken up te daten en nieuwe functionaliteiten toevoegen. Bert is begonnen met een bestaand deel te verbeteren dat uit heel slechte code bestaat. Ik ben begonnen met een nieuwe functionaliteit te schrijven. Ik ga een soort van exchange platform maken waar G2Studio samen met hun klanten bestanden kan uitwisselen, een soort van Dropbox in je webbrowser. We weten nog niet goed wanneer de kantooruren zijn, dus we hadden gewerkt van 10u-18u, dat leek me wel schappelijk. Morgenvroeg moeten we onze residence permit halen. De residence permit zorgt ervoor dat we met onze visa ook echt op kantoor kunnen werken, legaal. Dit zorgt er ook voor dat we een multiple entry visa hebben, dit wil zeggen dat gedurende de tijd dat mijn visa geldig is ik het land in en uit kan. We hadden misschien plannen om naar Hong Kong te gaan, dit kunnen we dus doen met ons multiple entry visa. Weekend Voor de rest is alles goed met mij. We hebben een heel rustig weekend gehad. We hadden even geleden van Epermarket een hele grote doos met allemaal groenten, champignons en aardappelen gekregen. We zijn hiermee zaterdag samengekomen bij onze Belgische vrienden en zij hebben ons dan een maaltijd gekookt. De belgen!",
+      "slideshows": [],
+      "images": [
+        {
+          "file": "2017/03/IMG_20170320_182640-768x1024.jpg",
+          "caption": "Mijn Chinese klas"
+        },
+        {
+          "file": "2017/03/wp-1490100201252-1024x768.jpg",
+          "caption": "De belgen!"
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 23,
+          "parent": null,
+          "author": "Anneke",
+          "date": "2017-03-26T08:22:38+00:00",
+          "text": "?Leuke en interessante beleef je daar geniet er van!"
+        },
+        {
+          "id": 24,
+          "parent": null,
+          "author": "Ome Miel",
+          "date": "2017-03-27T17:45:04+00:00",
+          "text": "Freek, zo te lezen heb je je “draai” gevonden! Leer, ontdek en geniet!!"
+        }
+      ]
+    },
+    {
+      "path": "/residence-permit-en-stage/",
+      "title": "Residence permit en stage",
+      "date": "2017-03-25T06:24:40+00:00",
+      "tags": [
+        "China",
+        "Escape room",
+        "G2S",
+        "G2S Creative Workshop",
+        "Mr. X",
+        "Residence permit",
+        "Shanghai",
+        "Stage"
+      ],
+      "featured": {
+        "file": "2017/03/IMG_20170322_090733-e1490422822206.jpg",
+        "shown": true
+      },
+      "text": "Residence permit We zijn woensdag onze residence permits gaan aanvragen. Dit hebben we nodig omdat een X2 Student Visa normaal niet genoeg is om een stage te mogen doen. Je zou eigenlijk een visa moeten hebben waar je mee mag werken. Dus we hebben nu onze visums omgezet naar residence permits, dus we wonen nu ‘echt’ hier in Shanghai. Daarom kunnen we nu wel gewoon onze stage doen. Dus ondanks een beetje vertraging zijn we donderdag begonnen met op het kantoor te werken van mijn stage bedrijf. Ik werk nu dus als Web Development Intern bij G2S Creative Workshop, dit is een marketing en advertisment bedrijf. Er is een heel goede sfeer op kantoor en veel jonge, niet-Aziatische werknemers. We werken momenteel van 9.30-18.30, dit is wel redelijk lang. Gelukkig gaan we rond de middag lekker wat uiteten! Weekend & plannen Vrijdag na onze stage zijn we met een groep van Hutong naar een Escape Room geweest van Mr. X. Dit was heel leuk, en de eerste keer dat ik dit ooit heb gedaan! Voor dat je binnen mocht moest je eerst al je spullen afgeven, waarna ze je controleren met een metaaldetector(!). Eenmaal binnen in de donkere kamer moet je de oplossing vinden om naar de volgende kamers te kunnen. Voor sommige dingen moet je goed nadenken, voor andere moet je heel goed samenwerken. Het was een hele leuke ervaring, dit is de groep met wie we het gedaan hebben: Escape Room Mr. X Voorlopig gaat het dus ook een beetje moeilijker zijn om veel blog posts te maken. Ik ga het namelijk een stuk drukker hebben door mijn stage waardoor ik een stuk minder tijd ga hebben om aan mijn blog te werken en leuke dingen te gaan doen. Ik ga natuurlijk proberen om het zo goed mogelijk bij te houden. Ik kan het hier goed volhouden!",
+      "slideshows": [],
+      "images": [
+        {
+          "file": "//digitalabstracts.com/img/news/667987/G2%20logo%20white_crop_new.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/03/IMG_20170324_233431_045-1024x773.jpg",
+          "caption": "Escape Room Mr. X"
+        }
+      ],
+      "links": [
+        "http://www.g2studio.com",
+        "http://www.g2studio.com",
+        "http://mr-x.com.cn:9877/skcms/en/index_en.html"
+      ],
+      "comments": [
+        {
+          "id": 22,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-03-25T10:56:09+00:00",
+          "text": "Hallo Freek, Wat leuk en spannend allemaal. Steeds nieuwe uitdagingen en leuke mensen ontmoeten. Heel veel succes met je stage. Groetjes Jeanne"
+        }
+      ]
+    },
+    {
+      "path": "/eerste-week-op-kantoor/",
+      "title": "Eerste week op kantoor",
+      "date": "2017-03-30T03:02:12+00:00",
+      "tags": [
+        "Beer",
+        "China",
+        "G2S",
+        "G2S Creative Workshop",
+        "Lessen",
+        "Shanghai",
+        "Stage",
+        "Tasting"
+      ],
+      "featured": {
+        "file": "2017/03/intern-card.png",
+        "shown": true
+      },
+      "text": "Stage Deze week is meteen een heel drukke week. Omdat we een verlengd weekend hebben (zondag tot en met dinsdag), hebben we deze week een 6 dagen werkweek. Dit wilt dus zeggen van maandag tot en met zaterdag, 9u/dag. Dat gaat dus een week worden van 54u, waarschijnlijk dus heel vermoeiend! Ik ben op mijn stage aan het werken aan een soort van “Google Drive/Dropbox” waar G2Studio bestanden makkelijk met hun klanten gaat kunnen uitwisselen. Ze maken een account aan voor een client en dan hebben ze een nieuwe exchange met 2 folders: Client en G2S. In het ene mapje kunnen G2S-werknemers bestanden zetten, in het andere de clients. Ze kunnen elkaars bestanden niet verwijderen maar wel downloaden. Ik heb dit gemaakt met pure php zonder framework (omdat het hele platform geen framework gebruikt) en jQuery, JQuery contextMenu en jQuery File Upload. Zo ziet het er voorlopig uit: G2S Platform Exchange Chinese les De Chinese lessen zijn ook weer begonnen. We hebben nu les op woensdagochtend van 8.30-10.30. Daarna moeten we natuurlijk rechtstreeks naar onze stage gaan, een hele lange dag dus. Het is dezelfde klas als eerst, en dezelfde lăoshī (lesgever in het Chinees). Het is echt wel nuttig, de Chinese les. De gemiddelde Chinees spreekt misschien 10 woorden Engels, waar “hello, thank you and goodbye” al bij inbegrepen zijn. Zonder Chinees zul je je 9 op de 10 keer niet verstaanbaar kunnen maken tegen een gemiddelde Chinees. Maar gelukkig met een kleine basis zoals ik nu heb kun je wel al overleven! Beer tasting Zoals iedere woensdag zijn we naar de beer tasting bij De Refter geweest. Deze week was het ook weer speciaal, het waren trappist bieren. Een van de bieren was Achel trappist, heel dicht bij huis dus! Het iedere week weer heel gezellig. Ik denk dat we hier vaste klant gaan worden totdat we terug naar huis gaan!",
+      "slideshows": [],
+      "images": [
+        {
+          "file": "//i.imgur.com/kToikeU.gif",
+          "caption": "G2S Platform Exchange"
+        },
+        {
+          "file": "2017/03/wp-1490842779535.jpg",
+          "caption": null
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 25,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-03-31T15:27:04+00:00",
+          "text": "Hallo Freek. Ziet er goed uit, maar ik snap er niet zo heel veel van. Gelukkig zijn er nog de Belgische biertjes. Groetjes Jeanne"
+        }
+      ]
+    },
+    {
+      "path": "/verlengd-weekend/",
+      "title": "Verlengd weekend!",
+      "date": "2017-04-02T12:32:59+00:00",
+      "tags": [
+        "China",
+        "Shanghai",
+        "Weekend",
+        "Yuyuan Garden"
+      ],
+      "featured": {
+        "file": "2017/04/IMG_20170402_155807_345-700x700.jpg",
+        "shown": false
+      },
+      "text": "Het voordeel van een werkweek van 6 dagen We hebben afgelopen week 6 dagen gewerkt. De reden? Er is een verlengd weekend tot dinsdag en omdat er dus anders twee dagen werk gemist zou worden, beslissen ze dat ze dan een zaterdag werken om een dag in te halen. Blijkbaar is zoiets heel normaal in China. Ik vind het eigenlijk ook helemaal niet zo erg, ik doe mijn stage graag. Het was vandaag heel mooi weer, namelijk 21 graden en zonnig. We kwamen dus op het idee om naar de Fabric Market te gaan. Dit is een groot complex met letterlijk honderden tailors die op maat gemaakte hemden, pakken, jurken, etc. maken. Vandaag was de eerste keer dat ik er was en heb ik een mooie lederen riem gekocht. Ik ben aan het overwegen om ook een pak op maat te laten maken, en misschien ook wat hemden. Maar dat is voor een andere keer. Vervolgens waren we naar Yuyuan Garden gegaan, of dat was het idee toen we vertrokken in ieder geval. Het was namelijk zo ongelofelijk druk! Alle chinezen hadden natuurlijk ook vakantie en het was de eerste mooie dag sinds een paar dagen. Die zullen ook wel gedacht hebben, laten we naar Shanghai gaan en wat mooie dingen bekijken! We hebben dus maar in de buurt rondgekeken, maar hier was het ook zeer mooi! Hier zijn een paar foto’s die ik gemaakt heb: Residence permit en bankrekening Morgen gaan we ons paspoort met residence permit ophalen. Dit wil eigelijk zeggen dat we echt in Shanghai wonen, en niet dat we hier gewoon 90 dagen zijn om te studeren. Met dit op ons paspoort kunnen we ook gewoon China verlaten en terug binnengaan, dat ging eerst niet met ons visum. Ik ben dus van plan om ook een keer een paar dagen naar Hong Kong te gaan, nu ik toch hier ben en de mogelijkheid heb! Als ik mijn paspoort terug heb kan ik ook een bankrekening gaan openen. Een bankrekening hebben in Shanghai is echt wel nuttig. Je hebt namelijk een Chinese bankrekening nodig om online bestellingen te doen, maar ook om met WeChat of AliPay te betalen. Dit zijn apps die je installeert op je smartphone en koppelt aan je bankrekening. Wanneer je dan gaat uiteten of winkelen kun je als je moet betalen een QR-code scannen met die app en dan gaat het automatisch van je bankrekening af. Heel makkelijk dus! Zoiets zou in België toch ook wel makkelijk zijn! Een week of twee Beijing? We hebben zaterdag nog een meeting met onze stagebegeleider gehad, hij is de General Manager bij G2S Creative Workshop. We hadden laten zien wat we gemaakt hebben en hij was zeer tevreden met onze resultaten. Hij vroeg ineens of we eens een keer naar Beijing zouden willen gaan. Wij dachten, een paar dagen Beijing, dat is wel leuk. Plots zegt hij, OK dan zal ik iets proberen te regelen voor een week of twee! Als we dus geluk hebben kunnen we ook een of twee weken Beijing verkennen! Mijn stage hier doen is zeker een goede keuze geweest! Groepsfoto met van links naar rechts: Bernard, Sophie, ik en Bert.",
+      "slideshows": [
+        {
+          "id": "gallery-329-1-slideshow",
+          "images": [
+            {
+              "file": "2017/04/IMG_20170402_155351.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_154335.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_154034.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_153906.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_153829.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_153806.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_153526.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_153206.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_153128.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152951.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152827.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152706.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152555.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152436.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152409.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170402_152222.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/04/IMG_20170402_155807_345.jpg",
+          "caption": "Groepsfoto met van links naar rechts: Bernard, Sophie, ik en Bert."
+        }
+      ],
+      "links": [
+        "http://www.smartshanghai.com/venue/1701/fabric_market_shanghai",
+        "https://en.wikipedia.org/wiki/Yu_Garden",
+        "https://play.google.com/store/apps/details?id=com.tencent.mm&hl=en",
+        "https://play.google.com/store/apps/details?id=com.eg.android.AlipayGphone&hl=en",
+        "https://en.wikipedia.org/wiki/QR_code",
+        "http://localhost:8080/wp-content/uploads/2017/04/IMG_20170402_155807_345.jpg"
+      ],
+      "comments": [
+        {
+          "id": 26,
+          "parent": null,
+          "author": "Pa",
+          "date": "2017-04-02T17:37:39+00:00",
+          "text": "Leuk als je ook nog de kans krijgt om Beijing te bezoeken!"
+        },
+        {
+          "id": 28,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-04-08T09:56:02+00:00",
+          "text": "Wat super allemaal. Het is aan je glimmende ogen te zien dat je het naar je het fantastisch vindt."
+        }
+      ]
+    },
+    {
+      "path": "/een-korte-werkweek/",
+      "title": "Een korte werkweek",
+      "date": "2017-04-07T12:58:48+00:00",
+      "tags": [
+        "China",
+        "Shanghai",
+        "Stage",
+        "Weekend"
+      ],
+      "featured": {
+        "file": "2017/04/chrome_2017-04-07_20-27-50-700x465.png",
+        "shown": false
+      },
+      "text": "Deze week was maar een korte werkweek door het verlengde weekend dat ik had van zondag tot en met dinsdag. Het was een heel rustige week. We hebben een paar meetings met Thomas (de General Manager) gehad en we hebben onze stage opdracht wat besproken. Ik heb afgelopen weken een module voor een online webplatform geschreven om bestanden te delen met cliënten. We hadden dit dan besproken en hij was zeer tevreden met het resultaat. Zo tevreden dat onze taak nu bestaat nu uit het verbeteren en herschrijven van het huidige webplatform. De Exchange module van het webplatform We gaan dus een hele hoop functionaliteit moeten herschrijven. Mijn volgende taak bestaat uit het creëren van een calendar waar ze een aantal kalenders kunnen maken en deze kunnen gaan delen. Er gaat bijvoorbeeld voor iedereen een persoonlijke kalender zijn, maar ook een gemeenschappelijke kalender waar iedereen in zit. Er gaan ook kalenders aangemaakt kunnen worden voor een bepaald project, waar de projectmanager dan mensen in kan gaan uitnodigen. Er gaat hier ook een module voor geschreven moeten worden waar mensen vrije dagen in kunnen geven. Maar hier zit veel logica achter omdat niet iedereen evenveel vrije dagen heeft, dat ligt af van hun contract. Dit gaat dus niet makkelijk worden. Wat ik vandaag in elkaar geklungelt heb voor de calendar module We hebben de lay-out ook een beetje aangepast van de webapplicatie. De vorige achtergrond was van heel slechte kwaliteit en het design was een beetje verouderd. Hieronder kun je een paar schermafbeeldingen zien van hoe het er nu uitziet. Dat is het voor deze post! Ik heb deze afgelopen week niet heel veel interessants gedaan, dus meer kan ik er ook niet over vertellen. Ik kan wel zeggen dat ik het nog altijd heel fijn vind hier in Shanghai! Nu lekker weekend!",
+      "slideshows": [
+        {
+          "id": "gallery-344-1-slideshow",
+          "images": [
+            {
+              "file": "2017/04/explorer_2017-04-07_20-25-07.png",
+              "caption": "De login met de nieuwe layout."
+            },
+            {
+              "file": "2017/04/2017-04-07_20-52-34.png",
+              "caption": "Hoofdmenu met de nieuwe layout."
+            },
+            {
+              "file": "2017/04/explorer_2017-04-07_20-26-38.png",
+              "caption": "Het menu van de Exchange module."
+            },
+            {
+              "file": "2017/04/chrome_2017-04-07_20-27-50.png",
+              "caption": "De Exchange module van het webplatform"
+            },
+            {
+              "file": "2017/04/explorer_2017-04-07_20-55-14.png",
+              "caption": "Dit gaat alle prijzen in de databank van RMB naar EUR en USD omzetten aan de hand van de huidige wisselkoers."
+            },
+            {
+              "file": "2017/04/chrome_2017-04-07_20-54-23.png",
+              "caption": "De logger van de Exchange module."
+            },
+            {
+              "file": "2017/04/explorer_2017-04-07_20-28-46.png",
+              "caption": "Wat ik vandaag in elkaar geklungelt heb voor de calendar module"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/04/chrome_2017-04-07_20-27-50-1024x680.png",
+          "caption": "De Exchange module van het webplatform"
+        },
+        {
+          "file": "2017/04/explorer_2017-04-07_20-28-46-1024x680.png",
+          "caption": "Wat ik vandaag in elkaar geklungelt heb voor de calendar module"
+        }
+      ],
+      "links": [
+        "http://localhost:8080/wp-content/uploads/2017/04/chrome_2017-04-07_20-27-50.png",
+        "http://localhost:8080/wp-content/uploads/2017/04/explorer_2017-04-07_20-28-46.png"
+      ],
+      "comments": [
+        {
+          "id": 27,
+          "parent": null,
+          "author": "Graddy",
+          "date": "2017-04-08T08:11:54+00:00",
+          "text": "Hartstikke fijn dat je het zo naar je zin hebt en goed dat je stageopdrachten goed worden ontvangen. We lezen met veel plezier je posts, dus niet ermee stoppen hè. Groetjes Will en Graddy"
+        }
+      ]
+    },
+    {
+      "path": "/bankrekening-massage-en-mahjong/",
+      "title": "Bankrekening, massage en Mahjong!",
+      "date": "2017-04-11T15:58:02+00:00",
+      "tags": [
+        "China",
+        "Mahjong",
+        "Massage",
+        "Residence permit",
+        "Shanghai",
+        "Weekend"
+      ],
+      "featured": {
+        "file": "2017/04/IMG_20170409_231440-700x525.jpg",
+        "shown": true
+      },
+      "text": "Bankrekening Zaterdag ben ik dus eindelijk mijn residence permit gaan halen. We hadden vorige week maandag ook al geprobeerd maar toen hadden zij blijkbaar ook verlengd weekend. Nu ben ik dus een inwoner van Shanghai en kan ik in principe komen en gaan in China tot de 30ste juli, maar ik weet nog niet of ik hier daadwerkelijk ook nog gebruik van ga maken. Hierna ben ik meteen naar de ICBC geweest, de Industrial and Commercial Bank of China, om een bankrekening te open. Dit is gemakkelijk wegens meerdere redenen. Metro kaart makkelijker herladen AliPay en WeChat Pay Online bestellen van Taobao Het heeft dus een heleboel voordelen, en het kost helemaal geen moeite om te doen. Ik ben een bank binnengegaan en zei ‘I want to open a bank account’. Ik moest een paar formulieren invullen en 5RMB betalen en ik stond na minder dan een half uur terug buiten. Dit is dus letterlijk minder dan een euro, 0.68 euro namelijk. Ik kreeg meteen mijn pasje en alles. AliPay en WeChat Pay is ook heel gemakkelijk. Je koppelt dit aan je Chinese bankrekening en dan kun je geld van je rekening meteen overzetten naar deze app op je smartphone. Als je dan in een winkel iets koopt of ergens iets gaat eten kun je een QR-code scannen, het bedrag ingeven en uiteindelijk bevestigen met een pincode en dan is alles betaald. Makkelijk toch? We zouden graag ook online wat spulletjes bestellen die we hier niet zo makkelijk vinden. We hadden als oplossing Taobao gevonden. Taobao is ongeveer een Chinese Amazon, maar als je iets wilt bestellen had je een bankrekening nodig. Gelukkig kunnen we dit nu ook doen! Massage Na al het verkennen en het werken in Shanghai begon ik toch wat last te krijgen van mijn rug. Gelukkig organiseerde Hutong zondag een activiteit om naar een massage salon te gaan. Hier had ik me dus meteen voor opgegeven! Voor een goede stevige massage van een uur was ik 128RM kwijt, oftewel 17.47EUR. Dit is helemaal niks! Het waren uiterst professionele masseurs en masseuses. Na 5 minuten hadden ze meteen de plekken gevonden waar ik het meeste last van had en hebben hier veel aandacht aan besteed. Ik had er echt nood aan en het heeft enorm veel deugd gedaan! Het groepje waarmee ik zondag een massage gehad heb. Mahjong Vandaag was er ook een activiteit gepland, namelijk Mahjong. We waren hier rechtstreeks na onze stage naar toe gegaan. Iedereen kent dit natuurlijk van op de computer ofzo, maar dat is blijkbaar niet de echte Mahjong. Mahjong speel je met vier mensen en lijkt een beetje op Rummikub. Het was een heel gezellige avond. Ik heb ook twee keer gewonnen! Dinsdag avond was het Mahjong avond! Alles gaat dus nog steeds zeer goed hier in Shanghai! Ik raad je ook aan om zeker de Foto’s pagina in de gaten te houden aangezien ik veel op mijn Instagram zet.",
+      "slideshows": [],
+      "images": [
+        {
+          "file": "2017/04/mmexport1491923266015-1024x768.jpg",
+          "caption": "Het groepje waarmee ik zondag een massage gehad heb."
+        },
+        {
+          "file": "2017/04/mmexport1491922639667-1024x768.jpg",
+          "caption": "Dinsdag avond was het Mahjong avond!"
+        }
+      ],
+      "links": [
+        "https://global.alipay.com/",
+        "https://pay.weixin.qq.com/index.php/public/wechatpay",
+        "https://world.taobao.com/",
+        "https://en.wikipedia.org/wiki/QR_code",
+        "http://localhost:8080/fotos/"
+      ],
+      "comments": [
+        {
+          "id": 29,
+          "parent": null,
+          "author": "A.Lambrechtse",
+          "date": "2017-04-11T19:57:30+00:00",
+          "text": "?Groetjes Leuk om je weer te volgen!"
+        },
+        {
+          "id": 30,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-04-15T14:49:37+00:00",
+          "text": "Hallo Freek. Wat doe jij veel ervaring op, super leuk. Geniet ervan en eet maar lekker veel Chinese specialiteiten en drink lekkere Belgische biertjes. Groetjes"
+        }
+      ]
+    },
+    {
+      "path": "/beerpong-en-hittegolf/",
+      "title": "Beerpong en hittegolf",
+      "date": "2017-04-17T13:01:11+00:00",
+      "tags": [
+        "Beer",
+        "Beerpong",
+        "Beijing",
+        "China",
+        "Shanghai",
+        "Weekend",
+        "Welcome party"
+      ],
+      "featured": {
+        "file": "2017/04/17883062_154432548419375_5665315790480474112_n-700x700.jpg",
+        "shown": true
+      },
+      "text": "Welcome party Vrijdag was er weer een welcome party van Hutong School. Dit is elke maand omdat er ook weer steeds nieuwe mensen hier komen. Het was wel een stuk drukker dan dat ze verwacht hadden, er waren namelijk meer dan 50 mensen, lekker gezellig dus! Het enige nadeel was dat het bier relatief snel op was, dus daar zaten we dan mee! Ze organiseren vaak leuke activiteiten bij Hutong School. Deze week is het bijvoorbeeld morgenavond gaan uiteten met wat mensen van Hutong School, iets van geroosterde vis. Vrijdag is er weer KTV, of zoals wij het kennen, Karaoke! Er is dus altijd wel wat leuks te beleven. Hittegolf Het is de laatste paar dagen ook ongelofelijk warm, daarom dat ik niet zo heel veel heb meegemaakt, en bijgevolg ook niet veel te vertellen heb. Het was in het weekend meer dan 30 graden. Vandaag was het ook weer vlot boven de 25 graden, maar het was toch aan het regenen. Dan krijg je van die heel vochtige hitte, niet zo aangenaam. Zo ziet de voorspelling er hier uit, ik moet er wel bijzeggen dat het altijd een 3-tal graden warmer word dan dat ze voorspellen: Weersvoorspelling voor deze week. Beijing (Peking) Ik heb wat meer informatie over Beijing gekregen. De tijd dat ik naar Beijing zal gaan zal waarschijnlijk van de 10e-19de mei zijn, een mooie periode dus! Daarna heb ik meteen de week dat ik naar de Shanghai Polytechnic University moet, van de 21ste tot de 26ste mei. Die week ga ik les krijgen over de Chinese cultuur, taal en business in China. Heel interessant dus! Voor de rest gaat alles hier nog steeds perfect, Tot de volgende!",
+      "slideshows": [],
+      "images": [
+        {
+          "file": "2017/04/WeChat-Image_20170417205135-576x1024.jpg",
+          "caption": "Weersvoorspelling voor deze week."
+        }
+      ],
+      "links": [],
+      "comments": []
+    },
+    {
+      "path": "/vis-karaoke-en-bbq/",
+      "title": "Vis, karaoke en BBQ!",
+      "date": "2017-04-23T10:58:02+00:00",
+      "tags": [
+        "BBQ",
+        "Beer",
+        "China",
+        "Eten",
+        "Shanghai",
+        "Tasting",
+        "Vis"
+      ],
+      "featured": {
+        "file": "2017/04/mmexport1492914147686-700x525.jpg",
+        "shown": false
+      },
+      "text": "Het is al weer eventjes geleden dat ik nog een blog post heb gemaakt. Dit komt omdat ik deze week heel veel weggeweest ben, en dus niet veel tijd heb gehad. Ik was dinsdag-, woensdag-, vrijdag- en zaterdagavond niet/laat terug thuis. Er was deze week namelijk heel veel te doen! Uiteten We zijn dinsdagavond met een paar studenten van Hutong gaan uiteten in een bekend visrestaurant. Het was echt speciaal. Er waren bijvoorbeeld blauwe lampen om het ‘onderwater-gevoel’ te geven, er hingen netten en allerlei andere voorwerpen die met vissen te maken hebben aan de muur, … Het was een heel gezellig restaurant. We hebben een soort van inktvis besteld en twee grote gebakken vissen. Een van de twee was spicy en de andere was hun eigen saus waar ze zo bekend voor zijn. Het was allemaal echt enorm lekker. Het was een heel goede avond. Ik heb die avond ook nog een paar andere Belgen leren kennen. Ze waren ook studenten Toegepaste Informatica die hun stage aan het doen waren in Shanghai! Hier zijn wat foto’s van de avond: Beertasting, zoals gewoonlijk! Zoals iedere week zijn we deze week ook naar de beertasting bij De Refter geweest. Het waren deze week Italiaanse craft beers. De naam was Baladin. Ik heb er nog nooit van gehoord maar het waren hele goede bieren. We waren samen met de Belgen die we hadden leren kennen bij het visrestaurant gegaan. Bij de beertasting hadden we ook nog een Duits meisje en een Mongoolse jongen leren kennen. Zij is hier pas begonnen met werken en hij doet zijn stage hier. Iets heel interessants wat we geleerd hebben is dat ze in Mongolië enkel briefgeld hebben, en het kleinste wat ze daar hebben is een briefje van 10MNT, wat 0.00385EUR is. Niet normaal toch, een briefje van een derde van een eurocent! Blijkbaar is het ook niet een heel welvarend land, maar hij kwam van de hoofdstad. De beerstasting op woensdag. KTV (vrijdag) Vrijdagavond was er weer een karaokeavond. Deze keer was het wel veel gezelliger als de vorige keer omdat we nu al veel meer mensen kennen. Het is dan ook iets gemakkelijker om te zingen! Het was echt heel leuk, we hadden zelfs nog extra tijd bijgekocht! KTV Na de KTV zijn we nog naar een andere Belgische bar geweest. Astrid zit in een organisatie die bestaat uit Vlamingen in Shanghai, zij hadden hier een event georganiseerd en we moesten dus wel langsgaan! Chinese BBQ Zaterdag hadden we dus begrijpelijk een rustig dagje. Overdag heb ik niet heel veel gedaan, maar s’avonds zijn we met iemand van ons werk een vriend van haar Chinese BBQ gaan eten. Dit was echt een geweldige ervaring. We hebben ook allerlei speciale dingen gegeten zoals geroosterde inktvis, kippenpoten, koeienhiel, … We hebben ook normale dingen gegeten natuurlijk, maar ik moest deze wel vermelden! Er kwam ook heel wat bier aan te pas, we hebben met 4 man 7 liter bier op. Maar dit was chinees bier en dus niet zo zwaar, maar 3-4%. De volgende dag hadden we helemaal geen kater of niks dus. Het was heel gezellig, we gaan dit zeker vaker doen! Het is dus een hele leuke week geweest en ik heb veel leuke mensen leren kennen! Tot de volgende!",
+      "slideshows": [
+        {
+          "id": "gallery-384-1-slideshow",
+          "images": [
+            {
+              "file": "2017/04/IMG_20170418_194946.jpg",
+              "caption": "Een hele speciale ervaring, wel lekker!"
+            },
+            {
+              "file": "2017/04/IMG_20170418_194630.jpg",
+              "caption": "Een foto van het restaurant."
+            },
+            {
+              "file": "2017/04/IMG_20170418_202010.jpg",
+              "caption": "Het eten."
+            },
+            {
+              "file": "2017/04/IMG_20170418_202014.jpg",
+              "caption": "Het eten."
+            },
+            {
+              "file": "2017/04/mmexport1492914147686.jpg",
+              "caption": "Groepsfoto!"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/04/17934048_117765772055554_5892374278875119616_n.jpg",
+          "caption": "De beerstasting op woensdag."
+        },
+        {
+          "file": "2017/04/mmexport1492934713440-738x1024.jpg",
+          "caption": "KTV"
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 31,
+          "parent": null,
+          "author": "Leo",
+          "date": "2017-04-23T19:56:22+00:00",
+          "text": "Hoi Freek leuk om te lezen dat het goed met je gaat . De tijd vliegt voorbij dus geniet ervan. Gr uit Budel"
+        },
+        {
+          "id": 32,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-04-25T07:31:24+00:00",
+          "text": "Hallo Freek. Je leert er niet alleen veel , je proeft er ook veel bijzondere gerechten en je proeft ook vele buitenlandse biertjes . Wat een ervaring doe je daar toch op. Het zal straks weer wennen zijn thuis. Geniet ervan. Groetjes Jeanne"
+        },
+        {
+          "id": 35,
+          "parent": null,
+          "author": "Miel",
+          "date": "2017-04-29T16:33:06+00:00",
+          "text": "Hoi Freek, Ik leer via jou blog een hele ‘andere’ Freek kennen!! Een ding zie ik wel, je geniet enorm en gelijk heb je. Gr. Ome Miel"
+        }
+      ]
+    },
+    {
+      "path": "/uiteten-en-beertasting/",
+      "title": "Uiteten en Beertasting!",
+      "date": "2017-04-27T13:36:57+00:00",
+      "tags": [
+        "Beer",
+        "China",
+        "Drinken",
+        "Eten",
+        "Shanghai",
+        "Tasting",
+        "Vis"
+      ],
+      "featured": {
+        "file": "2017/04/IMG_20170426_100725-700x933.jpg",
+        "shown": false
+      },
+      "text": "Dit gaat een redelijk korte blogpost worden. Een korte update over het begin van de week. Uiteten: seafood op z’n Cantonees We zijn dinsdag met wat mensen gaan uiteten bij een bekend seafood restaurant. Het was echt heel lekker. Ik heb ook weer heel veel dingen leren kennen die ik normaal nooit thuis zou proberen! Het was echt de moeite waard. Beertasting Zoals iedere week zijn we ook weer naar de beertasting in De Refter geweest. We nemen steeds meer mensen mee! We hadden deze keer ook onze Chinese collega meegenomen. Ze zag iedere week de foto’s die ik gemaakt had en ze wou heel graag meegaan. Hoe meer hoe beter toch? Het waren 4 Japanse bieren en 2 Italiaanse bieren deze week. Het was weer een heel goede week! En ik ben ook naar de autoshow in Shanghai geweest, maar dat is voor de volgende blogpost! Vrijdag ga ik ook uiteten met de mensen van mijn bedrijf, dus dat gaat ook leuk worden. Tot de volgende!",
+      "slideshows": [
+        {
+          "id": "gallery-408-1-slideshow",
+          "images": [
+            {
+              "file": "2017/04/mmexport1493133186480.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/mmexport1493133184468.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/mmexport1493128820965-e1493299803342.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/mmexport1493128806733.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/mmexport1493128802767.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/mmexport1493128816798.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/mmexport1493128813323.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-408-2-slideshow",
+          "images": [
+            {
+              "file": "2017/04/mmexport1493223457469.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/wx_camera_1493206654127.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170426_200957.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170426_211914.jpg",
+              "caption": "Nog een sleutelhanger en een bieropener gekregen!"
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "links": [],
+      "comments": []
+    },
+    {
+      "path": "/autoshow-shanghai/",
+      "title": "Autoshow Shanghai",
+      "date": "2017-04-29T07:01:49+00:00",
+      "tags": [
+        "Auto",
+        "auto show",
+        "China",
+        "G2S",
+        "G2S Creative Workshop",
+        "Shanghai",
+        "Show"
+      ],
+      "featured": {
+        "file": "2017/04/IMG_20170427_152231-e1493450450952-700x586.jpg",
+        "shown": false
+      },
+      "text": "De afgelopen twee weken was er een autoshow in Shanghai. Het is echt een enorm event hier en ook super bekend. Er waren zo veel auto’s en merken. Die dag had ik bijna 21 000 stappen gedaan. We hadden donderdag vrij gekregen van ons werk om hier naar toe te gaan. Ons bedrijf deed de AV voor een bepaalde booth in de autoshow, de Lynk&co. Alles was zo indrukwekkend, ik heb 426 foto’s genomen! Deze foto’s kun je onderaan allemaal vinden. Ik amuseer me hier wel!",
+      "slideshows": [
+        {
+          "id": "gallery-837-1-slideshow",
+          "images": [
+            {
+              "file": "2017/04/IMG_20170427_145131.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_144343.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143752.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143659.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143648.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143543.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143536.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145438.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143511.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_143428.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145443.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145508.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145604.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145733.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145830.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145849_01.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145934.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_145951.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150003.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150014.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150025.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150050.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150052.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150112.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150124.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150141.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150151.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150203.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150329.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150409.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150333.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150405.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150411.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150426.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150452.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150631.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150645.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150649.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150705.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150717.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150756.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150808.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150816.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_150821.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151040.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151043.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151104.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151112.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151245.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151254.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151303.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151306.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151329.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151336.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151401.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151428.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151443.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151433.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151528.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151534.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151547.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151553.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151608.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151616.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151635.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151640.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151645.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151659.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151704.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151735.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151740.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151817.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151822.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151836.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151904.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151907.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151945.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151948.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152049.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152052.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152104.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152203.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152212.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152220.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152224.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152231-e1493450450952.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152319.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152340.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152344.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152410.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152413.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152416.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152455.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152500.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152506.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152515.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152526.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152545.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152606.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152613.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152615.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152637.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152646.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152648.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152707.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152710.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152746.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152826.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152902.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_152914.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153003.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153007.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153010.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153109.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153126.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153141.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153200.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153211.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153233.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153247.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153258.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153312.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153315.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153319.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153352.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153418.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153431.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153448.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153544.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153615.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153619.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153626.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153634.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153645.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153659.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153710.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_153714.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154049.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154050.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154055.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154100.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154111.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154129.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154136.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154142.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154241.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154324.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154509.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154529.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154542.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154617.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154630.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154751.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154753.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154606.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154859.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_154911.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155214.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155346.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155403.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155429.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155432.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155507.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155539.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155558.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155603.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155622.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155740.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155801.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155817.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155847.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155935.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155941.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155947.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155954.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160001.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160012.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160037.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160051.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160054.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160121.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160132.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160139.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160144.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160156.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160205.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160228.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160231.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160255.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160320.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160333.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160348.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160415.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160420.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160436.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160448.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160500.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160510.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160526.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160604_01.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160628.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160642.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160636.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160721.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160738.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160746.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160753.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160813.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160759.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160816.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160940.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160945.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160951.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_160958.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161003.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161008.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161015.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161025.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161031.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161044.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161128.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161215.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161219.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161243.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_161257.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162155.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162203.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162218.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162246.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162255.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162327.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162355.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162452.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162505.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162509.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162553.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162559.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162605.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162615.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162617.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162632.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162715.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162817.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162826.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162834.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162847.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162855.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162900.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_162905.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163225.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163228.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163416.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163448.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163502.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163508.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163548.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163540.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163555.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163600.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163653.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163658.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163714.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163746.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163747.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163826.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163830.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163841.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163855.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163932.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163936.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_163959.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164008.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164025.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164028.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164058.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164111.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164119.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164124.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164130.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164141.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164241.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164250.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164309.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164315.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164603.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164650.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164724.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164727.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164739.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164740.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164757.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164804.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164811.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_164818.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165253.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165254.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165301.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165313.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165329.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165407.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165438.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165456.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165544.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165628.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165644.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165649.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165706.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165717.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165739.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165913.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_165921.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170008.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170025.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170232.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170237.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170248.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170255.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170306.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170307.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170317.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170327.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170345.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170358.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170408.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170448.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170505.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170517.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170518.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170524.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170539.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170543.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170627.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170629.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170649.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170631.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170651.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170700.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170703.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170709.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170723.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170836.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170920.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_170939.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171013.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171021_01.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171033.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171103.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171115.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171126.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171412.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171855.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171921.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_171924.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172253.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172358.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172416.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172435.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172456.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172507.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172535.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172737.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172910.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172919.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172935.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172946.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172950.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_172957.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173006.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173021.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173028.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173037.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173118.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173136.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173143.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173201.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173218.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173223-e1493448979261.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173235.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173258.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173317.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173354.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173400.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173422.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173431.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173444.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173502.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173538.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173620.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173637.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173720.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173753.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173813.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173831.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173839.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173851.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173902.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173937.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173943.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173951.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_173959.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174010.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174025.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174037.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174056.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174120.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174133.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174154.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174217.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174228.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174229.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174240.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174251.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174311.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174447.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174458.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174529.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174701.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174713.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174724.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174738.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_174746.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155859.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155911.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155925.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_155931.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/04/IMG_20170427_151919.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "links": [],
+      "comments": [
+        {
+          "id": 33,
+          "parent": null,
+          "author": "A.Lambrechtse",
+          "date": "2017-04-29T07:15:53+00:00",
+          "text": "En een keuze kunnen maken????"
+        },
+        {
+          "id": 34,
+          "parent": 33,
+          "author": "Freek",
+          "date": "2017-04-29T07:26:55+00:00",
+          "text": "Haha! Ik vond de McLaren 720s wel de moeite! Maar er waren zo veel mooie autos!"
+        }
+      ]
+    },
+    {
+      "path": "/eventjes-geleden/",
+      "title": "Eventjes geleden",
+      "date": "2017-05-15T12:17:10+00:00",
+      "tags": [
+        "China",
+        "Chinees",
+        "G2S",
+        "G2S Creative Workshop",
+        "Lessen",
+        "Shanghai",
+        "University",
+        "Website"
+      ],
+      "featured": {
+        "file": "2017/05/18252679_1708836219145227_6000592564082704384_n.jpg",
+        "shown": true
+      },
+      "text": "Hallo! Het is al eventjes geleden dat ik een post heb gemaakt. Dit komt omdat ik het nogal druk heb gehad op mijn stage. Ik heb een nieuw project gekregen (waar ik niet te veel over mag vertellen) en ik heb mijn handen vol gehad. Ik ben een website aan het maken (alleen) volgens een heel basic design (echt heel basic, ik moest zelf veel improviseren en bedenken) voor een grote klant van het bedrijf. Ik sta dus constant in contact nu met de bazen en met de designer tijdens het maken van deze website, daarom dus dat ik het zo druk heb. Nu is heb ik het project bijna af en is het wat stiller aan het worden, daarom dat ik me nog eens rustig heb neergezet en besloten heb om nog eens een blog post te maken. Het weer is de laatste paar weken ook enorm goed. Er zijn dagen dat het 33 graden is, en het is nog niet onder de 23 graden gezakt denk ik de laatste 2-3 weken. Sommige dagen is het wel enorm vochtig weer, en ook al is het dan maar 25 graden, het is veel moeilijker te verdragen dan als het 33 graden is. Ik ben de laatste 2 weken ook niet echt meer iets gaan doen (buiten de beertasting natuurlijk) omdat ik echt heel moe was van het harde werken. Ik heb in het weekend ook veel geslapen, maar ik ben toch echt moe geweest de laatste 2 weken. Nu gaat het gelukkig weer wat beter! Volgende week is het ook de universiteit week voor mij! Ik moet een week naar de Shanghai Second Polytechnic University om wat lessen International Business, Chinese en Culture te volgen. Dit moet ik doen in verband met mijn visum, maar ik ga er zeker niet met tegenzin naar toe. Ik ga dus een week een echte student zijn op die unversiteit. Ik ga ook daadwerkelijk op de campus in ‘student dorms’ slapen en in de cafetaria eten enzo. Het zal zeker een goede ervaring worden! Ik zal proberen terug weer wat meer posts te maken, maar ik beloof niks! Nog 3 weken en dan terug naar huis.. Tot de volgende!",
+      "slideshows": [],
+      "images": [],
+      "links": [],
+      "comments": [
+        {
+          "id": 36,
+          "parent": null,
+          "author": "A.Lambrechtse",
+          "date": "2017-05-15T12:23:19+00:00",
+          "text": "Jeetje nog maar drie weken, wat vliegt de tijd. Is dat voor jou ook zo? Moet je nog een hoop zien en doen toch of ben.je blij dat eind in zicht is?"
+        },
+        {
+          "id": 37,
+          "parent": 36,
+          "author": "Freek",
+          "date": "2017-05-15T12:28:05+00:00",
+          "text": "Ja de tijd is echt enorm snel gegaan, daar sta ik ook iedere keer van te kijken. Er natuurlijk nog zoveel te zien, maar ergens ben ik ook wel blij dat het er weer bijna op zit."
+        },
+        {
+          "id": 38,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-05-17T14:42:52+00:00",
+          "text": "Hallo Freek. Ik heb het ook heel druk gehad met van alles en nog wat. Wat gaat de tijd inderdaad snel, over een paar weken weer naar huis. Zo te horen is het nog steeds een grote uitdaging. Hier is het vandaag ook zeer warm 30 graden. Heel veel plezier op de universiteit, je komt straks als een China kenner terug. Goed joh. Groetjes Jeanne"
+        }
+      ]
+    },
+    {
+      "path": "/university-in-shanghai/",
+      "title": "University in Shanghai",
+      "date": "2017-05-24T08:57:42+00:00",
+      "tags": [
+        "Beijing",
+        "China",
+        "Lessons",
+        "Shanghai",
+        "Shanghai Second Polytechnic University",
+        "trip",
+        "uitstap",
+        "University"
+      ],
+      "featured": {
+        "file": "2017/05/IMG_20170521_160520_126-700x700.jpg",
+        "shown": true
+      },
+      "text": "Deze week ben ik op de campus van de Shanghai Second Polytechnic University! Dit is een universiteit in Shanghai met 12.000 studenten, gelegen bij de eindhalte van metro lijn 12. Het ziet er een heel mooie campus en universiteit uit. Alles is heel goed onderhouden en heel schoon. Ik heb niet foto’s genomen van heel de campus, maar het is echt wel een grote campus. Wij verblijven hier in een super mooie kamer, het is echt net een 4 sterren hotel. Dit is natuurlijk niet zoals de gewone student hier logeert. Hier kun je een beetje het ‘westerner favoritisme‘ zien. Hier in China hebben ze een concept van Face en dat herken je hier heel duidelijk in. Hier zijn een paar foto’s van de kamer: Verspreid over de campus staan er kleine flat-gebouwtjes waar de studenten wonen. Er zijn ook 2 cafetarias, een voor de studenten en een in het gebouw waar mijn kamer is. Deze wordt meestal enkel gebruikt door de guest speakers en de professoren. Voor de studenten cafetaria is het 1.5 euro per maaltijd en in de ‘chique’ cafetaria is het iets minder dan 5 euro per maaltijd, maar dan heb je wel een buffet met heel veel lekkere gerechten en desserts, en het is all-you-can-eat. In de ochtend hebben we les over de Chinese cultuur. De eerste dag hadden we les over Globalisation & FDI, de tweede dag Chinese food culture en vandaag hadden we Chinese business culture. Het is allemaal wel heel interessant. Morgen gaan we afsluiten met Chinese business environment en dan gaan we terug naar ons appartement. Het is zeker een heel goede ervaring geweest, je ziet hoe alles er aan toe gaat in een Chinese universiteit. Ze hebben ons wel alleen maar het beste laten zien natuurlijk, maar we zijn zelf ook gaan verkennen op de campus. O ja! Dit is mijn studentenkaart! We mogen de sfeer ook niet vergeten in het studenten leven! Daarom zijn we op zoek gegaan naar een bar in de buurt en we hebben een goede gevonden! Bejing Ik had even geleden ook al vermeld dat we een trip naar Bejing gingen doen, maar dat was toen uiteindelijk niet doorgegaan omdat we te laat waren om alles te regelen. Nu hebben we al de trein tickets gekocht en een hostel geboek en zijn we dus klaar om te vertrekken. We gaan van vrijdag ochtend tot zondagnamiddag, niet een heel lange tijd, maar we krijgen de belangrijkste dingen wel gezien in die tijd. We zijn van plan om de Grote Muur, The Forbidden City met Tiananmen Square, Summer Palace en The Temple of Heaven te bezoeken. Hopelijk gaat dit allemaal lukken! Ik zal mooie foto’s proberen te maken!! Tot de volgende!",
+      "slideshows": [
+        {
+          "id": "gallery-863-1-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170521_151214.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170521_151236.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170521_151308.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170522_170611_078.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-863-2-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170521_154708.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170524_112255.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170521_154723.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/05/IMG_20170524_110111-1024x768.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/05/IMG_20170521_152200-e1495615575805.jpg",
+          "caption": null
+        },
+        {
+          "file": "2017/05/IMG_20170523_185609_748-1024x768.jpg",
+          "caption": null
+        }
+      ],
+      "links": [
+        "https://en.wikipedia.org/wiki/Face_(sociological_concept)"
+      ],
+      "comments": [
+        {
+          "id": 39,
+          "parent": null,
+          "author": "Geert Mencke",
+          "date": "2017-05-24T11:04:30+00:00",
+          "text": "Goed programma voor Beijing, zal wel druk worden."
+        },
+        {
+          "id": 40,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-05-26T15:15:25+00:00",
+          "text": "Het lijkt wel een grote vakantie met veel proeferijen/ etentjes en uitstapjes en af en toe (veel) studeren. Maar leuk om te lezen dat je zoveel ervaring opdoet, super. En nog een vraagje: hoeveel ben je aangekomen van al dat lekkers?"
+        },
+        {
+          "id": 41,
+          "parent": 40,
+          "author": "Freek",
+          "date": "2017-05-26T15:16:28+00:00",
+          "text": "Dat is nog een mysterie voorlopig! Ik heb hier geen weegschaal dus dat zal nog eventjes wachten zijn."
+        },
+        {
+          "id": 42,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-05-30T09:33:39+00:00",
+          "text": "Dat is heel verstandig, geniet ervan."
+        }
+      ]
+    },
+    {
+      "path": "/beijing-peking-en-terug-naar-belgie/",
+      "title": "Beijing (Peking) en terug naar België!",
+      "date": "2017-06-06T16:12:01+00:00",
+      "tags": [
+        "Beijing",
+        "China",
+        "Chinees",
+        "Reis",
+        "uistap",
+        "Verkennen",
+        "Weekend"
+      ],
+      "featured": {
+        "file": "2017/05/IMG_20170527_102429-700x525.jpg",
+        "shown": true
+      },
+      "text": "Ik ben vorig weekend naar Beijing geweest! We hadden de tijd en we zijn met een groepje van 7 Belgen gegaan voor een weekend. We zijn vrijdag ochtend heel vroeg vertrokken met de HST. Het is ongeveer 5 uur met de HST. Hij rijd ongeveer 300 km/h en het is 1300km! Forbidden City Het was heel goed weer gelukkig, het begon vrijdag bij 32 graden en het eindigde zondag op 37 graden! We hadden ook geluk dat de air quality heel goed was, daardoor konden we ook altijd goed zien en mooie foto’s maken! We zijn vlak nadat we aangekomen zijn op zoek gegaan naar onze hostel, maar deze konden we niet zo snel vinden. We hebben daarom besloten om eerst naar de Forbidden City te gaan. Hier zijn wat mooie foto’s: Hostel zoektocht Daarna zijn we dus opzoek gegaan naar onze hostel. Eenmaal we het gevonden hadden kwamen we er achter dat ze geen plaats meer hadden! Gelukkig stuurden ze ons naar een andere hostel die wel plaats had. Deze was gelukkig niet te ver en de zelfde prijs. Hier zijn wat foto’s van onze zoektocht naar een hostel: Gelukkig hadden we alles gevonden. De hostel was niet heel mooi, maar voor 10 euro per nacht hoeft dat ook niet. Ze hadden wel een heel mooie bar! En het bier was er ook niet te duur. The Great Wall De volgende dag hadden we de Grote Muur ingepland. Er was in de hosten een poster die een tripje aanbood. Voor weinig geld werd je met de bus gebracht, kreeg je gratis(betaald?) ingang en een lekkere traditionele Chinese maaltijd. Het was echt geweldig om allemaal te zien. Heel indrukwekkend, zeker als je weet dat de totale lengte van de muur ongeveer 8800km(?!) is. Hier zijn wat mooie foto’s: Olympische spelen Omdat we zo vroeg vertrokken waren hadden we nog veel tijd over. We zijn daarom naar de olympische stadiums geweest. Dit was zo indrukwekkend, alles was zo groot en uitgespreid. Die Chinezen doen echt geen half werk. Tiananmen Square We zijn daarna nog naar de Tiananmen Square (Gate of Heavenly Peace) geweest. Dit is het plein wat voor de Forbidden City ligt. Hier waren we eerder niet fantsoenlijk geweest. Hostel Hier zijn ook nog wat foto’s van onze hostel: Summer Palace De laatste dag, zondag, zijn we naar de Summer Palace geweest. Dit is echt een aanrader. Het is een enorm gebied van 3 vierkante km met een groot meer in het midden, rond dit meer staan allemaal oude, Chinese gebouwen. Samen met de Grote Muur zijn dit de twee mooiste plekken om naar toe te gaan! Dat was het dan En nu zit ik terug in België. De laatste week hebben niet heel veel speciaals gedaan (buiten lekker eten natuurlijk). Het is een hele ervaring geweest, Shanghai en China. Maar het is zeker een goede keuze geweest, ik heb helemaal geen spijt. Bedankt om mijn blog te lezen!",
+      "slideshows": [
+        {
+          "id": "gallery-1315-1-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170526_072544.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_074212.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_074214.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_074324.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_080620.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_072040.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_072037.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_070535.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-2-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170526_154424.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_154526.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_154714.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_154722.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_154933.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_154942.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_154937.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_155157.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160010.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160111.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160116.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160120.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160141.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160210.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160232.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160849.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160840.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160834.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160659.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160656.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160507.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160434.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160300.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_160235.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161138.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162224.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162239.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161205.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161216.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162243.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162246.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161246.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161316.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162307.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162318.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161421.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161425.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162344.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162351.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_161433.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162136.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162434.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162815.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162759.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162715.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162707.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162629.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162559.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162551.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162518.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162453.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162839.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162849.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162917.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162929.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_162930.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163037.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163039.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163212.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163216.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163404.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163401.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163323.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163308.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163306.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163304.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163243.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163217.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163247.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163432.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163439.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163503.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163509.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163514.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163524.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163537.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163544.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163601.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_165559.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_165431.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_164335.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163757.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163729.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163723.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163628.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163619.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_163604.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_165715.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_165732.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_170042.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_170225.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_170317.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_170442.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-3-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170526_144744.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_144826.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_144933.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_145304.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_145458.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_170620.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_170626.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_171108.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_171536.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_172058.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_173014.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_173152.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_183451.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_200914.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_201058.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_201145.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170526_201352.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-4-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170527_062200.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_071531.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_082335.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_082514.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_082637.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_082842.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_083329.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_083350.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_083451.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_084120.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_084342.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_085612.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_085656.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_090023.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_092317.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_092749.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_092758.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_092945.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_094751.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_094800.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_095223.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_095234.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_095406.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_095415.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_095431.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_095510.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100338.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100348.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100455.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100524.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100605.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100632.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100709.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100759.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100828.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_100932.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_101100.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_101211.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_101333.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_101804.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_101905.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_101934.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_102217.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_102346.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_102429.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_102515.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_102843.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103043.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103154.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103359.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103432.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103504.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103541.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103554.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103707.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103756.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103806.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_103903.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_104133.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_104245.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_104322.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_104625.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_104635.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_105003.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_105022.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_105529.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_105602.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_105715.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_110016.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_110131.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_110203.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_110256.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_115257.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-5-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170527_155017.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155049.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155101.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155134.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155137.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155307.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155328.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155350.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155606.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155621.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155630.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155729.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_155806.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_160816.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_160820.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_160827.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_161101.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_161126.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_161135.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_161208.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_161456.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_161507.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_163211.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_163230.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_163605.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_163847.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_163942.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170026.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170251.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170524.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170534.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170537.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170620.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_170758.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_172858.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_173223.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_173355.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_173422.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_173535.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_173754.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_174036.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_174735.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_174755.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-6-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170527_184326.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_184602.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_184621.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_184733.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_184808.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_184911.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_184922.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_185020.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_185040.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_190513.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_190644.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_190743.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_190923.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_191044.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-7-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170528_080236.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_080240.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_080248.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_080252.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_080958.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_075655.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_075652.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_075649.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170527_222059.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "gallery-1315-8-slideshow",
+          "images": [
+            {
+              "file": "2017/05/IMG_20170528_092535.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_092556.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093250.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093443.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093446.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093519.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093625.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093627.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093649.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093653.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093656.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093716.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093741.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093748.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093752.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093935.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093940.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_093946.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094117.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094122.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094157.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094235.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094257.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094348.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094432.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094652.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094822.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094853.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094856.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094918.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_094901.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095035.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095111.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095112.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095115.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095128.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095258.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095317.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095357.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095402.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095450.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095453.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095610.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_095622.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_100049.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_100308.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_100410.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_100817.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_100820.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101113.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101139.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101241.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101455.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101615.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101623.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101644.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101650.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101706.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101709.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101808.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101825.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101840.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_101851.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102014.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102027.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102124.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102140.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102158.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102203.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102207.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102210.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102257.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102340.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102422.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102555.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102607.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102630.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102639.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_102918.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103007.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103103.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103016.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103136.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103253.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103309.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103344.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103359.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103555.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103643.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103709.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103728.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103739.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_103806.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_104018.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_104020.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_104054.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_104057.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_104231.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_111828.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112102.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112208.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112532.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112533.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112631.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112638.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112716.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112759.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112841.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112848.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112918.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_112958.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113043.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113209.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113453.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113512.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113559.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113613.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113631.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113730.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_113850.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114049.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114108.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114238.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114329.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114344.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114905.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114847.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114819.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114806.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114802.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114733.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114708.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114502.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_114358.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_115004.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_115009.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_115039.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_115107.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_115111.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_115117.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_121617.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_121624.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_122155.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_122748.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_125053.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_125345.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_125347.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_125748.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_125750.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_125751.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_130010.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_130238.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_130247.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_130622.jpg",
+              "caption": ""
+            },
+            {
+              "file": "2017/05/IMG_20170528_132332.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "file": "2017/05/IMG_20170527_222059-1024x768.jpg",
+          "caption": null
+        }
+      ],
+      "links": [],
+      "comments": [
+        {
+          "id": 43,
+          "parent": null,
+          "author": "Jeanne Mencke Netten",
+          "date": "2017-06-07T10:28:44+00:00",
+          "text": "Wat is dat snel gegaan jouw trip naar China. Het was een hele mooie, indrukwekkende fotoreportage over je laatste weekend. Ook mooie selfies, zo te zien heb je daar super genoten. Het zal wel weer wennen zijn om thuis te zijn, maar ook fijn. Ik vond het superleuk om je te volgen, bedankt voor de tijd en moeite die je hebt genomen om ons op de hoogte te houden. Tot ziens"
+        }
+      ]
+    }
+  ],
+  "about": {
+    "path": "/about/",
+    "title": "About",
+    "date": null,
+    "tags": [],
+    "featured": null,
+    "text": "Welkom! Ik had vanuit school de mogelijkheid gekregen vanuit school om drie maanden naar Shanghai te gaan. Aangezien ik zeer geïnteresseerd ben in Azië heb deze kans natuurlijk met beide handen aangegrepen. Op mijn blog ga ik proberen zo veel mogelijk laten zien van Shanghai, van het gevarieerde eten tot de mensen die ik leer kennen. Veel plezier met lezen, Freek Mencke",
+    "slideshows": [],
+    "images": [
+      {
+        "file": "2017/03/IMG_20170308_145821-225x300.jpg",
+        "caption": null
+      }
+    ],
+    "links": [],
+    "comments": []
+  }
+}

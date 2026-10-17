@@ -1,0 +1,26 @@
+{%- macro commentList(list, says, className) -%}
+<ol class="{{ className }}">
+  {%- for c in list %}
+  <li id="comment-{{ c.id }}" class="comment">
+    <article class="comment-body">
+      <footer class="comment-meta">
+        <b class="comment-author">{{ c.author }}</b> <span class="says">{{ says }}</span>
+        <a class="comment-date" href="#comment-{{ c.id }}"><time datetime="{{ c.date }}">{{ c.date | dateTime }}</time></a>
+      </footer>
+      <div class="comment-content">
+        {{ c.html | safe }}
+      </div>
+    </article>
+    {%- if c.replies %}
+    {{ commentList(c.replies, says, 'comment-replies') }}
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>
+{%- endmacro -%}
+<section class="comments" aria-labelledby="comments-title">
+  <h2 id="comments-title" class="comments-title">
+    {{ site.text.comments(comments | commentCount) }} “{{ title }}”
+  </h2>
+  {{ commentList(comments, site.text.says, 'comment-list') }}
+</section>
