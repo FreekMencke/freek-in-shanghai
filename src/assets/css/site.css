@@ -13,9 +13,9 @@
 
 :root {
   /* Night: the page, header and footer. Paper: the panels the text sits on. */
-  --night: #161a2b;
-  --night-deep: #0f1220;
-  --night-raised: #1f2438;
+  --night: #060f35;
+  --night-deep: #030726;
+  --night-raised: #0f1c48;
   --on-night: #fff;
   --on-night-muted: #a9afc2;
   --line-night: rgb(255 255 255 / 0.1);
@@ -29,7 +29,7 @@
   --muted: #5a6072;
   --line: #e4e6ec;
 
-  /* Red for text on paper (5.5:1); the brighter red only on night (5.1:1). */
+  /* Red for text on paper (5.5:1); the brighter red only on night (5.5:1). */
   --red: #c8282b;
   --red-bright: #fc4949;
 
