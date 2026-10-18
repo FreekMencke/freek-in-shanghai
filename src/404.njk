@@ -4,14 +4,20 @@ permalink: /404.html
 title: Pagina niet gevonden
 bodyClass: page error-404
 ---
+{#- One 404 page for the whole site, so it speaks both languages. -#}
 <main class="content-area">
   <article class="entry">
     <header class="entry-header">
-      <h1 class="entry-title">{{ site.text.notFoundTitle }}</h1>
+      <h1 class="entry-title">{{ site.text.nl.notFoundTitle }}</h1>
     </header>
     <div class="entry-content">
-      <p>{{ site.text.notFoundText }}</p>
-      <p><a class="button" href="/">{{ site.text.backHome }}</a></p>
+      <p>{{ site.text.nl.notFoundText }}</p>
+      <p><a class="button" href="/">{{ site.text.nl.backHome }}</a></p>
+      <div lang="en">
+        <h2>{{ site.text.en.notFoundTitle }}</h2>
+        <p>{{ site.text.en.notFoundText }}</p>
+        <p><a class="button" href="/en/">{{ site.text.en.backHome }}</a></p>
+      </div>
     </div>
   </article>
 </main>

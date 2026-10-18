@@ -1,5 +1,6 @@
 // Checks the built site in _site/ (run `npm run build` first):
-//  1. content parity with baseline/content.json (what WordPress showed), apart from the documented content fixes
+//  1. content parity with baseline/content.json (what WordPress showed), apart from the documented content fixes;
+//     each English page under /en/ has the same photos, slideshows, tags, date and comments as its Dutch original
 //  2. every local link, image, script and stylesheet resolves to a file; no requests to hosts the archive dropped
 //  3. no files in _site/uploads that no page uses
 //  4. HTML validation (html-validate)
@@ -110,7 +111,7 @@ function checkEntry(where, $, expected) {
 
 async function checkPosts() {
   const builtPosts = (await readdir(SITE, { withFileTypes: true })).filter(
-    e => e.isDirectory() && !['about', 'tag', 'assets', 'uploads'].includes(e.name),
+    e => e.isDirectory() && !['about', 'tag', 'assets', 'uploads', 'en'].includes(e.name),
   );
   if (builtPosts.length !== baseline.posts.length) {
     fail('site', `${builtPosts.length} posts built, baseline has ${baseline.posts.length}`);
@@ -195,6 +196,54 @@ async function checkPosts() {
 
   const $ = await loadPage('/about/');
   checkEntry('/about/', $, baseline.about);
+
+  for (const urlPath of ['/about/', ...baseline.posts.map(post => post.path)]) {
+    await checkTranslation(urlPath);
+  }
+}
+
+/** Everything on a post or page that is not translated: it must match between the Dutch page and its English one. */
+function untranslated($) {
+  const content = $('.entry-content').first();
+  return {
+    date: $('.entry-meta time').attr('datetime') ?? null,
+    tags: $('.tag-links a')
+      .toArray()
+      .map(el => $(el).attr('href').replace(/^(\.\.\/)+(en\/)?/, '')),
+    featured: $('.entry-image img').attr('src')?.replace(/^(\.\.\/)+/, '') ?? null,
+    images: content
+      .find('img')
+      .toArray()
+      .map(el => uploadFile($(el).attr('src'))),
+    photoLinks: content
+      .find('a[href*="uploads/"]')
+      .toArray()
+      .map(el => uploadFile($(el).attr('href'))),
+    slideshows: content.find('.slideshow').toArray().map(el => $(el).find('.slide').length),
+    externalLinks: content
+      .find('a[href^="http"]')
+      .toArray()
+      .map(el => $(el).attr('href')),
+    comments: $('.comment')
+      .toArray()
+      .map(el => ({
+        id: $(el).attr('id'),
+        text: normalize($(el).children('.comment-body').find('.comment-content').text()),
+      })),
+  };
+}
+
+async function checkTranslation(urlPath) {
+  const where = `/en${urlPath}`;
+  const english = await loadPage(where).catch(() => null);
+  if (!english) return fail(where, 'missing English page');
+  const dutch = await loadPage(urlPath);
+  const a = untranslated(english);
+  const e = untranslated(dutch);
+  for (const key of Object.keys(e)) compareList(where, key, a[key], e[key]);
+  if (english('html').attr('lang') !== 'en') fail(where, 'html lang is not "en"');
+  const text = $ => normalize($('.entry-content').first().text());
+  if (text(english) === text(dutch)) fail(where, 'text is the same as the Dutch page');
 }
 
 // --- 2 and 3. Links, assets and unused uploads -------------------------------------------------------------------

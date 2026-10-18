@@ -1,13 +1,17 @@
 ---
 layout: layouts/base.njk
 ---
+{#- The Dutch post supplies the date, tags, images and comments for both languages. -#}
+{%- set original = page.fileSlug | original(collections.posts) -%}
+{%- set image = original.data.image -%}
+{%- set comments = original.data.comments -%}
 <main class="content-area">
   <article class="entry">
     <header class="entry-header">
       <h1 class="entry-title">{{ title }}</h1>
       <p class="entry-meta">
         <svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>
-        <time datetime="{{ page.date | isoDate }}">{{ page.date | date }}</time>
+        <time datetime="{{ original.date | isoDate }}">{{ original.date | date(lang) }}</time>
       </p>
     </header>
     {%- if image.large %}
@@ -18,12 +22,12 @@ layout: layouts/base.njk
     <div class="entry-content">
       {{ content | safe }}
     </div>
-    {%- if tags.length %}
+    {%- if original.data.tags.length %}
     <footer class="entry-footer">
-      <h2 class="visually-hidden">{{ site.text.tags }}</h2>
+      <h2 class="visually-hidden">{{ t.tags }}</h2>
       <ul class="tag-links">
-        {%- for slug in tags %}
-        <li><a href="/tag/{{ slug }}/">{{ slug | tagName }}</a></li>
+        {%- for slug in original.data.tags %}
+        <li><a href="{{ ('/tag/' + slug + '/') | localUrl(lang) }}">{{ slug | tagName(lang) }}</a></li>
         {%- endfor %}
       </ul>
     </footer>
