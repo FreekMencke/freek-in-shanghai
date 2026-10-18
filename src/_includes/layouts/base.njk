@@ -8,6 +8,24 @@
     <link rel="icon" href="{{ site.favicons.icon32 }}" sizes="32x32">
     <link rel="icon" href="{{ site.favicons.icon192 }}" sizes="192x192">
     <link rel="apple-touch-icon" href="{{ site.favicons.appleTouch }}">
+    {%- if alternateUrl %}
+    <link rel="alternate" hreflang="{{ otherLang }}" href="{{ alternateUrl }}">
+    {#- Before anything shows: English, unless the browser's first language is Dutch or its region Belgium; a
+        language picked with the menu link (stored by site.js) wins. Inline, so the wrong language never flashes. #}
+    <script>
+      (() => {
+        let picked = null;
+        try {
+          picked = localStorage.getItem('lang');
+        } catch {}
+        const first = (navigator.languages?.[0] ?? navigator.language ?? '').toLowerCase();
+        const wanted = picked ?? (first.startsWith('nl') || first.endsWith('-be') ? 'nl' : 'en');
+        if (wanted !== document.documentElement.lang) {
+          location.replace(document.querySelector('link[rel="alternate"]').href + location.hash);
+        }
+      })();
+    </script>
+    {%- endif %}
     <link rel="stylesheet" href="/assets/css/site.css">
     <script>document.documentElement.classList.add('js');</script>
     <script src="/assets/js/site.js" defer></script>

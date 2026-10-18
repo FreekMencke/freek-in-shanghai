@@ -88,6 +88,18 @@ function initMenu() {
   window.matchMedia('(min-width: 1025px)').addEventListener('change', e => e.matches && setOpen(false));
 }
 
+// --- Language link: remember the pick, so the redirect in the page head follows it from now on ------------------
+
+function initLanguageLink() {
+  document.querySelector('.lang-switch a')?.addEventListener('click', e => {
+    try {
+      localStorage.setItem('lang', e.currentTarget.lang);
+    } catch {
+      // No storage (private window, blocked site data): the link still works, the pick just isn't kept.
+    }
+  });
+}
+
 // --- Masonry: each card goes into the shortest column, in reading order -----------------------------------------
 
 function initMasonry() {
@@ -267,6 +279,7 @@ function initPhotoLinks() {
 
 initHeader();
 initMenu();
+initLanguageLink();
 initMasonry();
 initSlideshows();
 initPhotoLinks();

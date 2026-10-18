@@ -9,7 +9,8 @@ site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this sit
 ## Rules
 
 - One stylesheet (`src/assets/css/site.css`) and one script (`src/assets/js/site.js`). Don't add per-page CSS/JS,
-  inline styles in templates, or dependencies for the browser.
+  inline styles in templates, or dependencies for the browser. The only inline scripts are the two in the head of
+  `base.njk` that must run before the page shows: the `js` class and the language redirect.
 - Global changes go to one place: colours/fonts/sizes → `:root` tokens in `site.css`; menu, links and every piece
   of interface text → `src/_data/site.js` (`text.nl`/`text.en` for templates, as `t`; `ui` for `site.js`); page
   chrome → one partial. Every new piece of interface text needs both languages.
@@ -40,6 +41,9 @@ site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this sit
   `title` and `excerpt` only, and the translated body with the same markup. Date, tags, images and comments come
   from the Dutch post (the `original` and `translation` filters). A change to a post's photos or links goes in both
   files. Comments are not translated.
+- Language on arrival: the head of `base.njk` sends visitors to English, or to Dutch when the browser's first
+  language is Dutch or its region Belgium (`nl*`, `*-BE`). A language picked with the menu link is stored
+  (`localStorage` key `lang`, set in `site.js`) and wins. The 404 page has no redirect.
 - Tag names come from `src/_data/tagList.json` (`name` Dutch, `en` English where it differs); a new tag slug needs
   an entry there, or it shows as the slug and gets no tag page. Each tag slug is also an Eleventy collection name,
   so never use `posts`, `postsEn` or a tag in English posts' front matter.

@@ -69,7 +69,8 @@ On purpose:
   night blue of the hero photo, a narrower reading column, slideshow controls under the photo.
 - Interface in Dutch (it was English), dates as "6 juni 2017".
 - An English version of every page under `/en/`, with a language link in the menu: posts, About, captions and
-  tag names translated in October 2026. Comments stay in Dutch.
+  tag names translated in October 2026. Comments stay in Dutch. Visitors get English, unless their browser is set
+  to Dutch or to Belgium; the language they pick with the menu link is remembered.
 - Slideshows start paused, with a "12 / 426" counter, arrow keys and swipe, and only load the photos around the
   current one (the two biggest posts used to load 330 MB and 148 MB of photos at once). Clicking a photo opens it
   full size.
