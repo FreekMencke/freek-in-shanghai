@@ -52,5 +52,8 @@ site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this sit
 
 - Slideshow photos are `<figure class="slide"><a href=original><img src=1024 variant ...></a>`; `site.js` shows
   one at a time and sets `loading="eager"` on the neighbours. Hidden lazy images never load, which is the point.
+- Each slideshow photo gets a 160 px WebP thumbnail at build time (the `slide-thumbnails` transform in
+  `eleventy.config.js`, into `_site/uploads/` next to the photo) as the smallest candidate in its `srcset`; the photo
+  roll in `site.js` takes it from there. Never commit thumbnails to `src/uploads/`.
 - The masonry in `site.js` positions cards absolutely to keep DOM order; images need `width`/`height` for it.
 - Dates are stored in UTC and shown in UTC, as WordPress did.

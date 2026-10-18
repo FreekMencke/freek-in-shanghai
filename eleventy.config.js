@@ -1,4 +1,5 @@
 import path from 'node:path';
+import Image from '@11ty/eleventy-img';
 import tagList from './src/_data/tagList.json' with { type: 'json' };
 import site from './src/_data/site.js';
 
@@ -26,6 +27,23 @@ function relativeUrl(url, pageUrl) {
   const target = pathname.endsWith('/') ? `${pathname}index.html` : pathname;
   const from = pageUrl.endsWith('/') ? pageUrl : `${path.posix.dirname(pageUrl)}/`;
   return path.posix.relative(from, target) + suffix;
+}
+
+// The photo roll under the slideshows (site.js) shows thumbnails at 80 px wide (site.css, --thumb); 2× that.
+const THUMB_WIDTH = 160;
+
+/**
+ * Makes a thumbnail of an uploaded photo ("2017/04/x-1024x768.jpg", a path under uploads) next to it in the output.
+ * Returns the thumbnail's path under uploads and its width.
+ */
+async function thumbnail(file, outputDir) {
+  const { webp } = await Image(`src/uploads/${file}`, {
+    widths: [THUMB_WIDTH],
+    formats: ['webp'],
+    outputDir: path.join(outputDir, 'uploads', path.posix.dirname(file)),
+    filenameFormat: (id, src, width, format) => `${path.parse(src).name}-thumb.${format}`,
+  });
+  return { file: `${path.posix.dirname(file)}/${path.basename(webp[0].outputPath)}`, width: webp[0].width };
 }
 
 function countComments(comments = []) {
@@ -65,6 +83,21 @@ export default function (eleventyConfig) {
       /<a ([^>]*href="[^"]+\.(?:jpe?g|png|gif)"[^>]*)>(\s*<img)/gi,
       `<a $1 aria-label="${ui.openPhoto}">$2`,
     );
+  });
+
+  // Slideshow photos get a thumbnail as the smallest candidate in their srcset, where site.js finds it for the photo
+  // roll. The slideshow itself never picks it: its sizes are far wider.
+  eleventyConfig.addTransform('slide-thumbnails', async function (content) {
+    if (!this.page.outputPath?.endsWith('.html')) return content;
+    const slideImage = /(<figure class="slide">\s*<a [^>]*><img src="([^"]*?uploads\/)([^"]+)" srcset=")/g;
+    const files = new Set([...content.matchAll(slideImage)].map(m => m[3]));
+    if (!files.size) return content;
+    const outputDir = eleventyConfig.directories.output;
+    const thumbs = new Map(await Promise.all([...files].map(async file => [file, await thumbnail(file, outputDir)])));
+    return content.replace(slideImage, (match, start, uploads, file) => {
+      const thumb = thumbs.get(file);
+      return `${start}${uploads}${thumb.file} ${thumb.width}w, `;
+    });
   });
 
   // The 404 page is served at any depth by a host, so it keeps root-relative URLs.

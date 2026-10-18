@@ -41,7 +41,9 @@ function swipe(el, onPrev, onNext) {
   let start = null;
   let swiped = false;
   el.addEventListener('pointerdown', e => {
-    start = e.pointerType === 'mouse' ? null : { x: e.clientX, y: e.clientY };
+    // The photo roll scrolls sideways itself.
+    const own = e.pointerType !== 'mouse' && !e.target.closest('.photo-roll');
+    start = own ? { x: e.clientX, y: e.clientY } : null;
     swiped = false;
   });
   el.addEventListener('pointerup', e => {
@@ -137,10 +139,92 @@ function initMasonry() {
   }
 }
 
+// --- Photo roll: thumbnails under a slideshow and in the viewer -----------------------------------------------------
+
+/** The smallest candidate in an image's srcset: for slideshow photos, the thumbnail the build adds there. */
+function thumbnailOf(img) {
+  const candidates = img.getAttribute('srcset').split(',').map(c => c.trim().split(/\s+/));
+  return candidates.sort((a, b) => parseFloat(a[1]) - parseFloat(b[1]))[0][0];
+}
+
+/**
+ * A scrolling row of thumbnails, one per photo; a click calls pick(i). mark(i) highlights photo i and scrolls it to
+ * the middle of the row. One tab stop: the current thumbnail; the arrow keys of the slideshow or viewer move it.
+ */
+function photoRoll(items, pick) {
+  const roll = document.createElement('div');
+  roll.className = 'photo-roll';
+  roll.setAttribute('role', 'group');
+  roll.setAttribute('aria-label', ui.photoRoll ?? '');
+  // Thumbnails load once the row comes near the screen, and then as they come near its visible part. Not
+  // loading="lazy": in a sideways scroller, browsers load hundreds of thumbnails that are far out of view.
+  const loader = new IntersectionObserver(
+    entries => {
+      for (const { isIntersecting, target } of entries) {
+        if (!isIntersecting) continue;
+        loader.unobserve(target);
+        target.src = target.dataset.src;
+      }
+    },
+    { root: roll, rootMargin: '0px 50%' },
+  );
+  const thumbs = items.map((item, i) => {
+    const thumb = document.createElement('button');
+    thumb.type = 'button';
+    thumb.className = 'photo-roll-thumb';
+    thumb.tabIndex = -1;
+    thumb.setAttribute('aria-label', (ui.photoNumber ?? '{n}').replace('{n}', i + 1));
+    const img = document.createElement('img');
+    img.alt = '';
+    img.decoding = 'async';
+    img.dataset.src = item.thumb;
+    thumb.append(img);
+    thumb.addEventListener('click', () => pick(i));
+    return thumb;
+  });
+  roll.append(...thumbs);
+  new IntersectionObserver(
+    (entries, observer) => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer.disconnect();
+      for (const img of roll.querySelectorAll('img')) loader.observe(img);
+    },
+    { rootMargin: '200px' },
+  ).observe(roll);
+  roll.addEventListener('keydown', e => {
+    if (e.key === 'Home' || e.key === 'End') {
+      e.preventDefault();
+      pick(e.key === 'Home' ? 0 : items.length - 1);
+    }
+  });
+
+  let current = null;
+  // Not scrollIntoView: that would scroll the page too.
+  const center = jump => {
+    const left = current.offsetLeft - (roll.clientWidth - current.offsetWidth) / 2;
+    roll.scrollTo({ left, behavior: jump ? 'instant' : 'auto' });
+  };
+  const mark = (i, { jump = false } = {}) => {
+    const hadFocus = roll.contains(document.activeElement);
+    if (current) {
+      current.removeAttribute('aria-current');
+      current.tabIndex = -1;
+    }
+    current = thumbs[i];
+    current.setAttribute('aria-current', 'true');
+    current.tabIndex = 0;
+    if (hadFocus) current.focus({ preventScroll: true });
+    center(jump);
+  };
+  // A new width (a phone turned sideways, the viewer opening) moves the current photo off-centre.
+  new ResizeObserver(() => current && center(true)).observe(roll);
+  return { roll, mark };
+}
+
 // --- Lightbox: one full-size photo at a time ---------------------------------------------------------------------
 
 const lightbox = (() => {
-  let dialog, image, caption, counter, items, index, opener;
+  let dialog, image, caption, counter, items, index, opener, onChange, roll;
 
   function build() {
     dialog = document.createElement('dialog');
@@ -165,8 +249,10 @@ const lightbox = (() => {
       if (e.target === dialog || e.target.classList.contains('lightbox-figure')) dialog.close();
     });
     dialog.addEventListener('keydown', e => {
-      if (e.key === 'ArrowLeft') show(index - 1);
-      if (e.key === 'ArrowRight') show(index + 1);
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        e.preventDefault(); // or the photo roll scrolls as well
+        show(index + (e.key === 'ArrowLeft' ? -1 : 1));
+      }
     });
     dialog.addEventListener('close', () => {
       image.removeAttribute('src');
@@ -176,8 +262,10 @@ const lightbox = (() => {
     document.body.append(dialog);
   }
 
-  function show(i) {
+  function show(i, { jump = false } = {}) {
     index = (i + items.length) % items.length;
+    roll?.mark(index, { jump });
+    onChange?.(index);
     const item = items[index];
     image.src = item.src;
     caption.textContent = item.caption;
@@ -190,12 +278,20 @@ const lightbox = (() => {
   }
 
   return {
-    open(list, i, from) {
+    /** Shows photo i of list; onChange(i) hears which photo is shown, so a slideshow can follow along. */
+    open(list, i, from, change) {
       if (!dialog) build();
+      if (list !== items) {
+        roll?.roll.remove();
+        roll = list.length > 1 ? photoRoll(list, n => show(n)) : null;
+        if (roll) dialog.append(roll.roll);
+        dialog.classList.toggle('has-roll', Boolean(roll));
+      }
       items = list;
       opener = from;
-      show(i);
+      onChange = change;
       dialog.showModal();
+      show(i, { jump: true });
     },
   };
 })();
@@ -208,6 +304,7 @@ function initSlideshows() {
     const items = slides.map(slide => ({
       src: slide.querySelector('a').href,
       caption: slide.querySelector('figcaption')?.textContent ?? '',
+      thumb: thumbnailOf(slide.querySelector('img')),
     }));
     let index = 0;
 
@@ -223,13 +320,15 @@ function initSlideshows() {
     counter.className = 'slideshow-counter';
     counter.setAttribute('aria-live', 'polite');
     controls.append(prev, counter, next, open);
-    show.append(controls);
+    const { roll, mark } = photoRoll(items, i => go(i));
+    show.append(controls, roll);
 
     const go = i => {
       slides[index].classList.remove('is-active');
       index = (i + slides.length) % slides.length;
       slides[index].classList.add('is-active');
       counter.textContent = `${index + 1} / ${slides.length}`;
+      mark(index);
       // Fetch the neighbours now, so the next click shows a photo that is already loaded.
       for (const n of [index - 1, index + 1]) {
         slides[(n + slides.length) % slides.length].querySelector('img').loading = 'eager';
@@ -238,22 +337,25 @@ function initSlideshows() {
 
     prev.addEventListener('click', () => go(index - 1));
     next.addEventListener('click', () => go(index + 1));
-    open.addEventListener('click', () => lightbox.open(items, index, open));
+    open.addEventListener('click', () => lightbox.open(items, index, open, go));
     show.addEventListener('keydown', e => {
-      if (e.key === 'ArrowLeft') go(index - 1);
-      if (e.key === 'ArrowRight') go(index + 1);
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        e.preventDefault(); // or the photo roll scrolls as well
+        go(index + (e.key === 'ArrowLeft' ? -1 : 1));
+      }
     });
     const endedSwipe = swipe(show, () => go(index - 1), () => go(index + 1));
     slides.forEach((slide, i) =>
       slide.querySelector('a').addEventListener('click', e => {
         e.preventDefault();
-        if (!endedSwipe()) lightbox.open(items, i, open);
+        if (!endedSwipe()) lightbox.open(items, i, open, go);
       }),
     );
 
     // Start loading the neighbours only once the slideshow comes near the screen.
     slides[0].classList.add('is-active');
     counter.textContent = `1 / ${slides.length}`;
+    mark(0, { jump: true });
     new IntersectionObserver((entries, observer) => {
       if (entries.some(entry => entry.isIntersecting)) {
         observer.disconnect();
