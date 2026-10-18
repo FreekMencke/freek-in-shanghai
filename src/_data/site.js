@@ -40,7 +40,6 @@ export default {
     nextPost: 'Volgend bericht',
     postNavigation: 'Berichten',
     comments: count => (count === 1 ? '1 reactie op' : `${count} reacties op`),
-    says: 'zegt:',
     socialMenu: 'Sociale media',
     notFoundTitle: 'Oeps! Deze pagina bestaat niet.',
     notFoundText: 'Misschien vind je wat je zoekt via de berichten op de startpagina.',

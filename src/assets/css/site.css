@@ -1,94 +1,97 @@
 /*
  * Freek in Shanghai: the one stylesheet for the whole site.
- * Based on the Astrid theme by aThemes (GPLv2 or later) and the blog's own Customizer settings.
+ *
+ * The page is the city at night (the hero photo's dark blue); the posts are lit white panels on it. Post text sits
+ * in a narrow reading column, photos and slideshows break out wider. One typeface: SOLIX.
  *
  * Sections: tokens, fonts, base, layout, header, hero, cards, articles, post content, slideshow, lightbox,
- * comments, footer, utilities. Breakpoints (max-width): 1199px, 1024px (header switches to mobile), 991px,
- * 767px, 500px. Change colours, fonts and sizes in the tokens below.
+ * comments, footer, utilities. Breakpoints (max-width): 1199px and 991px (card columns), 1024px (mobile header,
+ * matches site.js), 760px (phones).
  */
 
 /* --- Tokens ------------------------------------------------------------------------------------------------- */
 
 :root {
-  --color-page: #111;
-  --color-surface: #fff;
-  --color-text: #333;
-  --color-heading: #272727;
-  --color-accent: #fc4949;
-  --color-muted: #a0a8ab;
-  --color-line: #f2f2f3;
-  --color-header: rgb(34 34 34 / 0.9);
-  --color-header-line: rgb(255 255 255 / 0.1);
-  --color-menu-mobile: #202529;
-  --color-footer: #222;
-  --color-footer-text: #a3aaaa;
-  --color-site-description: #bdbdbd;
-  --color-slideshow: #222;
-  --color-lightbox: rgb(0 0 0 / 0.95);
+  /* Night: the page, header and footer. Paper: the panels the text sits on. */
+  --night: #161a2b;
+  --night-deep: #0f1220;
+  --night-raised: #1f2438;
+  --on-night: #fff;
+  --on-night-muted: #a9afc2;
+  --line-night: rgb(255 255 255 / 0.1);
 
-  --font-body: 'Open Sans', sans-serif;
-  --font-heading: 'Josefin Sans', sans-serif;
-  --font-caption: 'Helvetica Neue', Arial, sans-serif;
+  --paper: #fff;
+  --ink: #1d2130;
+  --ink-body: #2b3040;
+  --muted: #5a6072;
+  --line: #e4e6ec;
 
-  --container-width: 1170px;
+  /* Red for text on paper (5.5:1); the brighter red only on night (5.1:1). */
+  --red: #c8282b;
+  --red-bright: #fc4949;
+
+  --font: 'SOLIX', 'SOLIX Fallback', sans-serif;
+
+  /* Type scale: 1.25 steps from an 18px body. */
+  --text-sm: 0.875rem;
+  --text-base: 1.125rem;
+  --text-md: 1.375rem;
+  --text-lg: 1.75rem;
+  --text-xl: clamp(2.125rem, 1.6rem + 2vw, 3.25rem);
+  --text-hero: clamp(2.75rem, 1.5rem + 6vw, 6.5rem);
+
+  --measure: 42rem;
+  --wide: 60rem;
+  --container: 1170px;
   --card-width: 350px;
-  --entry-padding: 60px;
-  /* Height of the fixed desktop header; pages without the hero start below it. */
-  --header-height: 112px;
+  --panel-padding: 4rem;
+  --gap: 1.5rem;
+  --radius: 3px;
+  --header-height: 4rem;
 }
 
 @media (max-width: 1199px) {
   :root {
-    --container-width: 970px;
-    --card-width: 283px;
+    --container: 970px;
+    --card-width: 290px;
   }
 }
 
 @media (max-width: 991px) {
   :root {
-    --container-width: 750px;
+    --container: 750px;
     --card-width: 330px;
-    --entry-padding: 30px;
+    --panel-padding: 2.5rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 760px) {
   :root {
-    --container-width: 100%;
+    --container: 100%;
     --card-width: 100%;
+    --panel-padding: 1.25rem;
+    --text-base: 1.0625rem;
   }
 }
 
-@media (max-width: 500px) {
-  :root {
-    --entry-padding: 15px;
-  }
-}
-
-/* --- Fonts (self-hosted, latin subset, SIL OFL 1.1; see assets/fonts) --------------------------------------- */
+/* --- Fonts -------------------------------------------------------------------------------------------------- */
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'SOLIX';
   font-style: normal;
-  font-weight: 300 800;
+  font-weight: 100 900;
   font-display: swap;
-  src: url('../fonts/open-sans-latin.woff2') format('woff2');
+  src: url('../fonts/solix-variable.woff2') format('woff2');
 }
 
+/* Arial sized to SOLIX, so the text doesn't move when SOLIX arrives (numbers from the SOLIX README). */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 300 800;
-  font-display: swap;
-  src: url('../fonts/open-sans-latin-italic.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('../fonts/josefin-sans-latin-300.woff2') format('woff2');
+  font-family: 'SOLIX Fallback';
+  src: local('Arial'), local('ArialMT');
+  size-adjust: 99.82%;
+  ascent-override: 87.16%;
+  descent-override: 16.73%;
+  line-gap-override: 0%;
 }
 
 /* --- Base --------------------------------------------------------------------------------------------------- */
@@ -101,19 +104,17 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background-color: var(--night);
 }
 
 body {
   margin: 0;
-  background-color: var(--color-page);
-  color: var(--color-text);
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.9;
-  letter-spacing: 1px;
+  background-color: var(--night);
+  color: var(--ink-body);
+  font-family: var(--font);
+  font-size: var(--text-base);
+  line-height: 1.65;
   overflow-wrap: break-word;
-  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -122,47 +123,41 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 20px 0;
-  color: var(--color-heading);
-  font-family: var(--font-heading);
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 36px;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: var(--text-lg);
 }
 
 h3 {
-  font-size: 24px;
+  font-size: var(--text-md);
 }
 
 h4 {
-  font-size: 16px;
+  font-size: var(--text-base);
 }
 
 p {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
 }
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 650;
 }
 
 a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color 0.3s;
+  color: var(--red);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 img {
@@ -172,94 +167,83 @@ img {
 }
 
 figure {
-  margin: 0 0 1em;
+  margin: 0 0 1.25rem;
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
 }
 
 .icon {
   width: 1em;
   height: 1em;
-  vertical-align: -0.125em;
   flex-shrink: 0;
+  vertical-align: -0.125em;
 }
 
 .button {
-  display: table;
-  padding: 12px 30px;
-  border: 1px solid var(--color-accent);
-  background-color: transparent;
-  color: var(--color-accent);
-  font-size: 14px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  transition:
-    background-color 0.3s,
-    color 0.3s;
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border-radius: var(--radius);
+  background-color: var(--red);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: var(--color-accent);
-  color: var(--color-text);
-  text-decoration: none;
+  background-color: var(--ink);
 }
 
 /* --- Layout ------------------------------------------------------------------------------------------------- */
 
 .container {
   width: 100%;
-  max-width: var(--container-width);
+  max-width: var(--container);
   margin-inline: auto;
   padding-inline: 15px;
 }
 
 .site-content {
-  margin: 60px 0;
+  padding-block: 3rem 5rem;
 }
 
-.site-content > .container {
-  display: flow-root;
-  padding: 0;
-  border: 1px solid var(--color-line);
-  border-top: 0;
-  background-color: var(--color-surface);
-}
-
-@media (min-width: 1025px) {
-  body:not(.home) .site-content {
-    margin-top: calc(var(--header-height) + 60px);
-  }
+/* Posts, the About page and the 404 page: one paper panel holding the article, post navigation and comments. */
+.content-area {
+  border-radius: var(--radius);
+  background-color: var(--paper);
 }
 
 /* --- Header ------------------------------------------------------------------------------------------------- */
 
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
-  width: 100%;
-  padding: 15px 0;
-  border-bottom: 1px solid var(--color-header-line);
-  background-color: var(--color-header);
-  transition: all 0.5s;
+  border-bottom: 1px solid var(--line-night);
+  background-color: var(--night-deep);
+  transition: background-color 0.4s;
 }
 
+/* On the home page the header lies over the photo until the page scrolls. */
 .site-header.over-hero {
+  position: fixed;
+  width: 100%;
+  border-bottom-color: transparent;
   background-color: transparent;
 }
 
-.site-header.is-scrolled {
-  padding: 5px 0;
-  border-bottom-color: transparent;
-  background-color: var(--color-header);
+.site-header.over-hero.is-scrolled {
+  border-bottom-color: var(--line-night);
+  background-color: var(--night-deep);
 }
 
 .site-header-inner {
   display: flex;
   align-items: center;
+  gap: var(--gap);
+  min-height: var(--header-height);
 }
 
 .site-branding {
@@ -268,105 +252,55 @@ figure {
 
 .site-title {
   margin: 0;
-  font-family: var(--font-heading);
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 1px;
+  font-size: var(--text-md);
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .site-title a {
-  color: #fff;
+  color: var(--on-night);
   text-decoration: none;
-}
-
-.site-description {
-  margin: 15px 0 0;
-  color: var(--color-site-description);
-  font-size: 14px;
 }
 
 .menu-toggle {
   display: none;
-  padding: 0;
+  padding: 0.5rem;
   border: 0;
   background: none;
-  color: #fff;
-  font-size: 28px;
+  color: var(--on-night);
+  font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
 }
 
 .main-nav ul {
   display: flex;
+  gap: 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav li {
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
 .main-nav a {
-  position: relative;
-  display: inline-block;
-  padding: 3px 0;
-  color: #fff;
+  color: var(--on-night);
   text-decoration: none;
 }
 
-/* Lines that grow from opposite sides on hover. */
-.main-nav a::before,
-.main-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 100%;
-  transition: width 0.5s;
+.main-nav a:hover,
+.main-nav a[aria-current='page'] {
+  text-decoration: underline;
+  text-decoration-color: var(--red-bright);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4em;
 }
 
-.main-nav a::before {
-  right: 0;
-  border-top: 1px solid var(--color-accent);
-}
-
-.main-nav a::after {
-  left: 0;
-  border-bottom: 1px solid var(--color-accent);
-}
-
-.main-nav a:hover {
-  color: var(--color-accent);
-}
-
-.main-nav a:hover::before,
-.main-nav a:hover::after {
-  width: 100%;
+.site-header :focus-visible {
+  outline-color: var(--red-bright);
 }
 
 @media (max-width: 1024px) {
-  .site-header,
-  .site-header.over-hero {
-    position: relative;
-    background-color: var(--color-header);
-  }
-
-  .site-header-inner {
-    display: block;
-  }
-
-  .site-branding {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
   .menu-toggle {
     display: block;
-    margin: 0 auto;
   }
 
   .main-nav {
@@ -374,7 +308,8 @@ figure {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--color-menu-mobile);
+    border-bottom: 1px solid var(--line-night);
+    background-color: var(--night-deep);
   }
 
   .js .main-nav:not(.is-open) {
@@ -385,19 +320,14 @@ figure {
     display: block;
   }
 
-  .main-nav li {
-    padding-inline: 0;
-    border-bottom: 1px solid rgb(255 255 255 / 0.05);
-    text-align: center;
-  }
-
   .main-nav a {
-    padding-inline: 15px;
+    display: block;
+    padding: 0.75rem 15px;
+    border-top: 1px solid var(--line-night);
   }
 
-  .main-nav a::before,
-  .main-nav a::after {
-    display: none;
+  .site-header.over-hero {
+    background-color: var(--night-deep);
   }
 }
 
@@ -405,83 +335,78 @@ figure {
 
 .hero {
   position: relative;
-  text-align: center;
 }
 
 .hero-image {
   display: block;
   width: 100%;
+  height: min(90vh, 56.25vw);
+  object-fit: cover;
+}
+
+/* The photo fades into the night of the page, where the cards start. */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 40% 0 0;
+  background: linear-gradient(to top, var(--night), transparent);
+  pointer-events: none;
 }
 
 .hero-text {
   position: absolute;
-  top: 35%;
+  bottom: 12%;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column-reverse;
   width: 100%;
-  color: #fff;
-  font-family: var(--font-heading);
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.hero-subtitle {
-  display: table;
-  margin: 0 auto 30px;
-  padding: 0 15px 30px;
-  border-bottom: 1px solid var(--color-header-line);
-  font-size: 24px;
-  letter-spacing: 5px;
+  max-width: var(--container);
+  padding-inline: 15px;
+  transform: translateX(-50%);
+  color: var(--on-night);
 }
 
 .hero-title {
-  display: table;
-  margin: 0 auto;
-  font-size: 76px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  margin: 0;
+  font-size: var(--text-hero);
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
-@media (max-width: 1199px) {
+.hero-subtitle {
+  margin: 1rem 0 0;
+  color: var(--on-night-muted);
+  font-size: var(--text-md);
+}
+
+@media (max-width: 1024px) {
   .hero-text {
-    top: 30%;
-  }
-
-  .hero-subtitle {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-  }
-
-  .hero-title {
-    font-size: 42px;
+    bottom: 8%;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 760px) {
+  .hero-image {
+    height: 70vw;
+  }
+
   .hero-subtitle {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
-  }
-
-  .hero-title {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-title {
-    font-size: 20px;
+    margin-top: 0.5rem;
+    font-size: var(--text-base);
   }
 }
 
 /* --- Post cards (home and tag pages) ------------------------------------------------------------------------ */
 
-/* Without JS: a centred grid. site.js positions the cards as masonry (.is-masonry), each in the shortest column. */
+/* Without JS: a centred grid. site.js positions the cards as masonry (.is-masonry), each in the shortest column,
+   and reads the 15px margin around each card. */
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, calc(var(--card-width) + 30px));
   justify-content: center;
   align-items: start;
-  padding: 15px 0;
 }
 
 .posts-grid.is-masonry {
@@ -493,157 +418,192 @@ figure {
   position: absolute;
 }
 
+/* Lit windows on the night: photo on top, then title, date and excerpt. */
 .card {
+  display: flex;
+  flex-direction: column;
   width: var(--card-width);
   margin: 15px;
-  padding: 30px;
-  background-color: var(--color-surface);
+  overflow: hidden;
+  border-radius: var(--radius);
+  background-color: var(--paper);
+  font-size: 1rem;
 }
 
-.card-title {
-  margin: 0 0 20px;
-}
-
-.card-title a {
-  color: var(--color-heading);
-}
-
-.card-title a:hover {
-  color: var(--color-accent);
-  text-decoration: none;
+.card > * {
+  margin-inline: 1.5rem;
 }
 
 .card-image {
-  display: block;
-  margin-bottom: 30px;
-  transition: opacity 0.4s;
+  order: -1;
+  margin: 0 0 1.25rem;
 }
 
-.card-image:hover {
-  opacity: 0.7;
+.card-image img {
+  display: block;
+  width: 100%;
+}
+
+.card-title {
+  margin: 0 0 0.25rem;
+  font-size: var(--text-md);
+  font-weight: 600;
+}
+
+.card-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: var(--red);
+}
+
+.card .entry-meta {
+  margin-bottom: 0.75rem;
 }
 
 .card-excerpt {
-  margin-bottom: 30px;
+  margin-bottom: 0.75rem;
 }
 
-@media (max-width: 767px) {
-  .posts-grid {
-    grid-template-columns: minmax(0, 380px);
-  }
+.card-more {
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
 
+@media (max-width: 760px) {
   .posts-grid {
-    padding: 15px;
+    grid-template-columns: minmax(0, 30rem);
   }
 
   .card {
-    max-width: 380px;
-    margin: 0 0 15px;
+    margin: 0 0 var(--gap);
   }
 }
 
-@media (max-width: 500px) {
-  .card {
-    padding: 15px;
-  }
-}
-
+/* Tag pages: the tag name above its cards, on the night. */
 .page-header {
-  padding: 20px var(--entry-padding) 0;
+  padding: 0 15px 1rem;
 }
 
 .page-title {
   margin: 0;
+  color: var(--on-night);
+  font-size: var(--text-xl);
+  font-weight: 300;
 }
 
 .page-title .icon {
-  margin-right: 15px;
-  color: var(--color-accent);
+  margin-right: 0.75rem;
+  color: var(--red-bright);
+  font-size: 0.6em;
+  vertical-align: 0.1em;
 }
 
 /* --- Articles (posts, About, 404) --------------------------------------------------------------------------- */
 
 .entry {
-  margin-bottom: -1px;
-  padding: var(--entry-padding);
-  border: 1px solid var(--color-line);
-  background-color: var(--color-surface);
+  padding: var(--panel-padding) var(--panel-padding) 3rem;
+}
+
+/* Text keeps to the reading column; photos and slideshows get the wider column. */
+.entry-header,
+.entry-content > *,
+.entry-footer {
+  max-width: var(--measure);
+  margin-inline: auto;
+}
+
+.entry-content > .slideshow,
+.entry-content > .aligncenter,
+.entry-content > .wp-caption,
+.entry-image {
+  /* min(): WordPress captions carry an inline width. */
+  max-width: min(var(--wide), 100%);
 }
 
 .entry-title {
-  margin-top: 0;
-}
-
-.page .entry-title {
-  margin-bottom: 30px;
-}
-
-.entry-meta,
-.entry-footer {
-  color: var(--color-muted);
-  font-size: 13px;
+  margin: 0 0 0.75rem;
+  font-size: var(--text-xl);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .entry-meta {
-  margin: 0 0 30px;
-  padding: 5px;
-  border-top: 1px solid var(--color-line);
-  border-bottom: 1px solid var(--color-line);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 2.5rem;
+  color: var(--muted);
+  font-size: var(--text-sm);
 }
 
-.entry-meta .icon {
-  margin-right: 5px;
-}
-
-.entry-meta a,
-.entry-footer a {
-  color: var(--color-muted);
-}
-
-.entry-meta a:hover,
-.entry-footer a:hover {
-  color: var(--color-accent);
+.entry-meta a {
+  color: inherit;
   text-decoration: none;
 }
 
 .entry-image {
-  margin-bottom: 30px;
+  margin: 0 auto 2.5rem;
 }
 
 .entry-footer {
-  margin-top: 30px;
+  margin-top: 2.5rem;
 }
 
 .tag-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .tag-links a {
-  display: inline-block;
-  padding: 2px 3px;
-  border: 1px solid;
-  line-height: 1;
+  display: block;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: var(--text-sm);
+  text-decoration: none;
 }
 
+.tag-links a:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* Older post on the left, newer on the right, each with its label. */
 .post-nav {
   display: flex;
-  gap: 30px;
-  padding: 30px var(--entry-padding);
+  gap: var(--gap);
+  /* Lines up with the reading column above it. */
+  padding: 2rem max(var(--panel-padding), (100% - var(--measure)) / 2);
+  border-top: 1px solid var(--line);
 }
 
 .post-nav a {
   flex: 1;
-  color: var(--color-heading);
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
 }
 
 .post-nav a:hover {
-  color: var(--color-accent);
-  text-decoration: none;
+  color: var(--red);
+}
+
+.post-nav-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--muted);
+  font-size: var(--text-sm);
+  font-weight: 400;
 }
 
 .post-nav-newer {
@@ -672,56 +632,51 @@ figure {
   margin-inline: auto;
 }
 
-.wp-caption {
-  max-width: 100%;
-  margin-bottom: 1.5em;
-}
-
 .wp-caption img {
   display: block;
   margin-inline: auto;
 }
 
 .wp-caption-text {
-  margin: 0.8075em 0;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: var(--text-sm);
   text-align: center;
 }
 
 @media (max-width: 600px) {
   .alignleft,
   .alignright {
-    float: none;
     display: block;
-    margin: 0 auto 1.5em;
+    float: none;
+    margin: 0 auto 1.25rem;
   }
 }
 
 /* --- Slideshow ---------------------------------------------------------------------------------------------- */
 
 /* Without JS: the photos one below the other. */
-.slideshow {
-  margin-bottom: 20px;
-}
-
 .slide {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   text-align: center;
 }
 
 .slide figcaption {
-  margin-top: 5px;
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: var(--text-sm);
 }
 
-/* With JS: one photo at a time in a dark 16:9 frame. */
+/* With JS: one photo at a time in a 16:9 night frame, with the caption and controls on a strip below it. */
 .js .slideshow {
+  --strip: 3.5rem;
   position: relative;
   height: 0;
-  padding: 30px 0 56.25%;
+  margin-block: 2rem;
+  padding-bottom: calc(56.25% + var(--strip));
   overflow: hidden;
-  border: 20px solid var(--color-slideshow);
-  border-radius: 10px;
-  background-color: var(--color-slideshow);
-  box-sizing: content-box;
+  border-radius: var(--radius);
+  background-color: var(--night);
 }
 
 .js .slide {
@@ -733,15 +688,14 @@ figure {
 
 .js .slide.is-active {
   display: block;
-  animation: fade-in 0.4s;
+  animation: fade-in 0.3s;
 }
 
 .js .slide > a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  height: calc(100% - var(--strip));
   cursor: zoom-in;
 }
 
@@ -752,73 +706,89 @@ figure {
 
 .js .slide figcaption {
   position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 100%;
+  bottom: 0;
+  left: 1rem;
+  right: 12rem;
   margin: 0;
-  color: #f6f7f7;
-  font-family: var(--font-caption);
-  font-size: 13px;
-  line-height: 25px;
-  letter-spacing: 0;
-  text-shadow: #222 1px 1px 2px;
-  pointer-events: none;
+  overflow: hidden;
+  color: var(--on-night-muted);
+  line-height: var(--strip);
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .slideshow-controls {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  z-index: 1;
+  right: 0.75rem;
+  bottom: 0;
   display: flex;
   align-items: center;
-  gap: 6px;
-  transform: translateX(-50%);
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
-
-.slideshow:hover .slideshow-controls,
-.slideshow:focus-within .slideshow-controls {
-  opacity: 1;
-}
-
-.control-button,
-.slideshow-counter {
-  height: 32px;
-  border: 2px solid rgb(255 255 255 / 0.1);
-  border-radius: 16px;
-  background-color: rgb(0 0 0 / 0.6);
-  color: #fff;
+  gap: 0.25rem;
+  height: var(--strip);
 }
 
 .control-button {
   display: grid;
   place-items: center;
-  width: 32px;
+  width: 2.25rem;
+  height: 2.25rem;
   padding: 0;
-  font-size: 16px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(255 255 255 / 0.08);
+  color: var(--on-night);
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .control-button:hover {
-  border-color: #fff;
+  background-color: rgb(255 255 255 / 0.2);
+}
+
+.control-button:focus-visible {
+  outline-color: var(--red-bright);
 }
 
 .slideshow-counter {
-  min-width: 64px;
-  padding: 0 10px;
-  font-family: var(--font-caption);
-  font-size: 12px;
-  line-height: 28px;
-  letter-spacing: 0;
-  text-align: center;
+  min-width: 4.5rem;
+  margin: 0;
+  color: var(--on-night-muted);
+  font-size: var(--text-sm);
   font-variant-numeric: tabular-nums;
+  text-align: center;
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  /* Edge to edge, and square: most phone photos are portrait. */
+  .js .slideshow {
+    max-width: none;
+    margin-inline: calc(-1 * var(--panel-padding));
+    padding-bottom: calc(100% + var(--strip));
+    border-radius: 0;
+  }
+
+  .js .slide figcaption {
+    left: 0;
+    right: 0;
+    bottom: var(--strip);
+    padding: 0.25rem 1rem;
+    background-color: rgb(15 18 32 / 0.7);
+    line-height: 1.5;
+    font-size: var(--text-sm);
+    text-align: center;
+  }
+
+  .slideshow-controls {
+    left: 0;
+    right: 0;
+    justify-content: center;
   }
 }
 
@@ -838,12 +808,12 @@ figure {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: var(--color-lightbox);
-  color: #fff;
+  background-color: rgb(15 18 32 / 0.97);
+  color: var(--on-night);
 }
 
 .lightbox::backdrop {
-  background-color: var(--color-lightbox);
+  background-color: rgb(15 18 32 / 0.97);
 }
 
 .lightbox-figure {
@@ -853,7 +823,7 @@ figure {
   justify-content: center;
   height: 100%;
   margin: 0;
-  padding: 60px 70px 40px;
+  padding: 4rem 5rem 3rem;
 }
 
 .lightbox-image {
@@ -863,25 +833,22 @@ figure {
 }
 
 .lightbox-caption {
-  min-height: 25px;
-  margin-top: 10px;
-  font-family: var(--font-caption);
-  font-size: 13px;
-  letter-spacing: 0;
+  min-height: 1.7em;
+  margin-top: 0.75rem;
+  color: var(--on-night-muted);
   text-align: center;
 }
 
 .lightbox .control-button {
   position: absolute;
-  width: 44px;
-  height: 44px;
-  border-radius: 22px;
-  font-size: 20px;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.25rem;
 }
 
 .lightbox-close {
-  top: 12px;
-  right: 12px;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .lightbox-prev,
@@ -891,29 +858,29 @@ figure {
 }
 
 .lightbox-prev {
-  left: 12px;
+  left: 0.75rem;
 }
 
 .lightbox-next {
-  right: 12px;
+  right: 0.75rem;
 }
 
 .lightbox .slideshow-counter {
   position: absolute;
-  top: 18px;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 760px) {
   .lightbox-figure {
-    padding: 60px 10px 40px;
+    padding: 4rem 0.5rem 4.5rem;
   }
 
   .lightbox-prev,
   .lightbox-next {
     top: auto;
-    bottom: 12px;
+    bottom: 0.75rem;
     transform: none;
   }
 }
@@ -921,42 +888,59 @@ figure {
 /* --- Comments ----------------------------------------------------------------------------------------------- */
 
 .comments {
-  margin-bottom: 60px;
+  padding: 3rem var(--panel-padding);
+  border-top: 1px solid var(--line);
+}
+
+.comments > * {
+  max-width: var(--measure);
+  margin-inline: auto;
 }
 
 .comments-title {
-  margin: 0;
-  padding: 30px var(--entry-padding);
-  border: 1px solid var(--color-line);
-  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: var(--text-md);
 }
 
 .comment-list,
 .comment-replies {
-  margin: 0;
+  margin-block: 0;
   padding: 0;
   list-style: none;
 }
 
+/* Replies hang off a line under the comment they answer. */
 .comment-replies {
-  padding-left: 20px;
+  margin-left: 0.5rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--line);
 }
 
 .comment-body {
-  padding: 30px var(--entry-padding);
-  border: 1px solid var(--color-line);
-  border-top: 0;
+  padding-block: 1rem;
 }
 
-.comment-replies .comment-body {
-  border-left-width: 3px;
+.comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.comment-author {
+  color: var(--ink);
 }
 
 .comment-date {
-  display: block;
-  margin-bottom: 30px;
-  color: #444;
-  font-size: 12px;
+  color: var(--muted);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.comment-date:hover {
+  text-decoration: underline;
 }
 
 .comment-content p:last-child {
@@ -966,51 +950,45 @@ figure {
 /* --- Footer ------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  padding: 30px 0;
-  background-color: var(--color-footer);
-  color: var(--color-footer-text);
+  padding-block: 2rem;
+  border-top: 1px solid var(--line-night);
+  background-color: var(--night-deep);
+  color: var(--on-night-muted);
+  font-size: var(--text-sm);
 }
 
 .site-footer a {
-  color: var(--color-footer-text);
+  color: var(--on-night-muted);
+  text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: var(--color-accent);
-  text-decoration: none;
+  color: var(--on-night);
+  text-decoration: underline;
+}
+
+.site-footer :focus-visible {
+  outline-color: var(--red-bright);
 }
 
 .site-footer-inner {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .footer-menu {
   display: flex;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.footer-menu li {
-  padding: 0 15px;
-}
-
 .footer-name {
   margin: 0;
-  padding-right: 30px;
-}
-
-@media (max-width: 991px) {
-  .site-footer-inner {
-    flex-direction: column;
-  }
-
-  .footer-name {
-    padding: 0;
-  }
 }
 
 /* --- Utilities ---------------------------------------------------------------------------------------------- */
@@ -1027,13 +1005,13 @@ figure {
 
 .skip-link:focus {
   position: fixed;
-  top: 5px;
-  left: 5px;
+  top: 0.5rem;
+  left: 0.5rem;
   z-index: 1000;
-  padding: 15px 23px;
-  border-radius: 3px;
-  background-color: #f1f1f1;
-  color: #21759b;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  background-color: var(--paper);
+  color: var(--ink);
   font-weight: 600;
 }
 

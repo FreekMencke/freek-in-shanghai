@@ -11,5 +11,5 @@
     <img src="{{ img.card.src }}" srcset="{{ img.small.src }} {{ img.small.width }}w, {{ img.card.src }} {{ img.card.width }}w" sizes="(max-width: 767px) 100vw, 290px" width="{{ img.card.width }}" height="{{ img.card.height }}" alt="" loading="lazy" decoding="async">
   </a>
   <p class="card-excerpt">{{ post.data.excerpt }}</p>
-  <a class="button" href="{{ post.url }}">{{ site.text.readMore }}<span class="visually-hidden">: {{ post.data.title }}</span></a>
+  <a class="card-more" href="{{ post.url }}">{{ site.text.readMore }}<span class="visually-hidden">: {{ post.data.title }}</span></a>
 </article>

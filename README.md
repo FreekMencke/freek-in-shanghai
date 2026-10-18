@@ -26,7 +26,7 @@ npm run check     # verifies _site/ (see below)
 | `src/_data/site.js` | Site title, menu, social links, hero and favicons, and all interface text |
 | `src/assets/css/site.css` | The only stylesheet. Colours, fonts and sizes are tokens at the top (`:root`) |
 | `src/assets/js/site.js` | The only script: header, mobile menu, masonry cards, slideshows, photo viewer |
-| `src/assets/fonts/` | Open Sans and Josefin Sans, self-hosted (SIL Open Font License) |
+| `src/assets/fonts/` | SOLIX, the one typeface (variable font, all weights) |
 | `src/_includes/layouts/` | `base.njk` (every page), `post.njk`, `page.njk` |
 | `src/_includes/partials/` | Header, hero, card, comments, post navigation, footer, SVG icons |
 | `src/posts/*.html` | One file per post: front matter (title, date, tags, images, comments) and the post HTML |
@@ -63,6 +63,8 @@ from `baseline/content.json`, so an intended content change also needs that file
 
 On purpose:
 
+- A new design (October 2026) instead of the Astrid theme: the SOLIX typeface, posts on white panels on the
+  night blue of the hero photo, a narrower reading column, slideshow controls under the photo.
 - Interface in Dutch (it was English), dates as "6 juni 2017".
 - Slideshows start paused, with a "12 / 426" counter, arrow keys and swipe, and only load the photos around the
   current one (the two biggest posts used to load 330 MB and 148 MB of photos at once). Clicking a photo opens it
@@ -80,5 +82,5 @@ On purpose:
 
 ## Licences
 
-The stylesheet is based on the Astrid theme by aThemes (GPLv2 or later). The fonts are under the SIL Open Font
-License 1.1 (see `src/assets/fonts/`). Posts and photos: © Freek Mencke.
+Posts, photos and the stylesheet: © Freek Mencke; a few photos are from Unsplash or Pixabay, under their licences.
+The SOLIX font: © Freek Mencke, all rights reserved (see `src/assets/fonts/LICENSE-solix.txt`).
