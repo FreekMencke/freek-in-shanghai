@@ -88,7 +88,8 @@ On purpose:
 - Comments are read-only, without the form or Gravatar avatars.
 - Dropped: share buttons, cookie banner, preloader, smooth-scroll script, category/date/author archives, feeds.
 - Content fixes:
-  - "Eerste week op kantoor": the dead imgur GIF is replaced by the copy in the media library.
+  - "Eerste week op kantoor": the dead imgur GIF is replaced by the copy in the media library, and "zonder
+    framework" is no longer underlined (it looked like a link).
   - "Residence permit en stage": the dead external G2 logo (and its link) is removed.
   - "Bankrekening, massage en Mahjong": the link to a "Foto's" page that no longer existed is removed (text kept).
   - "Eten, karaoke en 96th floor afterparty": one slideshow had random order; it now uses its saved order.
