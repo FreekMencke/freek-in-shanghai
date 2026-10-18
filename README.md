@@ -43,7 +43,7 @@ repo to be public.
 | `src/about.html`, `src/index.njk`, `src/tags.njk`, `src/404.njk` | About page, home page, one page per tag, 404 page |
 | `src/_data/tagList.json` | Tag slugs, Dutch names and English names (`en`) where they differ |
 | `src/uploads/` | The photos, in the same `2017/MM/` folders as on the old site (only files a page uses) |
-| `eleventy.config.js` | Eleventy setup: collections, Dutch dates, relative URLs |
+| `eleventy.config.js` | Eleventy setup: collections, dates per language, relative URLs, slideshow thumbnails |
 | `tools/check/check.mjs` | The checks behind `npm run check` |
 | `baseline/content.json` | What the WordPress site showed, used by the checks |
 | `tools/extract/`, `tools/baseline/` | One-time scripts that exported the content from WordPress |
@@ -75,14 +75,15 @@ from `baseline/content.json`, so an intended content change also needs that file
 On purpose:
 
 - A new design (October 2026) instead of the Astrid theme: the SOLIX typeface, posts on white panels on the
-  night blue of the hero photo, a narrower reading column, slideshow controls under the photo.
+  night blue of the hero photo, a narrower reading column, slideshows in a black 4:3 frame.
 - Interface in Dutch (it was English), dates as "6 juni 2017".
 - An English version of every page under `/en/`, with a language link in the menu: posts, About, captions and
   tag names translated in October 2026. Comments stay in Dutch. Visitors get English, unless their browser is set
   to Dutch or to Belgium; the language they pick with the menu link is remembered.
 - Slideshows start paused, with a "12 / 426" counter, arrow keys and swipe, and only load the photos around the
   current one (the two biggest posts used to load 330 MB and 148 MB of photos at once). Clicking a photo opens it
-  full size.
+  full size. Under each slideshow, and in the full-size viewer, a photo roll of thumbnails jumps straight to a photo;
+  the build makes the thumbnails (160 px WebP, with `@11ty/eleventy-img`).
 - All posts on one home page instead of infinite scroll; each tag on one page.
 - Comments are read-only, without the form or Gravatar avatars.
 - Dropped: share buttons, cookie banner, preloader, smooth-scroll script, category/date/author archives, feeds.
@@ -98,3 +99,5 @@ On purpose:
 
 Posts, photos and the stylesheet: © Freek Mencke; a few photos are from Unsplash or Pixabay, under their licences.
 The SOLIX font: © Freek Mencke, all rights reserved (see `src/assets/fonts/LICENSE-solix.txt`).
+The build tools (Eleventy and `@11ty/eleventy-img`, MIT; sharp, Apache-2.0, with libvips, LGPL-3.0) only run at build
+time; none of their code ends up in the site.

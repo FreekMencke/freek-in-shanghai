@@ -4,7 +4,7 @@
  * The page is the city at night (the hero photo's dark blue); the posts are lit white panels on it. Post text sits
  * in a narrow reading column, photos and slideshows break out wider. One typeface: SOLIX.
  *
- * Sections: tokens, fonts, base, layout, header, hero, cards, articles, post content, slideshow, lightbox,
+ * Sections: tokens, fonts, base, layout, header, hero, cards, articles, post content, slideshow, photo roll, lightbox,
  * comments, footer, utilities. Breakpoints (max-width): 1199px and 991px (card columns), 1024px (mobile header,
  * matches site.js), 760px (phones).
  */
@@ -19,6 +19,9 @@
   --on-night: #fff;
   --on-night-muted: #a9afc2;
   --line-night: rgb(255 255 255 / 0.1);
+  /* Black behind slideshow photos, apart from the night of the page; the bar under them a shade lighter. */
+  --photo-frame: #000;
+  --photo-bar: #0e0e10;
 
   --paper: #fff;
   --ink: #1d2130;
@@ -48,6 +51,9 @@
   --gap: 1.5rem;
   --radius: 3px;
   --header-height: 4rem;
+  /* Photo roll under slideshows and in the viewer: thumbnail size (the build makes them 160 px wide) and row height. */
+  --thumb: 3.5rem;
+  --roll: calc(var(--thumb) + 1.5rem);
 }
 
 @media (max-width: 1199px) {
@@ -678,26 +684,24 @@ figure {
   font-size: var(--text-sm);
 }
 
-/* With JS: one photo at a time in a 16:9 night frame, with the caption and controls on a strip below it. */
+/* With JS: one photo at a time in a night frame, and a bar below it with the photo roll and the controls. The frame
+   is 4:3, the shape of most photos, but no taller than the screen leaves room for. */
 .js .slideshow {
-  --strip: 3.5rem;
-  position: relative;
-  height: 0;
+  --frame: min(75cqi, 100svh - var(--header-height) - var(--roll) - 2rem);
+  container-type: inline-size;
   margin-block: 2rem;
-  padding-bottom: calc(56.25% + var(--strip));
   overflow: hidden;
   border-radius: var(--radius);
-  background-color: var(--night);
+  background-color: var(--photo-frame);
 }
 
 .js .slide {
-  position: absolute;
-  inset: 0;
   display: none;
   margin: 0;
 }
 
 .js .slide.is-active {
+  position: relative;
   display: block;
   animation: fade-in 0.3s;
 }
@@ -706,37 +710,48 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100% - var(--strip));
+  height: max(var(--frame), 12rem);
   cursor: zoom-in;
 }
 
+/* Fills the frame's height: width: auto alone would stop at the 824 px of the photos' sizes attribute. */
 .js .slide img {
   width: auto;
-  max-height: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
+/* Few photos have a caption (63 of 934), so it goes over the bottom of the photo instead of taking a row. */
 .js .slide figcaption {
   position: absolute;
-  bottom: 0;
-  left: 1rem;
-  right: 12rem;
+  inset: auto 0 0;
   margin: 0;
-  overflow: hidden;
-  color: var(--on-night-muted);
-  line-height: var(--strip);
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding: 0.25rem 1rem;
+  background-color: rgb(0 0 0 / 0.7);
+  color: var(--on-night);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.slideshow-bar {
+  display: flex;
+  border-top: 1px solid var(--line-night);
+  background-color: var(--photo-bar);
+}
+
+.slideshow-bar .photo-roll {
+  flex: 1;
+  justify-content: flex-start;
+  min-width: 0;
 }
 
 .slideshow-controls {
-  position: absolute;
-  right: 0.75rem;
-  bottom: 0;
   display: flex;
+  flex: none;
   align-items: center;
   gap: 0.25rem;
-  height: var(--strip);
+  padding-inline: 0.5rem 0.75rem;
+  border-left: 1px solid var(--line-night);
 }
 
 .control-button {
@@ -777,35 +792,96 @@ figure {
 }
 
 @media (max-width: 760px) {
-  /* Edge to edge, and square: most phone photos are portrait. */
+  /* Edge to edge, and square, so portrait photos get as much room as landscape ones. */
   .js .slideshow {
+    --frame: min(100cqi, 100svh - var(--header-height) - var(--roll) - 3.5rem - 2rem);
     max-width: none;
     margin-inline: calc(-1 * var(--panel-padding));
-    padding-bottom: calc(100% + var(--strip));
     border-radius: 0;
   }
 
   .js .slide figcaption {
-    left: 0;
-    right: 0;
-    bottom: var(--strip);
-    padding: 0.25rem 1rem;
-    background-color: rgb(15 18 32 / 0.7);
-    line-height: 1.5;
-    font-size: var(--text-sm);
     text-align: center;
   }
 
+  /* Too narrow for the roll and the controls side by side: the controls get a row above the roll. */
+  .slideshow-bar {
+    flex-direction: column-reverse;
+  }
+
+  .slideshow-bar .photo-roll {
+    flex: none;
+  }
+
   .slideshow-controls {
-    left: 0;
-    right: 0;
     justify-content: center;
+    height: 3.5rem;
+    border-left: 0;
+    border-bottom: 1px solid var(--line-night);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .js .slide.is-active {
     animation: none;
+  }
+}
+
+/* --- Photo roll ---------------------------------------------------------------------------------------------- */
+
+/* A row of thumbnails along the bottom of a slideshow or the viewer; it scrolls sideways and keeps the current photo
+   in the middle (site.js). */
+.photo-roll {
+  display: flex;
+  justify-content: safe center;
+  align-items: center;
+  gap: 0.375rem;
+  height: var(--roll);
+  padding-inline: 0.75rem;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--on-night-muted) transparent;
+}
+
+.photo-roll-thumb {
+  flex: none;
+  width: var(--thumb);
+  height: var(--thumb);
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius);
+  background-color: var(--night-raised);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.photo-roll-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-roll-thumb:hover {
+  opacity: 0.85;
+}
+
+.photo-roll-thumb[aria-current] {
+  outline: 2px solid var(--red-bright);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.photo-roll-thumb:focus-visible {
+  outline: 2px solid var(--on-night);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-roll {
+    scroll-behavior: auto;
   }
 }
 
@@ -883,9 +959,22 @@ figure {
   transform: translateX(-50%);
 }
 
+.lightbox .photo-roll {
+  position: absolute;
+  inset: auto 0 0;
+}
+
+.lightbox.has-roll .lightbox-figure {
+  padding-bottom: calc(var(--roll) + 1rem);
+}
+
 @media (max-width: 760px) {
   .lightbox-figure {
     padding: 4rem 0.5rem 4.5rem;
+  }
+
+  .lightbox.has-roll .lightbox-figure {
+    padding-bottom: calc(var(--roll) + 4.5rem);
   }
 
   .lightbox-prev,
@@ -893,6 +982,10 @@ figure {
     top: auto;
     bottom: 0.75rem;
     transform: none;
+  }
+
+  .lightbox.has-roll :is(.lightbox-prev, .lightbox-next) {
+    bottom: calc(var(--roll) + 0.75rem);
   }
 }
 
