@@ -72,7 +72,7 @@ export default {
     },
   },
 
-  // Text used by site.js (passed to the page as JSON by the base layout).
+  // Text used by site.js (passed to the page as JSON by the base layout, so strings only; site.js fills in {n}).
   ui: {
     nl: {
       slideshow: 'Fotoshow',
@@ -80,6 +80,8 @@ export default {
       nextPhoto: 'Volgende foto',
       openPhoto: 'Foto groot bekijken',
       photoViewer: 'Foto',
+      photoRoll: "Alle foto's",
+      photoNumber: 'Foto {n}',
       close: 'Sluiten',
     },
     en: {
@@ -88,6 +90,8 @@ export default {
       nextPhoto: 'Next photo',
       openPhoto: 'View photo full size',
       photoViewer: 'Photo',
+      photoRoll: 'All photos',
+      photoNumber: 'Photo {n}',
       close: 'Close',
     },
   },
