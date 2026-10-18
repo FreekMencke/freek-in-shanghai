@@ -57,7 +57,7 @@ function swipe(el, onPrev, onNext) {
   return () => swiped;
 }
 
-// --- Header: darker and smaller once the page scrolls ------------------------------------------------------------
+// --- Header: solid once the page scrolls (over the hero it starts transparent) ------------------------------------
 
 function initHeader() {
   const header = document.querySelector('[data-header]');

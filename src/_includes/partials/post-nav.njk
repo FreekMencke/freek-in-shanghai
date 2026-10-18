@@ -3,12 +3,12 @@
 <nav class="post-nav" aria-label="{{ site.text.postNavigation }}">
   {%- if older %}
   <a class="post-nav-older" href="{{ older.url }}" rel="prev">
-    <span class="visually-hidden">{{ site.text.previousPost }}: </span>{{ older.data.title }}
+    <span class="post-nav-label">{{ site.text.previousPost }}<span class="visually-hidden">:</span></span>{{ older.data.title }}
   </a>
   {%- endif %}
   {%- if newer %}
   <a class="post-nav-newer" href="{{ newer.url }}" rel="next">
-    <span class="visually-hidden">{{ site.text.nextPost }}: </span>{{ newer.data.title }}
+    <span class="post-nav-label">{{ site.text.nextPost }}<span class="visually-hidden">:</span></span>{{ newer.data.title }}
   </a>
   {%- endif %}
 </nav>
