@@ -1,9 +1,9 @@
 // Replaces the full-size photos in src/uploads/ with sharper versions made from the camera originals (a Google
 // Photos export): the photos WordPress kept were already shrunk to about 1920 px before upload. A photo is replaced
-// only when an original has the same file name, the same aspect ratio and the same content (photos cropped in
-// WordPress keep their upload), and gives more pixels. The new file is at most MAX_SIZE px on its long side, turned
-// upright and without metadata (the originals carry GPS positions). Keeps the file names, so only the widths in the
-// srcset attributes of the pages change. Safe to re-run, e.g. with another part of the export.
+// only when an original has the same file name (or the one in RENAMED), the same aspect ratio and the same content
+// (photos cropped in WordPress keep their upload), and gives more pixels. The new file is at most MAX_SIZE px on its
+// long side, turned upright and without metadata (the originals carry GPS positions). Keeps the file names, so only
+// the widths in the srcset attributes of the pages change. Safe to re-run.
 // Usage: node tools/originals/replace-photos.mjs "/mnt/c/Users/freek/Downloads/Photos from 2017"
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -16,6 +16,13 @@ const MAX_SIZE = 2560;
 const QUALITY = 85;
 // Mean difference (0–255) of the 16 x 16 fingerprints: the same photo scores under 11, a different one over 20.
 const MAX_DIFFERENCE = 15;
+// Uploads whose original has another name in the export: found by comparing content, then checked by eye.
+const RENAMED = {
+  '2017/03/IMG_20170308_141632-e1489058297553.jpg': 'IMG_20170308_141632.jpg',
+  '2017/03/IMG_20170308_143029-e1489058203154.jpg': 'IMG_20170308_143029.jpg',
+  '2017/04/17934048_117765772055554_5892374278875119616_n.jpg': 'IMG_20170419_195534_385.jpg',
+  '2017/05/18252679_1708836219145227_6000592564082704384_n.jpg': 'IMG_20170507_125555_392.jpg',
+};
 
 const originals = process.argv[2];
 if (!originals) throw new Error('Usage: node tools/originals/replace-photos.mjs <folder with the originals>');
@@ -60,14 +67,16 @@ const byName = new Map((await readdir(originals)).map(f => [f.toLowerCase(), pat
 const replaced = new Map();
 const skipped = [];
 let unmatched = 0;
+let notLarger = 0;
 for (const file of uploads) {
-  const original = byName.get(path.posix.basename(file).toLowerCase());
+  const original = byName.get((RENAMED[file] ?? path.posix.basename(file)).toLowerCase());
   if (!original) {
     unmatched++;
     continue;
   }
   const result = await replace(file, original);
-  if (result.skipped) skipped.push(`${file}: ${result.skipped}`);
+  if (result.skipped === 'not larger') notLarger++;
+  else if (result.skipped) skipped.push(`${file}: ${result.skipped}`);
   else replaced.set(file, result);
 }
 
@@ -87,5 +96,8 @@ for (const page of pages) {
   if (updated !== html) await writeFile(page, updated);
 }
 
-console.log(`replaced ${replaced.size}, srcset widths updated ${widths}, without an original ${unmatched}`);
+console.log(
+  `replaced ${replaced.size}, srcset widths updated ${widths}, ` +
+    `without an original ${unmatched}, original not larger ${notLarger}`,
+);
 if (skipped.length) console.log(`kept ${skipped.length}:\n  ${skipped.join('\n  ')}`);
