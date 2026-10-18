@@ -19,7 +19,7 @@
   --on-night: #fff;
   --on-night-muted: #a9afc2;
   --line-night: rgb(255 255 255 / 0.1);
-  /* Black behind slideshow photos, apart from the night of the page; the bar under them a shade lighter. */
+  /* Black behind photos (slideshows and the viewer), apart from the night of the page; the bar a shade lighter. */
   --photo-frame: #000;
   --photo-bar: #0e0e10;
 
@@ -895,12 +895,12 @@ figure {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: rgb(15 18 32 / 0.97);
+  background-color: var(--photo-frame);
   color: var(--on-night);
 }
 
 .lightbox::backdrop {
-  background-color: rgb(15 18 32 / 0.97);
+  background-color: var(--photo-frame);
 }
 
 .lightbox-figure {
