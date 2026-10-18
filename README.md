@@ -75,7 +75,7 @@ from `baseline/content.json`, so an intended content change also needs that file
 On purpose:
 
 - A new design (October 2026) instead of the Astrid theme: the SOLIX typeface, posts on white panels on the
-  night blue of the hero photo, a narrower reading column, slideshow controls under the photo.
+  night blue of the hero photo, a narrower reading column, slideshow controls under the photo in a 4:3 frame.
 - Interface in Dutch (it was English), dates as "6 juni 2017".
 - An English version of every page under `/en/`, with a language link in the menu: posts, About, captions and
   tag names translated in October 2026. Comments stay in Dutch. Visitors get English, unless their browser is set
