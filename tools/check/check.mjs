@@ -17,8 +17,6 @@ const baseline = JSON.parse(await readFile(path.join(ROOT, 'baseline/content.jso
 
 // The content fixes the archive makes on purpose (see README).
 const EXPECTED = {
-  tagRenames: { uistap: 'uitstap' },
-  tagDrops: ['Test'],
   imageReplacements: { 'i.imgur.com/kToikeU.gif': '2017/03/9uRjHYy-Imgur.gif' },
   imageRemovals: ['digitalabstracts.com'],
   aboutImage: { '2017/03/IMG_20170308_145821-225x300.jpg': '2017/03/IMG_20170308_145821-360x480.jpg' },
@@ -129,11 +127,7 @@ async function checkPosts() {
       .toArray()
       .map(el => normalize($(el).text()))
       .sort();
-    const expectedTags = post.tags
-      .filter(t => !EXPECTED.tagDrops.includes(t))
-      .map(t => EXPECTED.tagRenames[t] ?? t)
-      .sort();
-    compareList(where, 'tags', tags, expectedTags);
+    compareList(where, 'tags', tags, [...post.tags].sort());
 
     const featured = $('.entry-image img').attr('src');
     if (Boolean(featured) !== Boolean(post.featured?.shown)) {
