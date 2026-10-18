@@ -566,6 +566,12 @@ figure {
   margin: 0 auto 2.5rem;
 }
 
+/* Featured images are 700 px at most, narrower than the column. */
+.entry-image img {
+  display: block;
+  margin-inline: auto;
+}
+
 .entry-footer {
   margin-top: 2.5rem;
 }
