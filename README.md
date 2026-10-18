@@ -47,6 +47,7 @@ repo to be public.
 | `tools/check/check.mjs` | The checks behind `npm run check` |
 | `baseline/content.json` | What the WordPress site showed, used by the checks |
 | `tools/extract/`, `tools/baseline/` | One-time scripts that exported the content from WordPress |
+| `tools/originals/replace-photos.mjs` | Replaces full-size photos with sharper ones made from the camera originals |
 
 The site is built with [Eleventy](https://www.11ty.dev/) 3.
 
@@ -97,6 +98,10 @@ On purpose:
   - Tags: the 46 WordPress tags (most on one post, "Shanghai" on all but one) are replaced by 8 topics, such as
     Stage, Eten and Bier (October 2026). The baseline holds the new tags.
   - About page: a sharper photo, and the photo sits above the text on phones.
+  - Sharper photos: WordPress only had copies shrunk to about 1920 px before upload. The full-size photos (the ones
+    the viewer opens) were remade from the camera originals in a Google Photos export, at most 2560 px and without
+    their location data (October 2026, `tools/originals/replace-photos.mjs`). Photos without an original in that
+    export, or cropped in WordPress, are still the WordPress copies.
 
 ## Licences
 

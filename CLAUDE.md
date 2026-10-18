@@ -24,7 +24,8 @@ site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this sit
 - `_site/` is build output: never edit it.
 - Don't re-run `tools/extract/extract-wp.mjs` or `tools/baseline/capture.mjs` unless asked. The extract rewrites
   `src/posts/*.html`, `src/about.html`, `src/_data/tagList.json` and `src/uploads/`, bringing back the 46 WordPress
-  tags in place of the 8 topic tags; the capture rewrites `baseline/content.json`. Both read the WordPress backup on `http://localhost:8080`, and the extract also queries
+  tags in place of the 8 topic tags and the WordPress copies of the photos in place of the sharper ones remade from the
+  originals (`tools/originals/replace-photos.mjs`); the capture rewrites `baseline/content.json`. Both read the WordPress backup on `http://localhost:8080`, and the extract also queries
   its database container `freekinshanghai-db-1`. That backup isn't running; start it with `docker compose up -d` in
   `C:\Users\freek\Documents\freekinshanghai-clean` (see its README).
 - Format code like `.prettierrc.json` (2 spaces, single quotes, 120 columns). Prettier itself isn't installed.
