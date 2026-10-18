@@ -6,6 +6,7 @@ WordPress needed to view it. In Dutch, the language it was written in, and in En
 
 ## View it
 
+- **Online:** https://shanghai.freekmencke.com (GitHub Pages; see "Hosting" below).
 - **From disk:** open `_site/index.html` in a browser. All links are relative, so it works without a server.
 - **With a local server:** `npm run serve`, then open http://localhost:8081.
 
@@ -18,6 +19,14 @@ npm ci
 npm run build     # writes _site/
 npm run check     # verifies _site/ (see below)
 ```
+
+## Hosting
+
+GitHub Pages, published by `.github/workflows/pages.yml`: every push to `main` builds the site, runs `npm run check`
+and deploys `_site/`; pull requests get the build and check without deploying. The custom domain
+`shanghai.freekmencke.com` is set in the repo's Pages settings, and Route 53 (zone `freekmencke.com`) has a CNAME
+`shanghai` → `freekmencke.github.io`, which overrides the zone's wildcard record. Pages on GitHub Free needs this
+repo to be public.
 
 ## Structure
 
