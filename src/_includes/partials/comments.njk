@@ -1,18 +1,19 @@
-{%- macro commentList(list, className) -%}
+{#- Comments stay in the language they were written in (Dutch), also on English pages. -#}
+{%- macro commentList(list, className, lang) -%}
 <ol class="{{ className }}">
   {%- for c in list %}
   <li id="comment-{{ c.id }}" class="comment">
     <article class="comment-body">
       <footer class="comment-meta">
         <b class="comment-author">{{ c.author }}</b>
-        <a class="comment-date" href="#comment-{{ c.id }}"><time datetime="{{ c.date }}">{{ c.date | dateTime }}</time></a>
+        <a class="comment-date" href="#comment-{{ c.id }}"><time datetime="{{ c.date }}">{{ c.date | dateTime(lang) }}</time></a>
       </footer>
-      <div class="comment-content">
+      <div class="comment-content"{% if lang != 'nl' %} lang="nl"{% endif %}>
         {{ c.html | safe }}
       </div>
     </article>
     {%- if c.replies %}
-    {{ commentList(c.replies, 'comment-replies') }}
+    {{ commentList(c.replies, 'comment-replies', lang) }}
     {%- endif %}
   </li>
   {%- endfor %}
@@ -20,7 +21,7 @@
 {%- endmacro -%}
 <section class="comments" aria-labelledby="comments-title">
   <h2 id="comments-title" class="comments-title">
-    {{ site.text.comments(comments | commentCount) }} “{{ title }}”
+    {{ t.comments(comments | commentCount) }} “{{ title }}”
   </h2>
-  {{ commentList(comments, 'comment-list') }}
+  {{ commentList(comments, 'comment-list', lang) }}
 </section>

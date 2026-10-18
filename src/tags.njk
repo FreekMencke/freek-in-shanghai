@@ -1,23 +1,24 @@
 ---
 layout: layouts/base.njk
 pagination:
-  data: tagList
+  data: tagPages
   size: 1
-  alias: tag
-permalink: "/tag/{{ tag.slug }}/"
+  alias: tagPage
+permalink: "{{ ('/tag/' + tagPage.tag.slug + '/') | localUrl(tagPage.lang) }}"
 bodyClass: archive
 eleventyComputed:
-  title: "{{ tag.name }}"
+  lang: "{{ tagPage.lang }}"
+  title: "{{ tagPage.tag.slug | tagName(tagPage.lang) }}"
 ---
 <main>
   <header class="page-header">
     <h1 class="page-title">
       <svg class="icon" aria-hidden="true"><use href="#icon-tag"></use></svg>
-      <span class="visually-hidden">{{ site.text.tagTitle }}: </span>{{ tag.name }}
+      <span class="visually-hidden">{{ t.tagTitle }}: </span>{{ title }}
     </h1>
   </header>
   <div class="posts-grid" data-masonry>
-    {%- for post in collections[tag.slug] | reverse %}
+    {%- for post in collections[tagPage.tag.slug] | reverse %}
     {% include "partials/card.njk" %}
     {%- endfor %}
   </div>

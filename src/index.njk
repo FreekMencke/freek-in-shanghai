@@ -1,6 +1,10 @@
 ---
 layout: layouts/base.njk
-permalink: /
+pagination:
+  data: site.languages
+  size: 1
+  alias: lang
+permalink: "{{ '/' | localUrl(lang) }}"
 hero: true
 bodyClass: home
 ---
