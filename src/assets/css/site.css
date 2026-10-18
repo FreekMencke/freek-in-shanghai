@@ -153,7 +153,7 @@ p {
 
 b,
 strong {
-  font-weight: 650;
+  font-weight: 700;
 }
 
 a {
@@ -888,9 +888,9 @@ figure {
 /* --- Lightbox (full-size photo) ----------------------------------------------------------------------------- */
 
 .lightbox {
-  width: 100vw;
+  width: 100%;
   max-width: none;
-  height: 100vh;
+  height: 100%;
   max-height: none;
   margin: 0;
   padding: 0;
