@@ -33,8 +33,8 @@ export default {
     nl: {
       locale: 'nl-BE',
       languageName: 'Nederlands',
-      tagline: 'Een blog over mijn tijd in Shanghai.',
-      heroSubtitle: 'Een blog over mijn tijd in Shanghai',
+      tagline: 'Een gearchiveerde blog over mijn tijd in Shanghai in 2017.',
+      heroSubtitle: 'Een gearchiveerde blog over mijn tijd in Shanghai in 2017',
       skipToContent: 'Naar de inhoud',
       menu: 'Menu',
       readMore: 'Lees meer',
@@ -53,8 +53,8 @@ export default {
     en: {
       locale: 'en-GB',
       languageName: 'English',
-      tagline: 'A blog about my time in Shanghai.',
-      heroSubtitle: 'A blog about my time in Shanghai',
+      tagline: 'An archived blog about my time in Shanghai in 2017.',
+      heroSubtitle: 'An archived blog about my time in Shanghai in 2017',
       skipToContent: 'Skip to content',
       menu: 'Menu',
       readMore: 'Read more',
