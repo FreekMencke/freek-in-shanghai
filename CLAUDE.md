@@ -3,6 +3,9 @@
 Eleventy 3 site; README.md has the structure and commands. Runs in WSL with Node 24 from nvm: non-interactive
 shells need `source ~/.nvm/nvm.sh` first.
 
+Archives (2026-10-18) in `C:\Users\freek\OneDrive\Development\`: `freekinshanghai-static-2026-10-18.zip` (built
+site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this site was exported from).
+
 ## Rules
 
 - One stylesheet (`src/assets/css/site.css`) and one script (`src/assets/js/site.js`). Don't add per-page CSS/JS,
