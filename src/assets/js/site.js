@@ -321,7 +321,10 @@ function initSlideshows() {
     counter.setAttribute('aria-live', 'polite');
     controls.append(prev, counter, next, open);
     const { roll, mark } = photoRoll(items, i => go(i));
-    show.append(controls, roll);
+    const bar = document.createElement('div');
+    bar.className = 'slideshow-bar';
+    bar.append(roll, controls);
+    show.append(bar);
 
     const go = i => {
       slides[index].classList.remove('is-active');

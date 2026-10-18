@@ -19,6 +19,9 @@
   --on-night: #fff;
   --on-night-muted: #a9afc2;
   --line-night: rgb(255 255 255 / 0.1);
+  /* Black behind slideshow photos, apart from the night of the page; the bar under them a shade lighter. */
+  --photo-frame: #000;
+  --photo-bar: #0e0e10;
 
   --paper: #fff;
   --ink: #1d2130;
@@ -681,18 +684,15 @@ figure {
   font-size: var(--text-sm);
 }
 
-/* With JS: one photo at a time in a night frame, with the caption and controls on a strip below it and the photo
-   roll below that. The frame is 4:3, the shape of most photos, but no taller than the screen leaves room for. */
+/* With JS: one photo at a time in a night frame, and a bar below it with the photo roll and the controls. The frame
+   is 4:3, the shape of most photos, but no taller than the screen leaves room for. */
 .js .slideshow {
-  --strip: 3.5rem;
-  --frame: min(75cqi, 100svh - var(--header-height) - var(--strip) - var(--roll) - 2rem);
+  --frame: min(75cqi, 100svh - var(--header-height) - var(--roll) - 2rem);
   container-type: inline-size;
-  position: relative;
   margin-block: 2rem;
-  padding-bottom: var(--roll);
   overflow: hidden;
   border-radius: var(--radius);
-  background-color: var(--night);
+  background-color: var(--photo-frame);
 }
 
 .js .slide {
@@ -703,7 +703,6 @@ figure {
 .js .slide.is-active {
   position: relative;
   display: block;
-  padding-bottom: var(--strip);
   animation: fade-in 0.3s;
 }
 
@@ -722,28 +721,37 @@ figure {
   object-fit: contain;
 }
 
+/* Few photos have a caption (63 of 934), so it goes over the bottom of the photo instead of taking a row. */
 .js .slide figcaption {
   position: absolute;
-  bottom: 0;
-  left: 1rem;
-  right: 12rem;
+  inset: auto 0 0;
   margin: 0;
-  overflow: hidden;
-  color: var(--on-night-muted);
-  line-height: var(--strip);
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding: 0.25rem 1rem;
+  background-color: rgb(0 0 0 / 0.7);
+  color: var(--on-night);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.slideshow-bar {
+  display: flex;
+  border-top: 1px solid var(--line-night);
+  background-color: var(--photo-bar);
+}
+
+.slideshow-bar .photo-roll {
+  flex: 1;
+  justify-content: flex-start;
+  min-width: 0;
 }
 
 .slideshow-controls {
-  position: absolute;
-  right: 0.75rem;
-  bottom: var(--roll);
   display: flex;
+  flex: none;
   align-items: center;
   gap: 0.25rem;
-  height: var(--strip);
+  padding-inline: 0.5rem 0.75rem;
+  border-left: 1px solid var(--line-night);
 }
 
 .control-button {
@@ -786,27 +794,30 @@ figure {
 @media (max-width: 760px) {
   /* Edge to edge, and square, so portrait photos get as much room as landscape ones. */
   .js .slideshow {
-    --frame: min(100cqi, 100svh - var(--header-height) - var(--strip) - var(--roll) - 2rem);
+    --frame: min(100cqi, 100svh - var(--header-height) - var(--roll) - 3.5rem - 2rem);
     max-width: none;
     margin-inline: calc(-1 * var(--panel-padding));
     border-radius: 0;
   }
 
   .js .slide figcaption {
-    left: 0;
-    right: 0;
-    bottom: var(--strip);
-    padding: 0.25rem 1rem;
-    background-color: rgb(15 18 32 / 0.7);
-    line-height: 1.5;
-    font-size: var(--text-sm);
     text-align: center;
   }
 
+  /* Too narrow for the roll and the controls side by side: the controls get a row above the roll. */
+  .slideshow-bar {
+    flex-direction: column-reverse;
+  }
+
+  .slideshow-bar .photo-roll {
+    flex: none;
+  }
+
   .slideshow-controls {
-    left: 0;
-    right: 0;
     justify-content: center;
+    height: 3.5rem;
+    border-left: 0;
+    border-bottom: 1px solid var(--line-night);
   }
 }
 
@@ -821,8 +832,6 @@ figure {
 /* A row of thumbnails along the bottom of a slideshow or the viewer; it scrolls sideways and keeps the current photo
    in the middle (site.js). */
 .photo-roll {
-  position: absolute;
-  inset: auto 0 0;
   display: flex;
   justify-content: safe center;
   align-items: center;
@@ -834,8 +843,6 @@ figure {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--on-night-muted) transparent;
-  border-top: 1px solid var(--line-night);
-  background-color: var(--night-deep);
 }
 
 .photo-roll-thumb {
@@ -953,8 +960,8 @@ figure {
 }
 
 .lightbox .photo-roll {
-  border-top: 0;
-  background-color: transparent;
+  position: absolute;
+  inset: auto 0 0;
 }
 
 .lightbox.has-roll .lightbox-figure {
