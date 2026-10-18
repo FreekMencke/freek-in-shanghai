@@ -1,9 +1,9 @@
 // Replaces the full-size photos in src/uploads/ with sharper versions made from the camera originals (a Google
 // Photos export): the photos WordPress kept were already shrunk to about 1920 px before upload. A photo is replaced
-// only when an original has the same file name (or the one in RENAMED), the same aspect ratio and the same content
-// (photos cropped in WordPress keep their upload), and gives more pixels. The new file is at most MAX_SIZE px on its
-// long side, turned upright and without metadata (the originals carry GPS positions). Keeps the file names, so only
-// the widths in the srcset attributes of the pages change. Safe to re-run.
+// only when an original has the same file name (or the one in RENAMED or INSTAGRAM), the same aspect ratio and the
+// same content (photos cropped in WordPress keep their upload), and gives more pixels. The new file is at most
+// MAX_SIZE px on its long side, turned upright and without metadata (the originals carry GPS positions). Keeps the
+// file names, so only the widths in the srcset attributes of the pages change. Safe to re-run.
 // Usage: node tools/originals/replace-photos.mjs "/mnt/c/Users/freek/Downloads/Photos from 2017"
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -23,6 +23,13 @@ const RENAMED = {
   '2017/04/17934048_117765772055554_5892374278875119616_n.jpg': 'IMG_20170419_195534_385.jpg',
   '2017/05/18252679_1708836219145227_6000592564082704384_n.jpg': 'IMG_20170507_125555_392.jpg',
 };
+// Instagram posts: the centre square of an original, with a filter. Remade from that square without the filter,
+// which the content check can't see past, so these skip it.
+const INSTAGRAM = {
+  '2017/03/17076418_384939298556002_5160741692516597760_n.jpg': 'IMG_20170308_195725.jpg',
+  '2017/03/17076938_1429881617023525_7474689953557905408_n.jpg': 'IMG_20170308_204448.jpg',
+  '2017/03/17077711_430707013988024_5851715919427928064_n.jpg': 'IMG_20170308_154032.jpg',
+};
 
 const originals = process.argv[2];
 if (!originals) throw new Error('Usage: node tools/originals/replace-photos.mjs <folder with the originals>');
@@ -38,20 +45,24 @@ async function uprightSize(file) {
   return orientation >= 5 ? { width: height, height: width } : { width, height };
 }
 
-async function replace(file, original) {
+async function replace(file, original, square) {
   const upload = path.join(UPLOADS, file);
-  const [current, source] = await Promise.all([uprightSize(upload), uprightSize(original)]);
+  const [current, full] = await Promise.all([uprightSize(upload), uprightSize(original)]);
+  const side = Math.min(full.width, full.height);
+  const source = square ? { width: side, height: side } : full;
   const ratio = current.width / current.height / (source.width / source.height);
   if (Math.abs(ratio - 1) > 0.01) return { skipped: `other aspect ratio (${source.width} x ${source.height})` };
-  const [a, b] = await Promise.all([fingerprint(upload), fingerprint(original)]);
-  const difference = a.reduce((sum, value, i) => sum + Math.abs(value - b[i]), 0) / a.length;
-  if (difference > MAX_DIFFERENCE) return { skipped: `other content (difference ${difference.toFixed(0)})` };
+  if (!square) {
+    const [a, b] = await Promise.all([fingerprint(upload), fingerprint(original)]);
+    const difference = a.reduce((sum, value, i) => sum + Math.abs(value - b[i]), 0) / a.length;
+    if (difference > MAX_DIFFERENCE) return { skipped: `other content (difference ${difference.toFixed(0)})` };
+  }
   const scale = Math.min(1, MAX_SIZE / Math.max(source.width, source.height));
   if (Math.round(source.width * scale) <= current.width) return { skipped: 'not larger' };
 
   const { data, info } = await sharp(original)
     .rotate()
-    .resize(MAX_SIZE, MAX_SIZE, { fit: 'inside', withoutEnlargement: true })
+    .resize(MAX_SIZE, MAX_SIZE, { fit: square ? 'cover' : 'inside', withoutEnlargement: true })
     .jpeg({ quality: QUALITY, mozjpeg: true })
     .toBuffer({ resolveWithObject: true });
   await writeFile(upload, data);
@@ -69,12 +80,13 @@ const skipped = [];
 let unmatched = 0;
 let notLarger = 0;
 for (const file of uploads) {
-  const original = byName.get((RENAMED[file] ?? path.posix.basename(file)).toLowerCase());
+  const name = INSTAGRAM[file] ?? RENAMED[file] ?? path.posix.basename(file);
+  const original = byName.get(name.toLowerCase());
   if (!original) {
     unmatched++;
     continue;
   }
-  const result = await replace(file, original);
+  const result = await replace(file, original, file in INSTAGRAM);
   if (result.skipped === 'not larger') notLarger++;
   else if (result.skipped) skipped.push(`${file}: ${result.skipped}`);
   else replaced.set(file, result);

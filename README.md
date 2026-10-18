@@ -100,8 +100,9 @@ On purpose:
   - About page: a sharper photo, and the photo sits above the text on phones.
   - Sharper photos: WordPress only had copies shrunk to about 1920 px before upload. The full-size photos (the ones
     the viewer opens) were remade from the camera originals in a Google Photos export, at most 2560 px and without
-    their location data (October 2026, `tools/originals/replace-photos.mjs`). Photos without an original in that
-    export, or cropped in WordPress, are still the WordPress copies.
+    their location data (October 2026, `tools/originals/replace-photos.mjs`). Three Instagram squares in
+    "Boodschappen doen" are now the centre square of their camera photo, without the Instagram filter. Photos without
+    an original in that export, or cropped in WordPress, are still the WordPress copies.
 
 ## Licences
 
