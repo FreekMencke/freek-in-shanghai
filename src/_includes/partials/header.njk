@@ -2,18 +2,22 @@
   <div class="container site-header-inner">
     <div class="site-branding">
       {% if hero %}<h1 class="site-title">{% else %}<p class="site-title">{% endif %}
-        <a href="/" rel="home">{{ site.title }}</a>
+        <a href="{{ '/' | localUrl(lang) }}" rel="home">{{ site.title }}</a>
       {% if hero %}</h1>{% else %}</p>{% endif %}
     </div>
     <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
       <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
-      <span class="visually-hidden">{{ site.text.menu }}</span>
+      <span class="visually-hidden">{{ t.menu }}</span>
     </button>
-    <nav id="site-nav" class="main-nav" aria-label="{{ site.text.menu }}">
+    <nav id="site-nav" class="main-nav" aria-label="{{ t.menu }}">
       <ul>
         {%- for item in site.menu %}
-        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
+        {%- set url = item.url | localUrl(lang) %}
+        <li><a href="{{ url }}"{% if page.url == url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
         {%- endfor %}
+        {%- if alternateUrl %}
+        <li class="lang-switch"><a href="{{ alternateUrl }}" hreflang="{{ otherLang }}" lang="{{ otherLang }}">{{ site.text[otherLang].languageName }}</a></li>
+        {%- endif %}
       </ul>
     </nav>
   </div>

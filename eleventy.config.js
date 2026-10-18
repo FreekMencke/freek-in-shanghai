@@ -2,9 +2,19 @@ import path from 'node:path';
 import tagList from './src/_data/tagList.json' with { type: 'json' };
 import site from './src/_data/site.js';
 
-const tagNames = new Map(tagList.map(t => [t.slug, t.name]));
-const dateFormat = new Intl.DateTimeFormat(site.locale, { dateStyle: 'long', timeZone: 'UTC' });
-const dateTimeFormat = new Intl.DateTimeFormat(site.locale, { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' });
+const tags = new Map(tagList.map(t => [t.slug, t]));
+const formats = Object.fromEntries(
+  site.languages.map(lang => {
+    const { locale } = site.text[lang];
+    return [
+      lang,
+      {
+        date: new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }),
+        dateTime: new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' }),
+      },
+    ];
+  }),
+);
 
 /**
  * Turns a root-relative URL into one relative to the page, with an explicit index.html, so the built site works
@@ -26,19 +36,34 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets', 'src/uploads': 'uploads' });
 
   eleventyConfig.addCollection('posts', api => api.getFilteredByGlob('src/posts/*.html'));
+  eleventyConfig.addCollection('postsEn', api => api.getFilteredByGlob('src/en/posts/*.html'));
 
-  eleventyConfig.addFilter('date', value => dateFormat.format(new Date(value)));
-  eleventyConfig.addFilter('dateTime', value => dateTimeFormat.format(new Date(value)));
+  eleventyConfig.addFilter('date', (value, lang) => formats[lang].date.format(new Date(value)));
+  eleventyConfig.addFilter('dateTime', (value, lang) => formats[lang].dateTime.format(new Date(value)));
   eleventyConfig.addFilter('isoDate', value => new Date(value).toISOString());
-  eleventyConfig.addFilter('tagName', slug => tagNames.get(slug) ?? slug);
+  // tagList.json has the Dutch name, and an English one (`en`) where it differs.
+  eleventyConfig.addFilter('tagName', (slug, lang) => {
+    const tag = tags.get(slug);
+    return (lang === 'en' && tag?.en) || tag?.name || slug;
+  });
+  eleventyConfig.addFilter('localUrl', (url, lang) => (lang === 'nl' ? url : `/${lang}${url}`));
+
+  // Dutch posts are the originals; an English post is the file with the same name in src/en/posts/.
+  // Eleventy's i18n plugin expects every language in its own folder or host redirects, and this site keeps Dutch
+  // at / and has to work from disk, so these two filters do the matching.
+  eleventyConfig.addFilter('original', (slug, posts) => posts.find(post => post.page.fileSlug === slug));
+  eleventyConfig.addFilter('translation', (post, lang, translations) =>
+    lang === 'nl' ? post : translations.find(t => t.page.fileSlug === post.page.fileSlug),
+  );
   eleventyConfig.addFilter('commentCount', countComments);
 
   // Photos in posts link to their full-size file; give those links a name (the image has no alt text).
   eleventyConfig.addTransform('photo-link-labels', function (content) {
     if (!this.page.outputPath?.endsWith('.html')) return content;
+    const ui = site.ui[this.page.url.startsWith('/en/') ? 'en' : 'nl'];
     return content.replace(
       /<a ([^>]*href="[^"]+\.(?:jpe?g|png|gif)"[^>]*)>(\s*<img)/gi,
-      `<a $1 aria-label="${site.ui.openPhoto}">$2`,
+      `<a $1 aria-label="${ui.openPhoto}">$2`,
     );
   });
 

@@ -5,15 +5,18 @@
   },
   {
     "slug": "appartement",
-    "name": "appartement"
+    "name": "appartement",
+    "en": "Apartment"
   },
   {
     "slug": "auto",
-    "name": "Auto"
+    "name": "Auto",
+    "en": "Car"
   },
   {
     "slug": "auto-show",
-    "name": "auto show"
+    "name": "auto show",
+    "en": "Auto show"
   },
   {
     "slug": "bbq",
@@ -25,7 +28,8 @@
   },
   {
     "slug": "beerpong",
-    "name": "Beerpong"
+    "name": "Beerpong",
+    "en": "Beer pong"
   },
   {
     "slug": "beijing",
@@ -41,7 +45,8 @@
   },
   {
     "slug": "chinees",
-    "name": "Chinees"
+    "name": "Chinees",
+    "en": "Chinese"
   },
   {
     "slug": "de-refter",
@@ -49,7 +54,8 @@
   },
   {
     "slug": "drinken",
-    "name": "Drinken"
+    "name": "Drinken",
+    "en": "Drinks"
   },
   {
     "slug": "escape-room",
@@ -57,7 +63,8 @@
   },
   {
     "slug": "eten",
-    "name": "Eten"
+    "name": "Eten",
+    "en": "Food"
   },
   {
     "slug": "g2s",
@@ -69,7 +76,8 @@
   },
   {
     "slug": "gebouwen",
-    "name": "Gebouwen"
+    "name": "Gebouwen",
+    "en": "Buildings"
   },
   {
     "slug": "karaoke",
@@ -81,11 +89,13 @@
   },
   {
     "slug": "les",
-    "name": "Les"
+    "name": "Les",
+    "en": "Class"
   },
   {
     "slug": "lessen",
-    "name": "Lessen"
+    "name": "Lessen",
+    "en": "Classes"
   },
   {
     "slug": "lessons",
@@ -101,7 +111,8 @@
   },
   {
     "slug": "medische",
-    "name": "Medische"
+    "name": "Medische",
+    "en": "Medical"
   },
   {
     "slug": "mr-x",
@@ -113,7 +124,8 @@
   },
   {
     "slug": "reis",
-    "name": "Reis"
+    "name": "Reis",
+    "en": "Travel"
   },
   {
     "slug": "residence-permit",
@@ -133,7 +145,8 @@
   },
   {
     "slug": "stage",
-    "name": "Stage"
+    "name": "Stage",
+    "en": "Internship"
   },
   {
     "slug": "tasting",
@@ -141,11 +154,13 @@
   },
   {
     "slug": "trip",
-    "name": "trip"
+    "name": "trip",
+    "en": "Trip"
   },
   {
     "slug": "uitstap",
-    "name": "uitstap"
+    "name": "uitstap",
+    "en": "Day out"
   },
   {
     "slug": "university",
@@ -153,15 +168,18 @@
   },
   {
     "slug": "verkennen",
-    "name": "Verkennen"
+    "name": "Verkennen",
+    "en": "Exploring"
   },
   {
     "slug": "vis",
-    "name": "Vis"
+    "name": "Vis",
+    "en": "Fish"
   },
   {
     "slug": "voorbereiding",
-    "name": "Voorbereiding"
+    "name": "Voorbereiding",
+    "en": "Preparation"
   },
   {
     "slug": "website",

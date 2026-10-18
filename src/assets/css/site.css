@@ -294,6 +294,12 @@ figure {
   text-underline-offset: 0.4em;
 }
 
+/* The language switch stands apart from the menu, after a thin line. */
+.main-nav .lang-switch {
+  padding-left: 2rem;
+  border-left: 1px solid var(--line-night);
+}
+
 .site-header :focus-visible {
   outline-color: var(--red-bright);
 }
@@ -324,6 +330,11 @@ figure {
     display: block;
     padding: 0.75rem 15px;
     border-top: 1px solid var(--line-night);
+  }
+
+  .main-nav .lang-switch {
+    padding-left: 0;
+    border-left: 0;
   }
 
   .site-header.over-hero {

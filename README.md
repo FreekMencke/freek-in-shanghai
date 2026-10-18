@@ -2,7 +2,7 @@
 
 Static archive of the blog www.freekinshanghai.be (2017): 21 posts, the About page, 42 comments and 934 photos in
 26 slideshows. Rebuilt in October 2026 from the WordPress backup as a plain static site: no server, database or
-WordPress needed to view it.
+WordPress needed to view it. In Dutch, the language it was written in, and in English under `/en/`.
 
 ## View it
 
@@ -23,15 +23,16 @@ npm run check     # verifies _site/ (see below)
 
 | Path | What it is |
 | --- | --- |
-| `src/_data/site.js` | Site title, menu, social links, hero and favicons, and all interface text |
+| `src/_data/site.js` | Site title, menu, social links, hero and favicons, and all interface text per language |
 | `src/assets/css/site.css` | The only stylesheet. Colours, fonts and sizes are tokens at the top (`:root`) |
 | `src/assets/js/site.js` | The only script: header, mobile menu, masonry cards, slideshows, photo viewer |
 | `src/assets/fonts/` | SOLIX, the one typeface (variable font, all weights) |
 | `src/_includes/layouts/` | `base.njk` (every page), `post.njk`, `page.njk` |
 | `src/_includes/partials/` | Header, hero, card, comments, post navigation, footer, SVG icons |
 | `src/posts/*.html` | One file per post: front matter (title, date, tags, images, comments) and the post HTML |
+| `src/en/posts/*.html`, `src/en/about.html` | The English translations: title, excerpt and the post HTML; the rest comes from the Dutch post |
 | `src/about.html`, `src/index.njk`, `src/tags.njk`, `src/404.njk` | About page, home page, one page per tag, 404 page |
-| `src/_data/tagList.json` | Tag slugs and names |
+| `src/_data/tagList.json` | Tag slugs, Dutch names and English names (`en`) where they differ |
 | `src/uploads/` | The photos, in the same `2017/MM/` folders as on the old site (only files a page uses) |
 | `eleventy.config.js` | Eleventy setup: collections, Dutch dates, relative URLs |
 | `tools/check/check.mjs` | The checks behind `npm run check` |
@@ -43,9 +44,10 @@ The site is built with [Eleventy](https://www.11ty.dev/) 3.
 ## Making changes
 
 - **Look of the whole site:** the tokens at the top of `site.css`.
-- **Menu, footer links, interface text:** `src/_data/site.js`.
+- **Menu, footer links, interface text:** `src/_data/site.js` (`text.nl` and `text.en`).
 - **Page structure:** one partial in `src/_includes/partials/`.
-- **A post:** its file in `src/posts/`. The body is plain HTML.
+- **A post:** its file in `src/posts/`, and its English version with the same file name in `src/en/posts/`. The
+  body is plain HTML.
 
 After a change, run `npm run build` and `npm run check`. The check fails if a post's text, photos or comments differ
 from `baseline/content.json`, so an intended content change also needs that file updated.
@@ -66,6 +68,9 @@ On purpose:
 - A new design (October 2026) instead of the Astrid theme: the SOLIX typeface, posts on white panels on the
   night blue of the hero photo, a narrower reading column, slideshow controls under the photo.
 - Interface in Dutch (it was English), dates as "6 juni 2017".
+- An English version of every page under `/en/`, with a language link in the menu: posts, About, captions and
+  tag names translated in October 2026. Comments stay in Dutch. Visitors get English, unless their browser is set
+  to Dutch or to Belgium; the language they pick with the menu link is remembered.
 - Slideshows start paused, with a "12 / 426" counter, arrow keys and swipe, and only load the photos around the
   current one (the two biggest posts used to load 330 MB and 148 MB of photos at once). Clicking a photo opens it
   full size.

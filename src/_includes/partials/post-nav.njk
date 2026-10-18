@@ -1,14 +1,16 @@
-{%- set older = collections.posts | getPreviousCollectionItem(page) -%}
-{%- set newer = collections.posts | getNextCollectionItem(page) -%}
-<nav class="post-nav" aria-label="{{ site.text.postNavigation }}">
+{%- set older = collections.posts | getPreviousCollectionItem(original) -%}
+{%- set newer = collections.posts | getNextCollectionItem(original) -%}
+{%- set older = older and (older | translation(lang, collections.postsEn)) -%}
+{%- set newer = newer and (newer | translation(lang, collections.postsEn)) -%}
+<nav class="post-nav" aria-label="{{ t.postNavigation }}">
   {%- if older %}
   <a class="post-nav-older" href="{{ older.url }}" rel="prev">
-    <span class="post-nav-label">{{ site.text.previousPost }}<span class="visually-hidden">:</span></span>{{ older.data.title }}
+    <span class="post-nav-label">{{ t.previousPost }}<span class="visually-hidden">:</span></span>{{ older.data.title }}
   </a>
   {%- endif %}
   {%- if newer %}
   <a class="post-nav-newer" href="{{ newer.url }}" rel="next">
-    <span class="post-nav-label">{{ site.text.nextPost }}<span class="visually-hidden">:</span></span>{{ newer.data.title }}
+    <span class="post-nav-label">{{ t.nextPost }}<span class="visually-hidden">:</span></span>{{ newer.data.title }}
   </a>
   {%- endif %}
 </nav>

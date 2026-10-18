@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +8,30 @@
     <link rel="icon" href="{{ site.favicons.icon32 }}" sizes="32x32">
     <link rel="icon" href="{{ site.favicons.icon192 }}" sizes="192x192">
     <link rel="apple-touch-icon" href="{{ site.favicons.appleTouch }}">
+    {%- if alternateUrl %}
+    <link rel="alternate" hreflang="{{ otherLang }}" href="{{ alternateUrl }}">
+    {#- Before anything shows: English, unless the browser's first language is Dutch or its region Belgium; a
+        language picked with the menu link (stored by site.js) wins. Inline, so the wrong language never flashes. #}
+    <script>
+      (() => {
+        let picked = null;
+        try {
+          picked = localStorage.getItem('lang');
+        } catch {}
+        const first = (navigator.languages?.[0] ?? navigator.language ?? '').toLowerCase();
+        const wanted = picked ?? (first.startsWith('nl') || first.endsWith('-be') ? 'nl' : 'en');
+        if (wanted !== document.documentElement.lang) {
+          location.replace(document.querySelector('link[rel="alternate"]').href + location.hash);
+        }
+      })();
+    </script>
+    {%- endif %}
     <link rel="stylesheet" href="/assets/css/site.css">
     <script>document.documentElement.classList.add('js');</script>
     <script src="/assets/js/site.js" defer></script>
   </head>
   <body class="{{ bodyClass }}">
-    <a class="skip-link" href="#content">{{ site.text.skipToContent }}</a>
+    <a class="skip-link" href="#content">{{ t.skipToContent }}</a>
     {% include "partials/icons.njk" %}
     {% include "partials/header.njk" %}
     {% if hero %}{% include "partials/hero.njk" %}{% endif %}
@@ -23,6 +41,6 @@
       </div>
     </div>
     {% include "partials/footer.njk" %}
-    <script type="application/json" id="ui-text">{{ site.ui | dump | safe }}</script>
+    <script type="application/json" id="ui-text">{{ site.ui[lang] | dump | safe }}</script>
   </body>
 </html>
