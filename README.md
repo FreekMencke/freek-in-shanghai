@@ -93,7 +93,9 @@ On purpose:
   - "Residence permit en stage": the dead external G2 logo (and its link) is removed.
   - "Bankrekening, massage en Mahjong": the link to a "Foto's" page that no longer existed is removed (text kept).
   - "Eten, karaoke en 96th floor afterparty": one slideshow had random order; it now uses its saved order.
-  - Hero subtitle typo fixed; tag "uistap" merged into "uitstap"; tag "Test" removed.
+  - Hero subtitle typo fixed.
+  - Tags: the 46 WordPress tags (most on one post, "Shanghai" on all but one) are replaced by 8 topics, such as
+    Stage, Eten and Bier (October 2026). The baseline holds the new tags.
   - About page: a sharper photo, and the photo sits above the text on phones.
 
 ## Licences
