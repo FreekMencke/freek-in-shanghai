@@ -19,9 +19,10 @@ site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this sit
   an intended content change, update the baseline or the `EXPECTED` list in `tools/check/check.mjs`. It also fails
   on unused files in `src/uploads/`, so delete photos no page uses.
 - `_site/` is build output: never edit it.
-- Don't re-run `tools/extract/extract-wp.mjs` or `tools/baseline/capture.mjs` unless asked: they overwrite
-  `src/posts/*.html`, `src/about.html`, `src/_data/tagList.json`, `src/uploads/` and `baseline/content.json` from
-  the WordPress backup. That backup isn't running; start it with `docker compose up -d` in
+- Don't re-run `tools/extract/extract-wp.mjs` or `tools/baseline/capture.mjs` unless asked. The extract rewrites
+  `src/posts/*.html`, `src/about.html`, `src/_data/tagList.json` and `src/uploads/`; the capture rewrites
+  `baseline/content.json`. Both read the WordPress backup on `http://localhost:8080`, and the extract also queries
+  its database container `freekinshanghai-db-1`. That backup isn't running; start it with `docker compose up -d` in
   `C:\Users\freek\Documents\freekinshanghai-clean` (see its README).
 - Format code like `.prettierrc.json` (2 spaces, single quotes, 120 columns). Prettier itself isn't installed.
 
@@ -30,10 +31,10 @@ site) and `freekinshanghai-backup-2026-10-18.zip` (the WordPress backup this sit
 - A post is `src/posts/<slug>.html`; the slug is the file name and the URL (`/<slug>/`). Front matter:
   `title`, `date` (UTC), `tags` (tag slugs), `excerpt` (card text), `image` (`card` 520 px and `small` 360 px for
   the cards, `large` 700 px only when the post shows its featured image), and `comments` (`id`, `author`, `date`,
-  `html`, nested `replies`).
+  `html`, nested `replies`). Every post needs `excerpt` and `image.card`/`image.small` with `width` and `height`:
+  the cards use them unchecked.
 - Tag names come from `src/_data/tagList.json`; a new tag slug needs an entry there, or it shows as the slug and
   gets no tag page. Each tag slug is also an Eleventy collection name, so never use `posts` as a tag.
-- `src/_data/site.js` holds everything that isn't a post: hero, favicons, menu, social links and all interface text.
 
 ## Gotchas
 
