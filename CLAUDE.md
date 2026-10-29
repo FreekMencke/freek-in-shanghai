@@ -1,6 +1,6 @@
 # Freek in Shanghai (static archive)
 
-Eleventy 3 site; README.md has the structure and commands. Runs in WSL with Node 24 from nvm: non-interactive
+Eleventy 3 site; README.md has the structure and commands. Runs in WSL with Node 26 from nvm: non-interactive
 shells need `source ~/.nvm/nvm.sh` first.
 
 Archives (2026-10-18) in `C:\Users\freek\OneDrive\Development\`: `freekinshanghai-static-2026-10-18.zip` (built

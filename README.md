@@ -12,7 +12,7 @@ WordPress needed to view it. In Dutch, the language it was written in, and in En
 
 ## Build
 
-Needs Node 24 (see `.nvmrc`).
+Needs Node 26 (see `.nvmrc`).
 
 ```
 npm ci
