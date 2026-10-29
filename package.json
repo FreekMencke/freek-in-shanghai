@@ -5,7 +5,7 @@
   "description": "Static archive of the blog Freek in Shanghai (2017)",
   "type": "module",
   "engines": {
-    "node": ">=24"
+    "node": ">=26"
   },
   "scripts": {
     "build": "eleventy",
